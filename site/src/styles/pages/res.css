@@ -74,3 +74,7 @@
 /* Compliance: certifications section right after the hero */
 .certs--compliance { background: #fff; }
 .certs--compliance .certs__copy p + p { margin-top: -10px; }
+
+/* 404 */
+.res-404__intro { max-width: 640px; margin: 20px auto 0; text-align: center; font-size: var(--rk-fs-lead); color: rgba(255, 255, 255, 0.92); }
+.page-res--404 main { min-height: 60svh; background: var(--rk-light-grey); }
