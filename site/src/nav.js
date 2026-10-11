@@ -52,7 +52,11 @@ export function initNav() {
   // Mobile drawer: a modal panel. The page behind it is inert, focus stays inside (toggle + drawer),
   // Escape or the toggle closes it and focus returns to the toggle.
   const behind = [...document.querySelectorAll('main, .site-footer, .schedule-tab, .skip-link')];
+  const header = document.getElementById('site-header');
+  const placeDrawer = () => nav.style.setProperty('--nav-top', `${Math.round(header.getBoundingClientRect().bottom)}px`);
+  window.addEventListener('resize', () => nav.classList.contains('is-open') && placeDrawer());
   const setDrawer = (open) => {
+    if (open) placeDrawer();
     toggle.setAttribute('aria-expanded', String(open));
     toggle.querySelector('.sr-only').textContent = open ? 'Close menu' : 'Menu';
     nav.classList.toggle('is-open', open);

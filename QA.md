@@ -271,6 +271,25 @@ After the pass, Lighthouse mobile is still 100 / 100 / 100 / 100 (spot-checked o
 - The floating Schedule A Call pill covers the bottom-right corner of content as you scroll, the same as live.
 - This is device emulation in Chrome; real iOS Safari and Android checks are still to do.
 
+## Public preview on GitHub Pages (2026-10-11)
+
+**Live:** https://travist6983.github.io/oct-boondoggle/. Deployed by `.github/workflows/pages.yml` on every push to `main`.
+
+**The preview build differs from the local build in four ways:**
+- It is served under `/oct-boondoggle/`. Every root-relative link, image, `srcset`, font, and icon is rewritten for the sub-path.
+- A slim ribbon reads "Concept redesign prototype. This is not the official Renkim website", with a link to renkim.com.
+- Pages carry `noindex, nofollow`.
+- Share cards: og:image (the homepage hero, ribbon included), og:url, and a large-image Twitter card. Shared titles are prefixed "Concept redesign ·".
+
+GitHub Pages serves a branded 404 page for unknown URLs.
+
+**Checks against the live URL:**
+- All 26 pages load with no failed requests and no console errors, the motion layer goes live on every page, and every internal link resolves.
+- Lighthouse on the live URL (Home and Certified Mail, mobile and desktop): Performance, Accessibility, and Best Practices are all **100**. Mobile LCP is 1.1–1.3 s (faster than local, on GitHub's CDN), CLS 0, TBT 0. SEO reads 63 only because of the intentional `noindex`.
+- The phone drawer fits exactly with the ribbon above the header (top 125 px, bottom at the viewport edge). It is anchored to the header's bottom edge when opened.
+
+**Fixed during deploy:** the CSS minifier dropped the unprefixed `backdrop-filter: none` when both the standard and `-webkit-` forms were written. The header kept its blur when the drawer opened, which made the header the drawer's containing block. The rule now uses only the standard property, and the minifier adds the prefix itself.
+
 ## Homepage: storyboard vs. build, stage by stage
 
 Screenshots: `qa/screenshots/{1440,1024,390}/NN-*.jpg` (motion) and `qa/screenshots/reduced-{1440,390}/` (static).

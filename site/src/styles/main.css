@@ -213,7 +213,6 @@ body:not(.nav-open) .site-header.is-over-hero .nav-toggle[aria-expanded='true'] 
   .site-header.is-over-hero :focus-visible { box-shadow: 0 0 0 3px var(--rk-green); }
 }
 .site-header { transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s; }
-body.nav-open .site-header { background: #fff; }
 
 /* Touch targets on phones and tablets: footer and list links get a 44px row, the homepage's
    step tabs and the contact channel links a 40px+ hit area. */
@@ -229,7 +228,8 @@ body.nav-open .site-header { background: #fff; }
    White type, green section labels, every chevron in the same 44px round button. */
 @media (max-width: 1023px) {
   .primary-nav {
-    position: fixed; inset: var(--header-h) 0 auto 0; height: calc(100dvh - var(--header-h)); z-index: 1;
+    /* --nav-top: the header's bottom edge when opened (nav.js), so content above the header is respected */
+    position: fixed; inset: var(--nav-top, var(--header-h)) 0 auto 0; height: calc(100dvh - var(--nav-top, var(--header-h))); z-index: 1;
     display: none; overflow-y: auto; overscroll-behavior: contain;
     padding: 6px var(--gutter) calc(32px + env(safe-area-inset-bottom));
     background: linear-gradient(180deg, var(--rk-deep-blue) 0%, var(--rk-deep-blue) 55%, var(--rk-blue) 140%);
@@ -238,8 +238,10 @@ body.nav-open .site-header { background: #fff; }
   .primary-nav.is-open { display: flex; flex-direction: column; animation: drawer-in 0.24s var(--ease-cine) both; }
   @keyframes drawer-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
 
-  /* the header bar joins the drawer: deep blue, white logo, white close icon */
-  body.nav-open .site-header { background: var(--rk-deep-blue); backdrop-filter: none; -webkit-backdrop-filter: none; border-bottom-color: rgba(255, 255, 255, 0.16); box-shadow: none; }
+  /* the header bar joins the drawer: deep blue, white logo, white close icon. backdrop-filter must go
+     (it makes the header the drawer's containing block); write only the standard property, since the
+     minifier adds the -webkit- prefix itself and listing both made it drop this one. */
+  body.nav-open .site-header { background: var(--rk-deep-blue); backdrop-filter: none; border-bottom-color: rgba(255, 255, 255, 0.16); box-shadow: none; }
   body.nav-open .header__logo-color { display: none; }
   body.nav-open .header__logo-white { display: block; }
   body.nav-open .nav-toggle__bars::before, body.nav-open .nav-toggle__bars::after { background: #fff; }
