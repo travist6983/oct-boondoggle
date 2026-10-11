@@ -1,0 +1,149 @@
+/* ==========================================================================
+   What We Do · Digital family
+   /digital-services/              the lab: one envelope's letter becomes an email,
+                                   a text, a payment and an electronic bill
+   /digital-services/email/        a sticky laptop: inbox → secure eNotice → PDF attachment
+   /digital-services/text-message/ a sticky phone: SMS → secure MMS → direct statement
+   Static first: without motion the offerings are cards with the redrawn live icons and the
+   lab shows its finished scene. .motion-ok sets the layout before paint; .is-live (JS) drives
+   every state from scrollY.
+   ========================================================================== */
+
+/* --- Shared SVG bits -------------------------------------------------------- */
+.dg-svg, .dg-icon { display: block; width: 100%; height: auto; overflow: visible; }
+/* SVG parts animate through their transform attribute (explicit pivots), never CSS transform-box.
+   Device scenes clip to their own frame so rising/flying parts never cover the copy. */
+.dg-stage .dg-svg { overflow: hidden; }
+.dg-icon { max-width: 260px; margin-inline: auto; }
+
+/* ==========================================================================
+   /digital-services/ : lab + rows
+   ========================================================================== */
+.wwd-lab.dg-lab { aspect-ratio: 16 / 10.4; background: #fff; margin: 0; }
+.dg-lab .dg-svg { position: absolute; left: 3%; top: 3%; width: 94%; }
+.dg-lab__ticks {
+  position: absolute; left: 3%; right: 3%; bottom: 4%;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px;
+}
+.dg-lab__ticks li {
+  display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px 5px 6px;
+  border: 1px solid var(--rk-border); border-radius: var(--rk-radius-pill); background: #fff;
+  font-size: 0.8125rem; font-weight: 500; color: var(--rk-dark-grey); transition: border-color 0.3s, background-color 0.3s;
+}
+.dg-lab__ticks svg { width: 18px; height: 18px; flex: none; }
+.dg-lab__ticks circle, .dg-row__done circle { fill: var(--rk-green); transition: fill 0.3s; }
+.dg-lab__ticks path, .dg-row__done path { fill: none; stroke: var(--rk-dark-grey); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.is-live .dg-lab__ticks li:not(.is-on) circle { fill: var(--rk-border); }
+.is-live .dg-lab__ticks li:not(.is-on) path { stroke: #fff; }
+.is-live .dg-lab__ticks li.is-on { border-color: var(--rk-green); background: #f0fff7; }
+@media (max-width: 767px) {
+  .wwd-lab.dg-lab { aspect-ratio: 16 / 12.2; }
+  .dg-lab__ticks { bottom: 3%; gap: 4px 6px; }
+  .dg-lab__ticks li { font-size: 0.6875rem; padding: 3px 8px 3px 4px; }
+  .dg-lab__ticks svg { width: 14px; height: 14px; }
+}
+/* Flying cards only exist mid-flight */
+.dg-l-fly { opacity: 0; }
+/* Before the journey takes over, the scene shows its finished state (static/reduced motion) */
+.is-live .dg-l-mail, .is-live .dg-l-sms, .is-live .dg-l-pay, .is-live .dg-l-bill { opacity: 0; }
+
+/* Pinned lab: the scene sticks while the four beats play */
+.motion-ok .dg-labpin::after { content: ''; display: block; height: 118vh; }
+.motion-ok .dg-labpin .dg-lab { position: sticky; top: calc(var(--header-h) + 24px); }
+@media (max-width: 1023px) {
+  .motion-ok .dg-labpin::after { height: 84vh; }
+  /* centre the scene in the space under the header while it is pinned */
+  .motion-ok .dg-labpin .dg-lab { top: calc(var(--header-h) + max(16px, (100svh - var(--header-h) - (100vw - 2 * var(--gutter)) * 0.7625) / 2)); }
+}
+@media (max-width: 767px) {
+  .motion-ok .dg-labpin .dg-lab { top: calc(var(--header-h) + max(16px, (100svh - var(--header-h) - (100vw - 2 * var(--gutter) - 34px) * 0.7625) / 2)); }
+}
+
+/* Rows */
+.dg-rows { margin-top: 40px; }
+.dg-row { position: relative; }
+.dg-row__kicker { font-size: 0.875rem; font-weight: 600; color: var(--rk-blue); margin: 0 0 4px !important; }
+.dg-row h2 { margin: 0; }
+.dg-row__art { position: relative; background: var(--rk-light-grey); border-radius: 16px; padding: 18px 12px; }
+.dg-row__art .dg-icon { max-width: 220px; }
+.dg-row__done { position: absolute; top: 12px; right: 12px; width: 28px; height: 28px; opacity: 0; transform: scale(0.6); transition: opacity 0.3s, transform 0.4s var(--ease-cine); }
+.dg-row__done svg { width: 100%; height: 100%; }
+.is-live .dg-row.is-done .dg-row__done { opacity: 1; transform: none; }
+
+/* ==========================================================================
+   Email / Text message: hero + offerings beside a sticky device stage
+   ========================================================================== */
+.dg-body { position: relative; background: var(--rk-light-grey); padding: 72px 0 104px; }
+.dg-body > .container { position: relative; z-index: 2; }
+.dg-offers { display: grid; gap: 24px; min-width: 0; }
+.dg-offer {
+  background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card);
+  padding: 30px 26px; display: grid; gap: 20px; align-content: start;
+}
+.dg-offer__title { color: var(--rk-blue); font-size: clamp(1.5rem, 1.25rem + 0.9vw, 2rem); padding-bottom: 16px; border-bottom: 1px solid var(--rk-border); }
+.dg-offer__facts { display: grid; gap: 18px; }
+.dg-fact h3 { font-size: 1.0625rem; margin-bottom: 4px; }
+.dg-fact p { font-size: 1rem; line-height: 1.6; }
+.dg-offer__icon { margin: 0; justify-self: center; width: min(240px, 70%); }
+@media (min-width: 768px) {
+  .dg-offer { grid-template-columns: minmax(0, 1fr) 210px; grid-template-areas: 'title title' 'facts icon'; padding: 36px 36px; column-gap: 32px; }
+  .dg-offer__title { grid-area: title; }
+  .dg-offer__facts { grid-area: facts; }
+  .dg-offer__icon { grid-area: icon; align-self: center; width: 100%; }
+  .dg-offer:nth-child(even) { grid-template-columns: 210px minmax(0, 1fr); grid-template-areas: 'title title' 'icon facts'; }
+}
+@media (min-width: 1024px) {
+  .dg-offer__facts { grid-template-columns: 1fr 1fr; column-gap: 32px; }
+  .dg-offer__facts .dg-fact:last-child { grid-column: 2; grid-row: 1 / span 2; }
+}
+
+.dg-stage-cell { display: none; }
+.dg-stage { position: relative; }
+.dg-stage__steps { display: flex; justify-content: center; gap: 8px; margin-top: 18px; }
+.dg-stage__steps li {
+  min-width: 46px; padding: 5px 12px; border-radius: var(--rk-radius-pill); text-align: center;
+  font-size: 0.8125rem; font-weight: 700; color: var(--rk-grey); background: #fff; border: 1px solid var(--rk-border);
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+.dg-stage__steps li.is-on { background: var(--rk-blue); border-color: var(--rk-blue); color: #fff; }
+
+/* Motion layout: the device stage is the page's hero object's destination */
+.motion-ok .dg-stage-cell { display: block; }
+.motion-ok .dg-offer__icon { display: none; }
+.motion-ok .dg-offer { grid-template-columns: 1fr; grid-template-areas: none; }
+.motion-ok .dg-offer > * { grid-area: auto; }
+.motion-ok .dg-offer__facts { grid-template-columns: 1fr; }
+.motion-ok .dg-offer__facts .dg-fact:last-child { grid-column: auto; grid-row: auto; }
+@media (min-width: 1024px) {
+  .motion-ok .dg-grid { display: grid; grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr); gap: 56px; align-items: stretch; }
+  .motion-ok .dg-offers { gap: 0; padding: 14vh 0 26vh; }
+  .motion-ok .dg-offer { min-height: min(76vh, 720px); align-content: center; background: transparent; border: 0; padding: 0 0 0 8px; }
+  .motion-ok .dg-offer__title { font-size: clamp(1.75rem, 1.2rem + 1.4vw, 2.5rem); }
+  .motion-ok .dg-fact p { font-size: var(--rk-fs-lead); }
+  .motion-ok .dg-stage { position: sticky; top: calc(var(--header-h) + max(20px, (100vh - var(--header-h) - 600px) / 2)); }
+  .motion-ok .dg-stage--text .dg-svg { width: auto; height: min(68vh, 620px); margin-inline: auto; }
+}
+@media (max-width: 1023px) {
+  /* Stacked: the stage sticks under the header; the offerings scroll beneath it */
+  .motion-ok .dg-grid { display: flex; flex-direction: column; }
+  .motion-ok .dg-stage-cell {
+    order: -1; position: sticky; top: var(--header-h); z-index: 3;
+    margin-inline: calc(var(--gutter) * -1); padding: 12px var(--gutter) 10px;
+    background: var(--rk-light-grey); box-shadow: 0 14px 18px -16px rgba(17, 24, 39, 0.35);
+  }
+  .motion-ok .dg-stage { height: min(38svh, 360px); display: grid; grid-template-rows: minmax(0, 1fr) auto; }
+  .motion-ok .dg-stage .dg-svg { width: 100%; height: 100%; }
+  .motion-ok .dg-stage__steps { margin-top: 8px; }
+  .motion-ok .dg-stage__steps li { min-width: 40px; padding: 3px 10px; font-size: 0.75rem; }
+  .motion-ok .dg-body { padding-top: 24px; }
+  .motion-ok .dg-offers { gap: 16px; padding-bottom: 46vh; }
+  .motion-ok .dg-offer { min-height: 56svh; align-content: start; }
+}
+
+/* Initial device states under motion (JS takes over once live) */
+.motion-ok .dg-e-newrow, .motion-ok .dg-e-notice, .motion-ok .dg-e-pdf, .motion-ok .dg-e-bdots, .motion-ok .dg-e-binfo,
+.motion-ok .dg-e-pass, .motion-ok .dg-e-doc,
+.motion-ok .dg-t-sms, .motion-ok .dg-t-typing, .motion-ok .dg-t-mms, .motion-ok .dg-t-direct, .motion-ok .dg-t-pop, .motion-ok .dg-t-popdoc { opacity: 0; }
+
+/* Hero: a little more room for the resting envelope under the long intro */
+.dg-hero .wwd-hero__intro { margin-top: 18px; }

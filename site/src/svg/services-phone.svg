@@ -1,0 +1,9 @@
+<svg class="svc-phone__art" viewBox="0 0 120 230" aria-hidden="true" focusable="false">
+<rect x="2" y="2" width="116" height="226" rx="20" fill="#231F20"/>
+<rect x="8" y="8" width="104" height="214" rx="15" fill="#000ACA"/>
+<rect x="44" y="14" width="32" height="7" rx="3.5" fill="#231F20"/>
+<g fill="#fff" opacity=".22"><rect x="18" y="40" width="44" height="18" rx="8"/><rect x="18" y="64" width="60" height="18" rx="8"/></g>
+<g class="svc-phone__msg"><rect x="34" y="96" width="70" height="34" rx="12" fill="#00FF84"/><path d="M92,128 l8,8 l-1,-10z" fill="#00FF84"/>
+<rect x="44" y="105" width="44" height="3.6" rx="1.8" fill="#231F20"/><rect x="44" y="113" width="30" height="3.6" rx="1.8" fill="#231F20"/><rect x="44" y="121" width="38" height="3.6" rx="1.8" fill="#231F20" opacity=".5"/></g>
+<rect x="40" y="208" width="40" height="4" rx="2" fill="#fff" opacity=".5"/>
+</svg>

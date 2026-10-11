@@ -1,0 +1,66 @@
+{
+  "$meta": {
+    "page": "/print-mail/",
+    "live": "https://renkim.com/print-mail/",
+    "source": "reference/wwd/print-mail-text.txt",
+    "localLinks": "Links to built pages are local in the prototype (https://renkim.com/print-mail/… ≡ /print-mail/…); verify-content maps them.",
+    "typoFixes": [
+      {
+        "where": "rows[2].heading",
+        "from": "MCIR Check Printing Solutions",
+        "to": "MICR Check Printing Solutions"
+      }
+    ],
+    "notes": [
+      "Live headings are spans ('Print document' + 'Solutions') shown with text-transform: capitalize; rendered as H2s with the displayed capitalisation.",
+      "The three 'Learn More' links carry a visually hidden suffix (' about Print Document Solutions' …) so each link name is unique."
+    ]
+  },
+  "hero": {
+    "heading": "Print & Mail Services",
+    "chips": [
+      {
+        "label": "Print Documents",
+        "href": "https://renkim.com/print-mail/print-document/"
+      },
+      {
+        "label": "Certified Mail",
+        "href": "https://renkim.com/print-mail/certified-mail/"
+      },
+      {
+        "label": "MICR Check Printing",
+        "href": "https://renkim.com/print-mail/micr-check-printing/"
+      },
+      {
+        "label": "Contact Us",
+        "href": "https://renkim.com/contact-us/"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "heading": "Print Document Solutions",
+      "text": "Our Print Document services ensure high-quality, accurate, and efficient document production. Whether you need marketing materials, invoices, or personalized communications, we handle everything from design to delivery, ensuring your documents are professional and impactful.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/print-mail/print-document/"
+      }
+    },
+    {
+      "heading": "Certified Mail Solutions",
+      "text": "Renkim's Certified Mail service guarantees that your important documents are delivered securely and tracked every step of the way. Perfect for legal, financial, and compliance-related communications, our certified mail service provides peace of mind and proof of delivery.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/print-mail/certified-mail/"
+      }
+    },
+    {
+      "heading": "MICR Check Printing Solutions",
+      "text": "Our MICR Check Printing services provide secure, reliable, and compliant check printing solutions. Using advanced MICR technology, we ensure your checks meet all banking standards and are processed accurately and efficiently.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/print-mail/micr-check-printing/"
+      }
+    }
+  ]
+}

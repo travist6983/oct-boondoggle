@@ -1,0 +1,130 @@
+{
+ "tabOrder": [
+  {
+   "tag": "A",
+   "text": "Skip to content",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "",
+   "ring": true
+  },
+  {
+   "tag": "BUTTON",
+   "text": "What We Do",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Who We Are",
+   "ring": true
+  },
+  {
+   "tag": "BUTTON",
+   "text": "Who We Are submenu",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Who We Help",
+   "ring": true
+  },
+  {
+   "tag": "BUTTON",
+   "text": "Who We Help submenu",
+   "ring": true
+  },
+  {
+   "tag": "BUTTON",
+   "text": "Resources",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Facebook",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "X (Twitter)",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "LinkedIn",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Contact",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Schedule A Call",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Contact us",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Services",
+   "ring": true
+  },
+  {
+   "tag": "A",
+   "text": "Automotive",
+   "ring": true
+  }
+ ],
+ "megaMenu": {
+  "opened": "true",
+  "megaVisible": true,
+  "intoMenu": {
+   "tag": "A",
+   "text": "Print Document",
+   "ring": true
+  },
+  "closed": {
+   "expanded": "false",
+   "focus": "nav__trigger"
+  }
+ },
+ "form": {
+  "focus": "f-name",
+  "invalid": [
+   "f-name",
+   "f-org",
+   "f-phone",
+   "f-email"
+  ],
+  "visibleErrors": 4,
+  "status": "Please complete the required fields.",
+  "labels": true
+ },
+ "outline": [
+  "H1 Quality Print and Mail, Text, and Email Solutions",
+  "H2 Renkim Is the Go-To Solution for All of Your Print and Mail,",
+  "H2 On-Demand Color Printing Solutions",
+  "H3 The People",
+  "H3 The Processes",
+  "H3 The Technology",
+  "H2 What Makes Renkim Different",
+  "H3 We Value Integrity",
+  "H3 We Value Communication",
+  "H3 We Value Teamwork",
+  "H3 We Value Quality",
+  "H3 We Value Empathy",
+  "H3 We Value Respect",
+  "H2 We Are A 100% Employee Owned Business",
+  "H2 Need to update your mailing or phone information? We can hel",
+  "H3 Request a Renkim demo today",
+  "H2 Get in touch with us any way that works for you",
+  "H3 Ready to Talk With Renkim Today?",
+  "H2 We Have the Certifications to Get the Job Done Right"
+ ]
+}

@@ -1,0 +1,57 @@
+/* Renkim design tokens — extracted from https://renkim.com/ computed styles (2026-10-10).
+   See design-tokens.json for sources and usage notes. */
+:root {
+  /* Brand (exact, from the site's global palette) */
+  --rk-blue: #0076c0;
+  --rk-deep-blue: #000aca;
+  --rk-green: #00ff84;
+
+  /* Neutrals (the site's own) */
+  --rk-white: #ffffff;
+  --rk-light-grey: #f7f7f7;
+  --rk-border: #dddddd;
+  --rk-grey: #656263;
+  --rk-dark-grey: #231f20;
+  --rk-heading: #111827;
+  --rk-grey-700: #374151;
+  --rk-grey-400: #9ca3af;
+
+  /* Alpha */
+  --rk-glass-fill: rgba(255, 255, 255, 0.26);
+  --rk-glass-stroke: rgba(255, 255, 255, 0.48);
+  --rk-scrim: rgba(35, 31, 32, 0.85);
+
+  /* Gradients */
+  --rk-gradient-blue: linear-gradient(0deg, var(--rk-deep-blue) 0%, var(--rk-blue) 100%);
+  --rk-gradient-hero: linear-gradient(0deg, var(--rk-blue) 0%, var(--rk-deep-blue) 100%);
+  --rk-gradient-photo: linear-gradient(10deg, var(--rk-deep-blue) 0.51%, rgba(0, 10, 202, 0.01) 98.97%);
+
+  /* Type */
+  --rk-font: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --rk-fw-regular: 400;
+  --rk-fw-medium: 500;
+  --rk-fw-semibold: 600;
+  --rk-fw-bold: 700;
+  --rk-fs-h1: clamp(3rem, 1.6rem + 4.6vw, 5.5625rem);      /* 48px → 89px */
+  --rk-fs-h2: clamp(2.125rem, 1.5rem + 2.2vw, 3.4375rem);  /* 34px → 55px */
+  --rk-fs-h3: clamp(1.75rem, 1.3rem + 1.6vw, 2.8125rem);   /* 28px → 45px */
+  --rk-fs-h4: 1.875rem;    /* 30px */
+  --rk-fs-card: 1.3125rem; /* 21px */
+  --rk-fs-lead: 1.1875rem; /* 19px */
+  --rk-fs-body: 1.0625rem; /* 17px */
+  --rk-fs-small: 0.875rem; /* 14px */
+  --rk-lh-tight: 1.2;
+  --rk-lh-body: 1.5;
+
+  /* Shape */
+  --rk-radius-button: 13px;
+  --rk-radius-input: 4px;
+  --rk-radius-card: 21px;
+  --rk-radius-photo: 34px;
+  --rk-radius-pill: 1000px;
+  --rk-button-pad: 17px 34px;
+
+  /* Layout */
+  --rk-container: 1140px;
+  --rk-gutter: clamp(16px, 4vw, 40px);
+}

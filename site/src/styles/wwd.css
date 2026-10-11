@@ -1,0 +1,158 @@
+/* ==========================================================================
+   What We Do pages (Print & Mail, Digital, Ancillary + their service pages).
+   Shared template: blue page hero with sibling chips, a sticky sidebar
+   (Industries We Serve + "Ready to get started?"), the article with its
+   "lab" (each page's signature illustration), then the employee band, the
+   industries band, and the core values. Family styles live in pages/wwd-*.css.
+   ========================================================================== */
+
+/* --- Hero: sibling chips scroll sideways when there are many ------------- */
+.wwd-hero .chips--siblings { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; padding: 4px 2px 6px; margin-inline: -2px; scroll-snap-type: x proximity; }
+.wwd-hero .chips--siblings::-webkit-scrollbar { display: none; }
+.wwd-hero .chips--siblings > li { flex: none; scroll-snap-align: start; }
+/* below 1024 the sibling chips scroll sideways: fade the edges so the row reads as scrollable */
+@media (max-width: 1023px) {
+  .wwd-hero .chips--siblings { -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 36px), transparent 100%); mask-image: linear-gradient(90deg, transparent 0, #000 12px, #000 calc(100% - 36px), transparent 100%); padding-inline: 12px 36px; margin-inline: calc(var(--gutter) * -1); scroll-padding-inline: var(--gutter); }
+}
+@media (min-width: 1024px) {
+  .wwd-hero .chips--siblings { display: grid; grid-template-columns: repeat(4, 1fr); overflow: visible; }
+  .wwd-hero .chips--siblings.chips--many { display: flex; flex-wrap: wrap; justify-content: center; }
+}
+.chip[aria-current='page'] { background: #fff; color: var(--rk-deep-blue); border-color: #fff; }
+.chip[aria-current='page'] .chip__icon { background: var(--rk-green); }
+.chip[aria-current='page'] .chip__icon svg { stroke: var(--rk-dark-grey); }
+/* room under the chips for the resting envelope; the hero's route leg spills into the body's
+   gutter, so the hero paints above the body instead of clipping */
+.wwd-hero.page-hero { padding-bottom: 72px; overflow: visible; z-index: 3; }
+@media (min-width: 768px) { .wwd-hero.page-hero { padding-bottom: 84px; } }
+.wwd-hero__intro { max-width: 760px; margin: 22px auto 0; text-align: center; font-size: var(--rk-fs-lead); color: rgba(255, 255, 255, 0.92); }
+.wwd-hero .page-hero__title--long { font-size: clamp(2rem, 1.3rem + 2.2vw, 3.25rem); max-width: 980px; margin-inline: auto; }
+
+/* --- Body: sidebar + article ---------------------------------------------- */
+.wwd-body { position: relative; background: var(--rk-light-grey); padding: 64px 0 96px; }
+/* extra room at the foot of the body: the route swings toward the employee band here */
+@media (min-width: 1024px) { .motion-ok .wwd-body { padding-bottom: 150px; } }
+.wwd-body > .container { position: relative; z-index: 2; }
+.wwd-grid { display: grid; gap: 40px; }
+@media (min-width: 1024px) {
+  .wwd-grid { grid-template-columns: 260px minmax(0, 1fr); gap: 56px; align-items: start; }
+  .wwd-side { position: sticky; top: calc(var(--header-h) + 24px); }
+}
+.wwd-side { display: grid; gap: 18px; align-content: start; }
+.wwd-side__card { background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card); padding: 22px 22px 18px; }
+.wwd-side__title { font-size: 1.0625rem; margin-bottom: 10px; }
+.wwd-side__list a { display: flex; align-items: center; gap: 10px; padding: 6px 0; min-height: 40px; color: var(--rk-grey); text-decoration: none; font-size: 0.9375rem; }
+.wwd-side__list a::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--rk-blue); flex: none; }
+.wwd-side__list a:hover { color: var(--rk-blue); }
+.wwd-cta { background: linear-gradient(0deg, var(--rk-deep-blue) 0%, var(--rk-blue) 100%); color: #fff; border-radius: var(--rk-radius-card); padding: 24px 22px; }
+.wwd-cta__kicker { color: #fff; font-size: 0.9375rem; font-weight: 500; margin-bottom: 6px; }
+.wwd-cta__title { color: #fff; font-size: 1.5rem; font-weight: 700; line-height: 1.2; margin-bottom: 18px; }
+.wwd-cta__title .accent { color: var(--rk-green); }
+.wwd-cta .btn:focus-visible { box-shadow: 0 0 0 3px #fff, 0 0 0 6px var(--rk-green); }
+@media (max-width: 1023px) {
+  /* On phones and tablets the article comes first; the sidebar follows it (as live). */
+  .wwd-side { order: 2; }
+  .wwd-side__list { columns: 2; column-gap: 20px; }
+}
+
+/* --- Article typography (live copy, verbatim) ------------------------------ */
+.wwd-article { min-width: 0; }
+.wwd-article > * + * { margin-top: 18px; }
+.wwd-article h2 { font-size: var(--rk-fs-h2); letter-spacing: -0.01em; }
+.wwd-article h2.wwd-h2--sm { font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.5rem); }
+.wwd-article h3 { font-size: var(--rk-fs-h3); margin-top: 40px; }
+.wwd-article h4 { font-size: 1.125rem; margin-top: 32px; }
+.wwd-article p, .wwd-article li { font-size: var(--rk-fs-lead); line-height: 1.6; }
+.wwd-article strong { color: var(--rk-heading); font-weight: 600; }
+.wwd-article ul.wwd-list { display: grid; gap: 10px; }
+.wwd-article ul.wwd-list li { position: relative; padding-left: 32px; }
+.wwd-article ul.wwd-list li::before {
+  content: ''; position: absolute; left: 0; top: 0.32em; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--rk-green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m7 12.5 3.2 3.2L17 9' fill='none' stroke='%23231F20' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 16px no-repeat;
+}
+.wwd-article a:not(.btn) { color: var(--rk-blue); }
+
+/* The lab: each page's signature, scroll-driven illustration (filled per family). */
+.wwd-lab { position: relative; border-radius: var(--rk-radius-card); background: #fff; border: 1px solid var(--rk-border); overflow: hidden; aspect-ratio: 16 / 9; }
+.wwd-lab svg.wwd-lab__art { position: absolute; inset: 0; width: 100%; height: 100%; }
+@media (max-width: 767px) { .wwd-lab { aspect-ratio: 4 / 3; } }
+
+/* Labs wrapped in <figure> keep their full width */
+figure.wwd-lab, .wwd-article figure { margin: 0; }
+
+/* Below the desktop layout the gutter route becomes a left rail beside the article: make room. */
+@media (max-width: 767px) { .motion-ok .wwd-body > .container { padding-left: calc(var(--gutter) + 34px); } }
+@media (min-width: 768px) and (max-width: 1023px) { .motion-ok .wwd-body > .container { padding-left: calc(var(--gutter) + 30px); } }
+
+/* Category pages: one row per child service */
+.wwd-rows { display: grid; gap: 28px; }
+.wwd-row { display: grid; gap: 24px; background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card); padding: 28px; align-items: center; }
+.wwd-row h2 { font-size: clamp(1.75rem, 1.3rem + 1.4vw, 2.5rem); }
+.wwd-row p { margin-top: 12px; font-size: var(--rk-fs-lead); }
+.wwd-row .btn { margin-top: 20px; }
+.wwd-row__media { border-radius: 16px; overflow: hidden; aspect-ratio: 3 / 2; background: var(--rk-light-grey); }
+.wwd-row__media img { width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 768px) { .wwd-row { grid-template-columns: 1.1fr 0.9fr; padding: 36px; } }
+
+/* --- Bands after the article ---------------------------------------------- */
+.page-wwd .employee--inner { padding-top: 104px; }
+.page-wwd .industries { margin-top: 0; }
+
+/* Core values. Static: a 3 × 2 grid, each card already postmarked and a sealed check below.
+   With motion: the envelope comes down from the industries band, flows around the heading, and
+   rides a centre lane between two columns; each card is postmarked as the envelope passes its
+   row, and the journey ends in the seal. */
+.wwd-values { position: relative; padding: 96px 0 104px; }
+.wwd-values > .container { position: relative; z-index: 2; }
+.wwd-values .dual { text-align: center; margin-bottom: 44px; }
+.wwd-values__list { display: grid; gap: 18px; }
+@media (min-width: 768px) { .wwd-values__list { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .wwd-values__list { grid-template-columns: repeat(3, 1fr); } }
+.wwd-values .value-card { position: relative; background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card); padding: 28px 26px; }
+.wwd-values .value-card__icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 12px; background: var(--rk-green); color: var(--rk-dark-grey); margin-bottom: 18px; }
+.wwd-values .value-card__icon svg { width: 24px; height: 24px; }
+.wwd-values .value-card h3 { font-size: 1.375rem; margin-bottom: 10px; }
+.wwd-values .value-card__pre { display: block; font-size: 0.875rem; font-weight: 500; color: var(--rk-blue); margin-bottom: 2px; }
+
+/* the postmark: "RENKIM" ring + cancellation waves, top-right of the card */
+.wwd-postmark { position: absolute; top: 20px; right: 18px; width: 104px; color: var(--rk-blue); opacity: 0.5; transform: rotate(-9deg); pointer-events: none; }
+.wwd-postmark svg { display: block; width: 100%; height: auto; overflow: visible; }
+.wwd-postmark text { font-family: var(--rk-font); }
+
+/* the seal the journey ends in */
+.wwd-values__end { display: flex; justify-content: center; margin-top: 40px; }
+.wwd-seal { display: grid; place-items: center; width: 64px; height: 64px; }
+.wwd-seal svg { width: 100%; height: 100%; overflow: visible; }
+.wwd-seal circle { fill: var(--rk-green); stroke: var(--rk-blue); stroke-width: 2.5; }
+.wwd-seal path { fill: none; stroke: var(--rk-dark-grey); stroke-width: 3.4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 40; stroke-dashoffset: 0; }
+
+/* live states (only once the motion layer runs) */
+.is-live .wwd-postmark { opacity: 0; transform: rotate(-9deg) scale(1.5); transition: opacity 0.25s ease, transform 0.45s cubic-bezier(0.2, 1.6, 0.4, 1); }
+.is-live .value-card.is-stamped .wwd-postmark { opacity: 0.5; transform: rotate(-9deg) scale(1); }
+.is-live .wwd-values .value-card__icon { transition: transform 0.4s cubic-bezier(0.2, 1.6, 0.4, 1); }
+.is-live .wwd-values .value-card.is-stamped .value-card__icon { transform: scale(1.08); }
+.is-live .wwd-seal circle { fill: #fff; stroke: var(--rk-border); transition: fill 0.35s, stroke 0.35s; }
+.is-live .wwd-seal path { stroke-dashoffset: 40; transition: stroke-dashoffset 0.5s var(--ease-cine) 0.15s; }
+.is-live .wwd-seal.is-sealed circle { fill: var(--rk-green); stroke: var(--rk-blue); }
+.is-live .wwd-seal.is-sealed path { stroke-dashoffset: 0; }
+.route .wwd-station { fill: #fff; stroke: var(--rk-border); stroke-width: 3; transition: fill 0.3s, stroke 0.3s; }
+.route .wwd-station.is-reached { fill: var(--rk-green); stroke: var(--rk-blue); }
+
+/* motion layout (tablet and up): two columns either side of the lane, the heading clear of it */
+@media (min-width: 768px) {
+  .motion-ok .wwd-values .dual { margin-bottom: 96px; }
+  .motion-ok .wwd-values__list { grid-template-columns: 1fr var(--lane) 1fr; column-gap: 0; row-gap: 28px; }
+  .motion-ok .wwd-values .value-card:nth-child(odd) { grid-column: 1; }
+  .motion-ok .wwd-values .value-card:nth-child(even) { grid-column: 3; }
+  .motion-ok .wwd-values__end { margin-top: 56px; }
+}
+/* phones: the route is a left rail */
+@media (max-width: 767px) {
+  .motion-ok .wwd-values > .container { padding-left: calc(var(--gutter) + 34px); }
+  .motion-ok .wwd-values .dual { text-align: left; }
+  .motion-ok .wwd-values__end { justify-content: flex-start; }
+}
+
+/* Generic one-shot reveal (core.js adds .is-in); never hides content without motion */
+.motion-ok [data-reveal] { transition: opacity 0.6s var(--ease-cine), transform 0.6s var(--ease-cine); transition-delay: calc(var(--ri, 0) * 70ms); }
+.motion-ok [data-reveal]:not(.is-in) { opacity: 0; transform: translateY(18px); }

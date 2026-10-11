@@ -1,0 +1,288 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/services/ main body, extracted 2026-10-11 (raw HTML + rendered DOM). Header, footer and the unreachable popup are shared with the homepage (see /content.json).",
+    "rules": "Copy is verbatim from the source HTML. The live page title-cases 'What We Do here at Renkim' with CSS (text-transform: capitalize); the redesign keeps the source text and the same CSS. Heading levels normalized (one h1, h2 per section, h3 per service).",
+    "typoFixes": [],
+    "liveSiteIssuesFound": [
+      "Hero phone chip links href=\"tel:73437483000\" (an extra digit). The redesign links tel:+17343748300.",
+      "Hero fax chip links href=\"fax:7343740168\" (not a supported URL scheme). Rendered as plain text.",
+      "Hero location chip links a Google Maps URL carrying ~600 characters of search-session parameters. The redesign links the same destination with only daddr=13333+Allen+Rd,+Southgate,+MI+48195.",
+      "Contact section phone link is href=\"tel:7323748300\" (732 area code), as on the homepage. The redesign links tel:+17343748300.",
+      "Contact section address links href=\"#\". Rendered as an <address>.",
+      "The three photos in 'What We Do' have empty alt text. The redesign adds descriptive alt text on the static page; inside the animated stage the photos are decorative (aria-hidden) because the copy carries the content."
+    ]
+  },
+  "hero": {
+    "headingLevelLive": "h1",
+    "heading": "Services",
+    "chips": [
+      {
+        "label": "(734) 374-8300",
+        "href": "tel:+17343748300",
+        "liveHref": "tel:73437483000"
+      },
+      {
+        "label": "info@renkim.com",
+        "href": "mailto:info@renkim.com"
+      },
+      {
+        "label": "(734) 374-0168",
+        "href": null,
+        "liveHref": "fax:7343740168"
+      },
+      {
+        "label": "Southgate, MI 48195",
+        "href": "https://www.google.com/maps?daddr=13333+Allen+Rd,+Southgate,+MI+48195",
+        "liveHref": "https://www.google.com/maps?…&daddr=13333+Allen+Rd,+Southgate,+MI+48195"
+      }
+    ]
+  },
+  "whatWeDo": {
+    "headingLevelLive": "span (styled heading)",
+    "heading": {
+      "full": "What We Do here at Renkim",
+      "parts": [
+        {
+          "text": "What We Do",
+          "style": "primary",
+          "annotate": true
+        },
+        {
+          "text": "here at Renkim",
+          "style": "primary"
+        }
+      ]
+    },
+    "tabs": [
+      "Print & Mail",
+      "Digital",
+      "Ancillary Services"
+    ],
+    "panels": [
+      {
+        "headingLevelLive": "h3 + h3",
+        "heading": {
+          "full": "Print & Mail Services",
+          "parts": [
+            {
+              "text": "Print & Mail"
+            },
+            {
+              "text": "Services"
+            }
+          ]
+        },
+        "body": "Renkim has been offering print and mail solutions since 1982. During this time Renkim has developed the people, processes, and technology to offer flexible print solutions with a variety of print and mail requirements. Our integrated document design and composition tools, combined with our forms development department, make it possible to provide easy-to-read documents that appeal to the eye and maximize the use of space.",
+        "links": [
+          {
+            "label": "Print Document",
+            "href": "https://renkim.com/print-mail/print-document/"
+          },
+          {
+            "label": "Certified Mail",
+            "href": "https://renkim.com/print-mail/certified-mail/"
+          },
+          {
+            "label": "MICR Check Printing",
+            "href": "https://renkim.com/print-mail/micr-check-printing/"
+          },
+          {
+            "label": "View All",
+            "href": "https://renkim.com/print-mail/"
+          }
+        ],
+        "image": {
+          "src": "assets/pages/pexels-liza-summer-6348101.jpg",
+          "liveAlt": ""
+        }
+      },
+      {
+        "headingLevelLive": "h3 + h3",
+        "heading": {
+          "full": "Digital Services",
+          "parts": [
+            {
+              "text": "Digital"
+            },
+            {
+              "text": "Services"
+            }
+          ]
+        },
+        "paragraphs": [
+          {
+            "body": "At Renkim, our digital services encompass a wide range of solutions designed to meet the evolving needs of modern businesses. We offer advanced digital communication tools that ensure your messages are delivered efficiently and securely."
+          },
+          {
+            "body": "By leveraging our digital services, businesses can enhance their operational efficiency and provide a better experience for their customers."
+          }
+        ],
+        "links": [
+          {
+            "label": "Email",
+            "href": "https://renkim.com/digital-services/email/"
+          },
+          {
+            "label": "Text Message",
+            "href": "https://renkim.com/digital-services/text-message/"
+          },
+          {
+            "label": "View All",
+            "href": "https://renkim.com/digital-services/"
+          }
+        ],
+        "image": {
+          "src": "assets/pages/pexels-serpstat-177219-572056-1.jpg",
+          "liveAlt": ""
+        }
+      },
+      {
+        "headingLevelLive": "h3 + h3",
+        "heading": {
+          "full": "Ancillary Services",
+          "parts": [
+            {
+              "text": "Ancillary"
+            },
+            {
+              "text": "Services"
+            }
+          ]
+        },
+        "paragraphs": [
+          {
+            "body": "Renkim's ancillary services provide comprehensive support to enhance the efficiency and accuracy of your business operations. Our suite of additional services is designed to complement our core offerings and address specific needs across various industries."
+          },
+          {
+            "body": "These services are designed to ensure that your business operates smoothly, with accurate data and secure processes, enhancing overall efficiency, and reducing risks."
+          }
+        ],
+        "links": [
+          {
+            "label": "Address Element Correction (AEC)",
+            "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+          },
+          {
+            "label": "Bankruptcy & Deceased",
+            "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+          },
+          {
+            "label": "Email Verification",
+            "href": "https://renkim.com/ancillary-services/email-verification/"
+          },
+          {
+            "label": "Litigious Scrub",
+            "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+          },
+          {
+            "label": "Lockbox",
+            "href": "https://renkim.com/ancillary-services/lockbox/"
+          },
+          {
+            "label": "Phone Search",
+            "href": "https://renkim.com/ancillary-services/phone-search/"
+          },
+          {
+            "label": "Return Mail Processing",
+            "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+          },
+          {
+            "label": "USPS CASS, DPV, NCOA",
+            "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+          },
+          {
+            "label": "Vacant Address Search",
+            "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+          },
+          {
+            "label": "View all",
+            "href": "https://renkim.com/ancillary-services/"
+          }
+        ],
+        "image": {
+          "src": "assets/pages/ancillary-services.png",
+          "liveAlt": ""
+        }
+      }
+    ]
+  },
+  "employeeOwned": {
+    "headingLevelLive": "span (styled heading)",
+    "heading": {
+      "full": "We Are A 100% Employee Owned Business",
+      "parts": [
+        {
+          "text": "We Are A"
+        },
+        {
+          "text": "100% Employee Owned",
+          "annotate": true
+        },
+        {
+          "text": "Business"
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "label": "About us",
+        "href": "https://renkim.com/about-us/",
+        "localHref": "/about-us/"
+      }
+    ],
+    "body": "...we value our Renkim employees as they are the success and backbone of our company",
+    "image": {
+      "src": "assets/pages/pexels-tiger-lily-4484151.jpg",
+      "liveAlt": "(CSS background)"
+    }
+  },
+  "contact": {
+    "headingLevelLive": "h2",
+    "heading": "Get in touch with us any way that works for you",
+    "body": "We are excited to speak with you and solve your personal print and electronic mail solutions. With our quality services we are sure to provide you with customized solutions.",
+    "channels": [
+      {
+        "label": "Email :",
+        "value": "info@renkim.com",
+        "href": "mailto:info@renkim.com"
+      },
+      {
+        "label": "Phone :",
+        "value": "(734) 374-8300",
+        "href": "tel:+17343748300",
+        "liveHref": "tel:7323748300"
+      },
+      {
+        "label": "Fax :",
+        "value": "(734) 374-0168",
+        "href": null
+      },
+      {
+        "label": "Address :",
+        "value": "13333 Allen Rd. Southgate, MI 48195",
+        "href": null,
+        "liveHref": "#"
+      }
+    ],
+    "formNote": "Or fill out the form to the right, and we'll be in touch",
+    "formCard": {
+      "heading": {
+        "full": "Ready to Talk With Renkim Today?",
+        "parts": [
+          {
+            "text": "Ready to Talk With"
+          },
+          {
+            "text": "Renkim",
+            "style": "secondary"
+          },
+          {
+            "text": "Today?"
+          }
+        ]
+      },
+      "subheading": "... fill out the form below to get started",
+      "note": "Same LeadConnector widget as the homepage; the redesign reuses the homepage form card (5 visible fields, posts nowhere yet: TODO(endpoint))."
+    }
+  }
+}

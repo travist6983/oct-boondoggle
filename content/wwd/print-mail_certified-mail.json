@@ -1,0 +1,60 @@
+{
+  "$meta": {
+    "page": "/print-mail/certified-mail/",
+    "live": "https://renkim.com/print-mail/certified-mail/",
+    "source": "reference/wwd/print-mail_certified-mail-text.txt",
+    "localLinks": "Links to built pages are local in the prototype (https://renkim.com/print-mail/… ≡ /print-mail/…); verify-content maps them.",
+    "typoFixes": [],
+    "liveHidden": [
+      "'Certified Mail Services Example' (XYZ Law Firm case example: client, challenge, solution, process, benefits) is in the live HTML but display:none at every breakpoint (.bde-heading-573-103, .bde-rich-text-573-104). Left out, as on the live page."
+    ],
+    "notes": [
+      "The lab's timeline labels (Preparation, Tracking, Final delivery, Proof of delivery) are words from the copy."
+    ]
+  },
+  "hero": {
+    "heading": "Certified Mail",
+    "chips": [
+      {
+        "label": "Print Documents",
+        "href": "https://renkim.com/print-mail/print-document/"
+      },
+      {
+        "label": "Certified Mail",
+        "href": "https://renkim.com/print-mail/certified-mail/"
+      },
+      {
+        "label": "MICR Check Printing",
+        "href": "https://renkim.com/print-mail/micr-check-printing/"
+      },
+      {
+        "label": "Contact Us",
+        "href": "https://renkim.com/contact-us/"
+      }
+    ]
+  },
+  "article": {
+    "heading": "Certified Mail Services",
+    "body": [
+      {
+        "text": "Renkim's Certified Mail services ensure that your critical documents are delivered securely and tracked every step of the way. Whether for legal, financial, or compliance-related communications, our certified mail service provides the assurance and proof of delivery you need. We utilize advanced tracking technology to keep you informed about the status of your mail, ensuring that it reaches its destination on time and intact."
+      },
+      {
+        "text": "Our team works diligently to manage all aspects of the certified mail process, from preparation to final delivery. This includes handling the necessary documentation and compliance requirements, so you can focus on your core business operations without worrying about the intricacies of mail delivery."
+      },
+      {
+        "text": "We also offer customized solutions tailored to meet the specific needs of different industries, ensuring that your certified mail processes are as efficient and effective as possible. Trust Renkim to deliver your important documents with the highest level of professionalism and security."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Why Work With Renkim?",
+        "body": [
+          {
+            "text": "Renkim is a 100% employee-owned business, which means that every member of our team is dedicated to the success and satisfaction of our clients. We take pride in delivering high-quality services that meet the needs of our diverse client base across various industries."
+          }
+        ]
+      }
+    ]
+  }
+}

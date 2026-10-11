@@ -1,0 +1,82 @@
+/* ==========================================================================
+   What We Do · Print & Mail family
+   Detail pages: a pinned "lab" (press → inserter, certified tracking, MICR) that the
+   envelope enters from the gutter. /print-mail/: one station per row, revealed as the
+   focus line crosses each photo. Markup is the finished state; motion rewinds it.
+   ========================================================================== */
+
+/* --- Article title: live dual heading, first part hand-underlined ---------- */
+.page-wwd--print .wwd-article .pm-title { font-size: var(--rk-fs-h2); }
+.page-wwd--print .wwd-article h2.wwd-h2--sm { margin-top: 48px; }
+
+/* --- Labs (detail pages) ---------------------------------------------------- */
+.pm-pin { position: relative; margin-block: 32px 8px; }
+.wwd-article > .pm-pin + * { margin-top: 32px; }
+.pm-lab { aspect-ratio: 3 / 2; container-type: inline-size; box-shadow: 0 30px 60px -44px rgba(17, 24, 39, 0.45); }
+/* Runway for the pinned story (only while motion is on; the static page shows the finished scene).
+   It must be content, not padding: a sticky box can't travel into its parent's padding.
+   While pinned, the lab is centred on the focus line (--lab-h is measured by the motion layer). */
+.motion-ok .pm-pin::after { content: ''; display: block; height: 100svh; }
+.motion-ok .pm-pin > .pm-lab { position: sticky; top: max(calc(var(--header-h) + 20px), calc(50svh - var(--lab-h, 0px) / 2)); }
+@media (max-width: 767px) {
+  .motion-ok .pm-pin::after { height: 64svh; }
+}
+
+/* The print heads only appear while the story plays; the static scene shows finished work. */
+html:not(.is-live) .pd-head, html:not(.is-live) .mi-head { display: none; }
+
+/* Counters on the press lab (numbers are the live copy's capacities) */
+.pm-hud { position: absolute; inset: 0; pointer-events: none; }
+.pm-count { position: absolute; top: 80.6%; display: flex; flex-direction: column; gap: 0.15em; margin: 0; line-height: 1; }
+.pm-count--print { left: 11.5%; }
+.pm-count--insert { left: 50.5%; }
+.pm-count__num { font-size: max(14px, 4cqw); font-weight: 800; letter-spacing: -0.01em; color: var(--rk-blue); font-variant-numeric: tabular-nums; }
+.pm-count__label { font-size: max(9px, 1.75cqw); font-weight: 600; color: var(--rk-dark-grey); }
+
+@media (max-width: 767px) {
+  /* the lab bleeds into the rail column so the scene stays legible on phones */
+  .motion-ok .page-wwd--print .pm-pin { margin-left: -28px; }
+}
+
+/* --- /print-mail/: one station per row ---------------------------------------- */
+.pm-rows { gap: 32px; }
+.pm-row { gap: 26px; }
+@media (min-width: 768px) {
+  .pm-row { grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: 36px; }
+}
+.pm-row__body h2 { font-size: clamp(1.5rem, 1rem + 1.2vw, 2.4rem); }
+.pm-row__body .annotate { white-space: normal; } /* long names wrap in the narrow text column */
+.pm-media { aspect-ratio: 3 / 2; border-radius: 16px; background: #fff; isolation: isolate; }
+.pm-media .pm-photo, .pm-media .pm-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.pm-media--certified .pm-photo img { object-position: 50% 40%; }
+
+/* Print row: blank paper under the photo; the photo prints in under the head */
+.pm-paper {
+  position: absolute; inset: 0; background: #fff;
+  background-image: linear-gradient(var(--rk-blue), var(--rk-blue)), repeating-linear-gradient(to bottom, transparent 0 18px, #ececee 18px 25px);
+  background-size: 100% 9%, 72% 62%; background-position: 0 0, 50% 70%; background-repeat: no-repeat;
+}
+.pm-head { position: absolute; left: -3%; width: 106%; top: 0; aspect-ratio: 400 / 44; margin-top: -2.4%; display: none; filter: drop-shadow(0 10px 14px rgba(0, 10, 202, 0.25)); will-change: transform; }
+.pm-head svg { display: block; width: 100%; height: 100%; }
+.is-live .pm-head { display: block; }
+
+/* Certified row: the label and four tracking stops */
+.pm-label { position: absolute; left: 6%; top: 7%; width: 46%; filter: drop-shadow(0 12px 18px rgba(17, 24, 39, 0.28)); transform-origin: 20% 30%; }
+.pm-label svg { display: block; width: 100%; height: auto; }
+.pm-track { position: absolute; left: 7%; right: 7%; bottom: 8%; display: flex; justify-content: space-between; align-items: center; }
+.pm-track::before { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 4px; margin-top: -2px; border-radius: 2px; background: rgba(255, 255, 255, 0.75); }
+.pm-track::after { content: ''; position: absolute; left: 0; top: 50%; height: 4px; margin-top: -2px; border-radius: 2px; background: var(--rk-green); width: calc(var(--trk, 1) * 100%); }
+.pm-track li { position: relative; z-index: 1; width: 16px; height: 16px; border-radius: 50%; background: var(--rk-green); border: 4px solid var(--rk-blue); box-shadow: 0 0 0 3px #fff; transition: background-color 0.2s, border-color 0.2s; }
+.pm-track li.is-off { background: #fff; border-color: var(--rk-border); }
+
+/* MICR row: reuse the lab scene, already printed; only the MICR line + reader play */
+.pm-media--micr .mi-head { display: none; }
+.pm-media--micr .pm-art { inset: -1px; }
+
+/* "Learn More" pulses once when its station completes */
+.pm-more { position: relative; }
+.pm-row.is-done .pm-more { animation: pm-pulse 1.1s var(--ease-cine) 1; }
+@keyframes pm-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 255, 132, 0.75); }
+  100% { box-shadow: 0 0 0 18px rgba(0, 255, 132, 0); }
+}

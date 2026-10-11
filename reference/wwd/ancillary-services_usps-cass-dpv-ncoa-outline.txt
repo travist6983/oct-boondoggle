@@ -1,0 +1,348 @@
+    ?: USPS CASS, DPV, NCOA | Renkim
+
+== <section class='bde-section-406-138 bde-section' id=''>
+    p: Renkim has experienced a cybersecurity incident.
+  [A href=https://renkim.com/renkim-notice-of-data-security-incident/]
+    a: Click here
+    p: for more information.
+
+== <section class='bde-section-406-113 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:1920/h:499/q:mauto/f:best/https://renkim.com/wp-content/uploads/RGB-Renkim-Logo-2026_WHITE-scaled.png alt='' w=2560 h=666]
+  [BUTTON]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/RenkimLogowhiteSmaller.png alt='' w= h=None]
+  [BUTTON]
+    button: Close
+  [BUTTON]
+    button: What We Do
+  [BUTTON]
+    h1: Print & Mail
+  [A href=https://renkim.com/print-mail/print-document/]
+    a: Print Document
+  [A href=https://renkim.com/print-mail/certified-mail/]
+    a: Certified Mail
+  [A href=https://renkim.com/print-mail/micr-check-printing/]
+    a: MICR Check Printing
+    h1: Digital
+  [A href=https://renkim.com/digital-services/email/]
+    a: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    a: Text Message
+    h1: Ancillary Services
+  [A href=https://renkim.com/ancillary-services/address-element-correction-aec/]
+    a: Address Element Correction (AEC)
+  [A href=https://renkim.com/ancillary-services/bankruptcy-deceased/]
+    a: Bankruptcy & Deceased
+  [A href=https://renkim.com/ancillary-services/email-verification/]
+    a: Email Verification
+  [A href=https://renkim.com/ancillary-services/litigious-scrub/]
+    a: Litigious Scrub
+  [A href=https://renkim.com/ancillary-services/lockbox/]
+    a: Lockbox
+  [A href=https://renkim.com/ancillary-services/phone-search/]
+    a: Phone Search
+  [A href=https://renkim.com/ancillary-services/return-mail-processing/]
+    a: Return Mail Processing
+  [A href=https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/]
+    a: USPS CASS, DPV, NCOA
+  [A href=https://renkim.com/ancillary-services/vacant-address-search/]
+    a: Vacant Address Search
+    h1: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    a: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    a: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    a: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    a: Renkim Reporting
+  [A href=https://renkim.com/about-us/]
+    a: Who We Are
+  [BUTTON]
+    span: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    span: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    span: History
+  [A href=https://renkim.com/about-us/#values]
+    span: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    span: The ESOP Advantage
+  [A href=https://renkim.com/industries-served/]
+    a: Who We Help
+  [BUTTON]
+    span: Industries We Serve
+  [A href=https://renkim.com/industries-served/#automotive]
+    span: Automotive
+  [A href=https://renkim.com/industries-served/#class-action]
+    span: Class Action/Data Breach
+  [A href=https://renkim.com/industries-served/#financial]
+    span: Financial
+  [A href=https://renkim.com/industries-served/#gov]
+    span: Government/Municipality
+  [A href=https://renkim.com/industries-served/#healthcare]
+    span: Healthcare
+  [A href=https://renkim.com/industries-served/#mortgage]
+    span: Mortgage
+  [A href=https://renkim.com/industries-served/#receivables]
+    span: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    span: Telecom/Internet
+  [A href=https://renkim.com/industries-served/#utility]
+    span: Utility
+  [BUTTON]
+    button: Resources
+  [BUTTON]
+    span: Quick Links
+  [A href=https://renkim.com/compliance/]
+    span: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    span: Renkim on the Road
+  [A href=https://renkim.com/in-the-community/]
+    span: Renkim in the Community
+  [A href=https://renkim.com/careers/]
+    span: Careers
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+  [A href=https://renkim.com/contact-us/]
+    span: Schedule A Call
+
+== <section class='bde-section-627-462 bde-section' id=''>
+    h1: USPS CASS, DPV, NCOA
+  [A href=https://renkim.com/ancillary-services/address-element-correction-aec/]
+    span: Address Element Correction
+  [A href=https://renkim.com/ancillary-services/bankruptcy-deceased/]
+    span: Bankruptcy & Deceased
+  [A href=https://renkim.com/ancillary-services/email-verification/]
+    span: Email Verification
+  [A href=https://renkim.com/ancillary-services/litigious-scrub/]
+    span: Litigous Scrub
+  [A href=https://renkim.com/ancillary-services/lockbox/]
+    span: LockBox
+  [A href=https://renkim.com/ancillary-services/phone-search/]
+    span: Phone Search
+  [A href=https://renkim.com/ancillary-services/renkim-360/]
+    span: Renkim 360
+  [A href=https://renkim.com/ancillary-services/return-mail-processing/]
+    span: Return Mail Processing
+  [A href=https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/]
+    span: USPS CASS, DPV, NCOA
+  [A href=https://renkim.com/ancillary-services/vacant-address-search/]
+    span: Vacant Address
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    span: Renkim Reporting
+
+== <section class='bde-section-627-502 bde-section' id=''>
+    h2: Industries We Serve
+  [A href=https://renkim.com/industries-served/#automotive]
+    span: Automotive
+  [A href=https://renkim.com/industries-served/#class-action]
+    span: Class Action / Data Breach
+  [A href=https://renkim.com/industries-served/#financial]
+    span: Financial
+  [A href=https://renkim.com/industries-served/#gov]
+    span: Government / Municipality
+  [A href=https://renkim.com/industries-served/#healthcare]
+    span: Healthcare
+  [A href=https://renkim.com/industries-served/#mortgage]
+    span: Mortgage
+  [A href=https://renkim.com/industries-served/#receivables]
+    span: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    span: Telecom / Internet
+  [A href=https://renkim.com/industries-served/#utility]
+    span: Utility
+    h3: Ready to get started?
+    span: Get in touch with
+    span: Renkim
+    span: Today!
+  [BUTTON]
+    span: Get Started
+
+== <section class='bde-section-601-100 bde-section' id=''>
+    h2: USPS CASS, DPV, NCOA Services
+    p: Ensuring accurate and deliverable addresses is crucial for effective communication and cost savings. Renkim's USPS CASS (Coding Accuracy Support System), DPV (Delivery Point Validation), and NCOA (National Change of Address) Services help you maintain up-to-date and accurate mailing lists, reducing the risk of undeliverable mail, and enhancing your overall mailing efficiency. Our services comply with USPS standards, ensuring that your mail reaches its intended recipients promptly and accurately.
+    h3: Example of USPS CASS, DPV, NCOA Service
+    strong: Client:
+    p: LMN Healthcare
+    strong: Challenge:
+    p: LMN Healthcare was facing high rates of undeliverable mail due to incorrect and outdated addresses in their database. This led to increased costs and delays in patient communications.
+    strong: Solution:
+    p: Renkim implemented our USPS CASS, DPV, and NCOA Services for LMN Healthcare. We processed their address database through our advanced validation and correction systems, ensuring compliance with USPS standards and updating any outdated addresses.
+    strong: Results:
+    strong: Reduced Undeliverable Mail:
+    li: The number of undeliverable mail pieces decreased significantly, saving LMN Healthcare time and money.
+    strong: Improved Data Accuracy:
+    li: Regular updates and corrections to the address database ensured ongoing accuracy and reliability.
+    strong: Enhanced Operational Efficiency:
+    li: With accurate addresses, LMN Healthcare could communicate more effectively with their patients, improving overall service quality.
+    strong: Compliance Assurance:
+    li: The use of CASS, DPV, and NCOA services ensured compliance with USPS standards, reducing the risk of penalties.
+    p: By utilizing Renkim's USPS CASS, DPV, and NCOA Services, LMN Healthcare streamlined their mailing processes, improved data accuracy, and reduced operational costs.
+    h2: Enhance Your Mailing Efficiency Today!
+    p: Accurate mailing addresses are essential for effective communication and operational success. Renkim's USPS CASS, DPV, and NCOA Services ensure your address database is always accurate and compliant, reducing the risk of undeliverable mail, and improving efficiency.
+    p: Ready to enhance your mailing accuracy? Contact Renkim today at (734) 374-8300 or email us at info@renkim.com to learn how our USPS CASS, DPV, and NCOA Services can benefit your business. Let's work together to optimize your mailing processes and ensure effective communication!
+
+== <section class='bde-section-627-515 bde-section' id=''>
+    span: We Are A
+    span: 100% Employee Owned
+    span: Business
+    div: ...we value our Renkim employees as they are the success and backbone of our company
+  [A href=https://renkim.com/careers/]
+    span: Careers
+
+== <section class='bde-section-627-524 bde-section' id=''>
+    span: Renkim Is the Go-To Solution for All of Your
+    span: Print and Mail, Text, and Email
+    span: Needs
+  [A href=https://renkim.com/industries-served/]
+    span: Automotive
+  [A href=https://renkim.com/industries-served/]
+    span: Class Action / Data Breach
+  [A href=https://renkim.com/industries-served/]
+    span: Financial
+  [A href=https://renkim.com/industries-served/]
+    span: Government / Municipality
+  [A href=https://renkim.com/industries-served/]
+    span: Healthcare
+  [A href=https://renkim.com/industries-served/]
+    span: Mortgage
+  [A href=https://renkim.com/industries-served/]
+    span: Receivables Management
+  [A href=https://renkim.com/industries-served/]
+    span: Telecom / Internet
+  [A href=https://renkim.com/industries-served/]
+    span: Utility
+
+== <section class='bde-section-627-540 bde-section' id=''>
+    span: Our core
+    span: Renkim
+    span: Values
+    h3: we value
+    h3: integrity
+    div: There's no point in doing a job unless you're going to do it right. We believe in adherence to proper guidelines that allow us to do exactly that. Being honest and hard-working are values we believe aid in our integrity.
+    h3: we value
+    h3: communication
+    div: Our entire business is founded in our ability to help people communicate quickly, efficiently, and effectively. We carry this ethos with us through every project we work on, from beginning to end.
+    h3: we value
+    h3: teamwork
+    div: Without the people who support our day-to-day operations, we wouldn't be where we are. We prioritize teamwork in all that we do. That's why we're 100% employee-owned, and why we'll stay that way for years to come.
+    h3: we value
+    h3: quality
+    div: Just because we live in a digital age doesn't mean you can't produce quality work. Renkim strives every day to deliver results that both match the speed of the modern era, while also remaining of the highest possible quality.
+    h3: we value
+    h3: empathy
+    div: Part of any good business is the desire to want to understand people. We want to know where you're coming from and why, not just because it's part of our job, but because we believe that's a simple courtesy you deserve.
+    h3: we value
+    h3: respect
+    div: Without mutual respect, any relationship is destined to fall apart. Renkim works every day to maintain the respect of our clients and our colleagues, and we believe the results of our efforts speak for themselves.
+
+== <section class='bde-section-72-128 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:216/h:66/q:mauto/f:best/https://renkim.com/wp-content/uploads/EmployeeOwnedLogoLarge.png alt='' w=216 h=66]
+    h6: What We Do
+  [A href=https://renkim.com/print-mail/]
+    h6: Print and Mail
+  [A href=https://renkim.com/digital-services/]
+    h6: Digital Services
+  [A href=https://renkim.com/digital-services/email/]
+    h6: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    h6: Text Message
+  [A href=https://renkim.com/ancillary-services/]
+    h6: Ancillary Services
+    h6: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    h6: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    h6: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    h6: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    h6: Renkim Reporting
+    h6: Who We Help
+  [A href=https://renkim.com/industries-served/]
+    h6: Automotive
+  [A href=https://renkim.com/industries-served/]
+    h6: Class Action
+  [A href=https://renkim.com/industries-served/]
+    h6: Financial
+  [A href=https://renkim.com/industries-served/]
+    h6: Government
+  [A href=https://renkim.com/industries-served/]
+    h6: Healthcare
+  [A href=https://renkim.com/industries-served/]
+    h6: Mortgage
+  [A href=https://renkim.com/industries-served/]
+    h6: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    h6: Telecom/Internet
+  [A href=https://renkim.com/industries-served/]
+    h6: Utility
+    h6: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    h6: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    h6: Our History
+  [A href=https://renkim.com/about-us/#values]
+    h6: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    h6: The ESOP Advantage
+    h6: Resources
+  [A href=https://renkim.com/compliance/]
+    h6: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    h6: Renkim On The Road
+  [A href=https://renkim.com/in-the-community/]
+    h6: Renkim In The Community
+  [A href=https://renkim.com/careers/]
+    h6: Careers
+    h6: Contact
+  [A href=tel:(734) 374-8300]
+    h6: Call (734) 374-8300
+  [A href=https://breakdance.com/]
+    h6: Fax (734) 374-0168
+  [A href=https://renkim.com/contact-us/]
+    h6: Send us a message
+    h6: Our Location
+  [A href=#]
+    h6: 13333 Allen Road
+  [A href=#]
+    h6: Southgate, MI 48195
+    p: Made with ♥ by
+  [A href=https://aelieve.com/]
+    a: Aelieve
+  [A href=https://renkim.com/privacy-policy/]
+    a: Privacy Policy
+  [A href=https://renkim.com/terms-of-service/]
+    a: Terms of Service
+    div: © 2026 Renkim. All Rights Reserved.
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+
+== <section class='bde-section-250-101 bde-section' id=''>
+    span: Want to
+    span: get in touch
+    span: with our team?
+    div: Just want to send a message to our team? No worries, we are here to help. Click on the button below to contact us.
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+    span: Request a
+    span: Renkim demo
+    span: today
+    h3: ... fill out the form below
+
+== <form class='breakdance-form breakdance-form--vertical' id='contact-form112'>
+  [INPUT type=text name=fields[name] id=name placeholder='Name' required=True value='']
+  [INPUT type=text name=fields[company] id=company placeholder='Company' required=False value='']
+  [INPUT type=email name=fields[email] id=email placeholder='Email' required=True value='']
+  [INPUT type=tel name=fields[phone] id=phone placeholder='Phone Number' required=False value='']
+  [TEXTAREA type=textarea name=fields[message] id=message placeholder='Message' required=True value='']
+  [BUTTON]
+    span: Submit
+  [INPUT type=hidden name=form_id id=None placeholder='' required=False value='112']
+  [INPUT type=hidden name=post_id id=None placeholder='' required=False value='250']

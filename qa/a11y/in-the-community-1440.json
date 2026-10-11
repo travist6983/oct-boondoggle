@@ -1,0 +1,98 @@
+{
+ "url": "http://localhost:4173/in-the-community/",
+ "tabStops": 62,
+ "noRing": [],
+ "offScreen": [],
+ "underHeader": [],
+ "invisible": [],
+ "h1Count": 1,
+ "outline": [
+  {
+   "level": 1,
+   "text": "Renkim In The Community"
+  },
+  {
+   "level": 2,
+   "text": "Renkim on LinkedIn"
+  },
+  {
+   "level": 2,
+   "text": "Renkim Philanthropy"
+  },
+  {
+   "level": 3,
+   "text": "St. Jude Children's Research Hospital"
+  },
+  {
+   "level": 3,
+   "text": "Gleaners"
+  },
+  {
+   "level": 3,
+   "text": "Capuchin's Soup Kitchen"
+  },
+  {
+   "level": 3,
+   "text": "The Guidance Center"
+  },
+  {
+   "level": 3,
+   "text": "Susie Q Kids"
+  },
+  {
+   "level": 3,
+   "text": "Bags of Hope"
+  },
+  {
+   "level": 3,
+   "text": "Love A Michigan Vet Project"
+  },
+  {
+   "level": 3,
+   "text": "Wyandotte Animal Shelter"
+  },
+  {
+   "level": 3,
+   "text": "School Donation Drive for Fordline Elementary in Southgate"
+  },
+  {
+   "level": 2,
+   "text": "What We Do"
+  },
+  {
+   "level": 2,
+   "text": "Portal"
+  },
+  {
+   "level": 2,
+   "text": "Who We Help"
+  },
+  {
+   "level": 2,
+   "text": "About Us"
+  },
+  {
+   "level": 2,
+   "text": "Resources"
+  },
+  {
+   "level": 2,
+   "text": "Contact"
+  },
+  {
+   "level": 2,
+   "text": "Our Location"
+  }
+ ],
+ "skips": [],
+ "dupIds": [],
+ "brokenAnchors": [],
+ "imgsNoAlt": [],
+ "unnamed": [],
+ "landmarks": [
+  "header",
+  "nav",
+  "main",
+  "footer"
+ ]
+}

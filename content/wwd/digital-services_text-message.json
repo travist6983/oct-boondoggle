@@ -1,0 +1,75 @@
+{
+ "$meta": {
+  "source": "https://renkim.com/digital-services/text-message/ main body, extracted 2026-10-11 (reference/wwd/digital-services_text-message-text.txt + -outline.txt).",
+  "rules": "Copy is verbatim. The live page title-cases headings with CSS (text-transform); the redesign keeps the source text. Heading levels normalized: one h1 (hero); the live h1 offering titles become h2; The Approach / The Benefit / How It Works stay h3. The live page has no sidebar or bands; neither does the redesign.",
+  "typoFixes": [
+   {
+    "where": "offerings",
+    "from": "a second copy of the offerings block in the page source whose first item is labeled '01. Renkim eBlast' (the SMS copy under the Email product's name)",
+    "to": "dropped; the visible block (01. Renkim SMS, 02. Secure MMS Texting, 03. New MMS Direct Statement) is kept",
+    "note": "The duplicate is a responsive variant hidden at desktop widths on the live site; its first label is a copy-paste error."
+   }
+  ],
+  "liveSiteIssuesFound": [
+   "The two offering illustrations (Renkim_text-message1-2.png) have empty alt text; 03 has none. The redesign redraws both as SVG in the same style and adds a matching one for 03 (a statement inside an MMS bubble); all are decorative (aria-hidden)."
+  ]
+ },
+ "hero": {
+  "headingLevelLive": "h1",
+  "heading": "Meet Customers on Their Screens: Next-Gen SMS & MMS Texting Solutions",
+  "body": "Put mission-critical information directly into your customers' hands. Whether it's a quick reminder or a fully embedded statement, Renkim Texting Solutions drive faster actions and immediate engagement."
+ },
+ "offerings": [
+  {
+   "heading": "01. Renkim SMS",
+   "facts": [
+    {
+     "heading": "The Approach",
+     "body": "Instant alerts and actionable reminders."
+    },
+    {
+     "heading": "How It Works",
+     "body": "Send rapid text-based alerts, bill reminders, and critical notifications straight to any mobile device."
+    },
+    {
+     "heading": "The Benefit",
+     "body": "Highly effective and versatile. You can easily include dynamic links back to your customer portals, company websites, or hosted documents."
+    }
+   ]
+  },
+  {
+   "heading": "02. Secure MMS Texting",
+   "facts": [
+    {
+     "heading": "The Approach",
+     "body": "Rich media delivery with built-in security."
+    },
+    {
+     "heading": "How It Works",
+     "body": "Send secure, password-protected texts directly to your customer's mobile device with direct links to their statements."
+    },
+    {
+     "heading": "The Benefit",
+     "body": "Enhanced interactivity. Statements accessed via these secure links can contain direct pathways straight to your designated payment portals."
+    }
+   ]
+  },
+  {
+   "heading": "03. New MMS Direct Statement",
+   "facts": [
+    {
+     "heading": "The Approach",
+     "body": "Instant, zero-click document presentation."
+    },
+    {
+     "heading": "How It Works",
+     "body": "Embed a clean image of the actual statement or document directly into the body of the MMS text message."
+    },
+    {
+     "heading": "The Benefit",
+     "body": "By eliminating the barrier of \"clicks\" or logins to open a document, you create a low-barrier experience that dramatically improves response rates."
+    }
+   ]
+  }
+ ]
+}

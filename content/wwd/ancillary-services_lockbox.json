@@ -1,0 +1,217 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/ancillary-services/lockbox/",
+    "captured": "2026-10-11",
+    "notes": [
+      "Main body only (hero + article). Sidebar, bands, values, header and footer are shared partials verified elsewhere.",
+      "Hero sibling chips link to the local pages; live hrefs are https://renkim.com/ancillary-services/…/ (the verifier treats them as equal). Renkim Reporting is a Portal page and stays on renkim.com.",
+      "The live page also carries an 'Example of … Service' case study (fictional client name, challenge, solution, results), but its heading and rich text are display:none at every breakpoint (CSS bde-heading-*-103 / bde-rich-text-*-104). It is kept here under hiddenOnLive and is not rendered, matching live."
+    ],
+    "typoFixes": [
+      {
+        "where": "hero chip",
+        "from": "Litigous Scrub",
+        "to": "Litigious Scrub",
+        "note": "Live sibling chip label; the page itself spells it 'Litigious'."
+      }
+    ],
+    "liveSiteIssuesFound": [
+      "The live 'Flow of Operations' is a 750×400 JPEG with its text baked in (no alt text). The redesign rebuilds it as an HTML list plus an animated SVG lab. The image numbers its steps 1, 2, 3, 5, 6, 7, 8 (no step 4); kept verbatim, flagged for the client."
+    ]
+  },
+  "hero": {
+    "heading": "Lockbox",
+    "siblings": [
+      {
+        "label": "Address Element Correction",
+        "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+      },
+      {
+        "label": "Bankruptcy & Deceased",
+        "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+      },
+      {
+        "label": "Email Verification",
+        "href": "https://renkim.com/ancillary-services/email-verification/"
+      },
+      {
+        "label": "Litigious Scrub",
+        "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+      },
+      {
+        "label": "LockBox",
+        "href": "https://renkim.com/ancillary-services/lockbox/"
+      },
+      {
+        "label": "Phone Search",
+        "href": "https://renkim.com/ancillary-services/phone-search/"
+      },
+      {
+        "label": "Renkim 360",
+        "href": "https://renkim.com/ancillary-services/renkim-360/"
+      },
+      {
+        "label": "Return Mail Processing",
+        "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+      },
+      {
+        "label": "USPS CASS, DPV, NCOA",
+        "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+      },
+      {
+        "label": "Vacant Address",
+        "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+      },
+      {
+        "label": "Renkim Reporting",
+        "href": "https://renkim.com/portal/renkim-reporting/",
+        "note": "Portal page: stays on renkim.com."
+      }
+    ]
+  },
+  "article": [
+    {
+      "level": "h2",
+      "heading": "Lockbox Services"
+    },
+    {
+      "text": "Managing client payments efficiently is critical for maintaining smooth financial operations. Renkim's Lockbox Services enable your organization to collect payments without handling a single piece of mail. We take care of collecting, sorting, and processing your client’s mail, depositing payments directly to your bank account on your behalf. This service streamlines your payment collection process, ensuring accuracy and timely deposits."
+    },
+    {
+      "level": "h3",
+      "heading": "Simplify Your Payment Collection Today!"
+    },
+    {
+      "text": "Efficient payment processing is essential for maintaining a healthy cash flow and reducing administrative workload. Renkim's Lockbox Services provide a reliable and efficient solution for collecting and processing client payments."
+    },
+    {
+      "text": "Ready to enhance your payment collection process? Contact Renkim today at (734) 374-8300 or email us at info@renkim.com to learn how our Lockbox Services can benefit your business. Let us handle your payment processing so you can focus on what you do best!"
+    },
+    {
+      "level": "h4",
+      "heading": "Flow of Operations"
+    }
+  ],
+  "hiddenOnLive": {
+    "omitted": "display:none on the live page at every breakpoint; not rendered",
+    "items": [
+      {
+        "tag": "h3",
+        "text": "Example of Lockbox Service"
+      },
+      {
+        "tag": "strong",
+        "text": "Client:"
+      },
+      {
+        "tag": "p",
+        "text": "DEF Utility Company"
+      },
+      {
+        "tag": "strong",
+        "text": "Challenge:"
+      },
+      {
+        "tag": "p",
+        "text": "DEF Utility Company was facing delays in processing customer payments, leading to cash flow issues and increased administrative workload. Their internal team was overwhelmed with the volume of payments, resulting in errors and inefficiencies."
+      },
+      {
+        "tag": "strong",
+        "text": "Solution:"
+      },
+      {
+        "tag": "p",
+        "text": "Renkim implemented our Lockbox Services for DEF Utility Company. We took over the responsibility of collecting and sorting mail, processing payments, and depositing funds directly into their bank account."
+      },
+      {
+        "tag": "strong",
+        "text": "Results:"
+      },
+      {
+        "tag": "strong",
+        "text": "Improved Cash Flow:"
+      },
+      {
+        "tag": "li",
+        "text": "Payments were processed and deposited more quickly, enhancing cash flow management."
+      },
+      {
+        "tag": "strong",
+        "text": "Reduced Administrative Burden:"
+      },
+      {
+        "tag": "li",
+        "text": "DEF Utility Company's internal team could focus on other critical tasks, improving overall efficiency."
+      },
+      {
+        "tag": "strong",
+        "text": "Enhanced Accuracy:"
+      },
+      {
+        "tag": "li",
+        "text": "Automated processing reduced errors, ensuring accurate payment handling and recording."
+      },
+      {
+        "tag": "strong",
+        "text": "Customer Satisfaction:"
+      },
+      {
+        "tag": "li",
+        "text": "Faster processing times led to improved customer satisfaction and trust."
+      },
+      {
+        "tag": "p",
+        "text": "By utilizing Renkim's Lockbox Services, DEF Utility Company streamlined their payment processes, reduced errors, and enhanced their financial management."
+      }
+    ]
+  },
+  "flowOfOperations": {
+    "heading": "Flow of Operations",
+    "source": "Text of the live image lockbox-1.jpg, verbatim (the live numbering skips 4).",
+    "stages": [
+      {
+        "heading": "Receiving",
+        "steps": [
+          {
+            "text": "Clients mail to PO Box",
+            "n": 1
+          },
+          {
+            "text": "Renkim collects mail",
+            "n": 2
+          },
+          {
+            "text": "Mail opened and sorted in secured environment",
+            "n": 3
+          }
+        ]
+      },
+      {
+        "heading": "Processing",
+        "steps": [
+          {
+            "text": "Payments scanned and deposited electronically to your bank",
+            "n": 5
+          },
+          {
+            "text": "Non-payments scanned and mailed back",
+            "n": 6
+          }
+        ]
+      },
+      {
+        "heading": "Reporting",
+        "steps": [
+          {
+            "text": "Daily reports confirm daily processing activities",
+            "n": 7
+          },
+          {
+            "text": "Unique IDs track each batch of records",
+            "n": 8
+          }
+        ]
+      }
+    ]
+  }
+}

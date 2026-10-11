@@ -1,0 +1,327 @@
+    ?: In the Community | Renkim
+
+== <section class='bde-section-406-138 bde-section' id=''>
+    p: Renkim has experienced a cybersecurity incident.
+  [A href=https://renkim.com/renkim-notice-of-data-security-incident/]
+    a: Click here
+    p: for more information.
+
+== <section class='bde-section-406-113 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:1920/h:499/q:mauto/f:best/https://renkim.com/wp-content/uploads/RGB-Renkim-Logo-2026_WHITE-scaled.png alt='' w=2560 h=666]
+  [BUTTON]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/RenkimLogowhiteSmaller.png alt='' w= h=None]
+  [BUTTON]
+    button: Close
+  [BUTTON]
+    button: What We Do
+  [BUTTON]
+    h1: Print & Mail
+  [A href=https://renkim.com/print-mail/print-document/]
+    a: Print Document
+  [A href=https://renkim.com/print-mail/certified-mail/]
+    a: Certified Mail
+  [A href=https://renkim.com/print-mail/micr-check-printing/]
+    a: MICR Check Printing
+    h1: Digital
+  [A href=https://renkim.com/digital-services/email/]
+    a: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    a: Text Message
+    h1: Ancillary Services
+  [A href=https://renkim.com/ancillary-services/address-element-correction-aec/]
+    a: Address Element Correction (AEC)
+  [A href=https://renkim.com/ancillary-services/bankruptcy-deceased/]
+    a: Bankruptcy & Deceased
+  [A href=https://renkim.com/ancillary-services/email-verification/]
+    a: Email Verification
+  [A href=https://renkim.com/ancillary-services/litigious-scrub/]
+    a: Litigious Scrub
+  [A href=https://renkim.com/ancillary-services/lockbox/]
+    a: Lockbox
+  [A href=https://renkim.com/ancillary-services/phone-search/]
+    a: Phone Search
+  [A href=https://renkim.com/ancillary-services/return-mail-processing/]
+    a: Return Mail Processing
+  [A href=https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/]
+    a: USPS CASS, DPV, NCOA
+  [A href=https://renkim.com/ancillary-services/vacant-address-search/]
+    a: Vacant Address Search
+    h1: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    a: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    a: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    a: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    a: Renkim Reporting
+  [A href=https://renkim.com/about-us/]
+    a: Who We Are
+  [BUTTON]
+    span: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    span: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    span: History
+  [A href=https://renkim.com/about-us/#values]
+    span: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    span: The ESOP Advantage
+  [A href=https://renkim.com/industries-served/]
+    a: Who We Help
+  [BUTTON]
+    span: Industries We Serve
+  [A href=https://renkim.com/industries-served/#automotive]
+    span: Automotive
+  [A href=https://renkim.com/industries-served/#class-action]
+    span: Class Action/Data Breach
+  [A href=https://renkim.com/industries-served/#financial]
+    span: Financial
+  [A href=https://renkim.com/industries-served/#gov]
+    span: Government/Municipality
+  [A href=https://renkim.com/industries-served/#healthcare]
+    span: Healthcare
+  [A href=https://renkim.com/industries-served/#mortgage]
+    span: Mortgage
+  [A href=https://renkim.com/industries-served/#receivables]
+    span: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    span: Telecom/Internet
+  [A href=https://renkim.com/industries-served/#utility]
+    span: Utility
+  [BUTTON]
+    button: Resources
+  [BUTTON]
+    span: Quick Links
+  [A href=https://renkim.com/compliance/]
+    span: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    span: Renkim on the Road
+  [A href=https://renkim.com/in-the-community/]
+    span: Renkim in the Community
+  [A href=https://renkim.com/careers/]
+    span: Careers
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+  [A href=https://renkim.com/contact-us/]
+    span: Schedule A Call
+
+== <section class='bde-section-878-100 bde-section' id=''>
+    h1: Renkim In The Community
+  [A href=https://renkim.com/compliance/]
+    span: Renkim Compliance
+  [A href=https://renkim.com/on-the-road/]
+    span: Renkim on the Road
+  [A href=https://renkim.com/in-the-community/]
+    span: Renkim in the Community
+  [A href=https://renkim.com/careers/]
+    span: Careers
+
+== <section class='bde-section-878-271 bde-section' id=''>
+
+== <section class='bde-section-878-316 bde-section' id=''>
+    span: Renkim
+    span: Philanthropy
+    div: Driven by its employee-owned culture, Renkim supports the community through hands-on volunteerism and donations for local philanthropies.
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/St-Jude-Symbol-scaled.png alt='' w=None h=None]
+    h1: St. Jude Children's Research Hospital
+  [A href=https://www.stjude.org/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/Untitled-design-89.png alt='' w=None h=None]
+    h1: Gleaners
+  [A href=https://www.gcfb.org/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/Capuchin-Soup-Kitchen-logo-MASTER-TM-1-Edited.png alt='' w=None h=None]
+    h1: Capuchin's Soup Kitchen
+  [A href=https://www.cskdetroit.org/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/the-guidance-center-horiz-logo-Edited-Edited.png alt='' w=None h=None]
+    h1: The Guidance Center
+  [A href=https://www.guidance-center.org/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/Untitled-design-88.png alt='' w=None h=None]
+    h1: Susie Q Kids
+  [A href=https://susieqskids.org/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/bags-of-hope.png alt='' w=None h=None]
+    h1: Bags of Hope
+  [A href=https://bagsofhopelkn.com/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/logo-web.png alt='' w=None h=None]
+    h1: Love A Michigan Vet Project
+  [A href=https://www.loveamivet.org/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/wyandotte_logo-scaled.png alt='' w=None h=None]
+    h1: Wyandotte Animal Shelter
+  [A href=https://wacshelter.com/]
+    span: Learn more
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/Fordline-Edited.png alt='' w=None h=None]
+    h1: School Donation Drive for Fordline Elementary in southgate
+  [A href=https://fordline.southgateschools.com/]
+    span: Learn more
+
+== <section class='bde-section-878-303 bde-section' id=''>
+
+== <section class='bde-section-1308-100-1334-1308-1 bde-section bde-section-1308-100' id=''>
+  [IMG src=https://img.aelieve.com/w:194/h:248/q:mauto/f:best/https://renkim.com/wp-content/uploads/Mail-Lindsey-Haag-Outlook-1.png alt='' w=194 h=248]
+    h1: Easter Bag Donation
+    p: At Renkim, we’re thrilled to be donating 45 Easter baskets to the
+  [A href=https://www.linkedin.com/company/capuchin-soup-kitchen/]
+    a: Capuchin Soup Kitchen
+    p: ‘s Rosa Parks Children and Youth Program!
+    p: These baskets will bring smiles to the faces of many deserving children in our community. We’re proud to support this incredible organization and its mission to empower young people through education and creativity.
+    p: Location: Southgate, MI
+    span: June 9-12, 2024
+    span: Orlando, FL
+
+== <section class='bde-section-1308-100-1327-1308-1 bde-section bde-section-1308-100' id=''>
+  [IMG src=https://img.aelieve.com/w:605/h:448/q:mauto/f:best/https://renkim.com/wp-content/uploads/Mail-Lindsey-Haag-Outlook.png alt='' w=605 h=448]
+    h1: Gleaners Community Food Bank
+    p: At Renkim, we believe in giving back to the community, and this year’s Renkim Volunteer Day as a shining example of that commitment. Our team members enthusiastically sorted through a variety of donated food items, ensuring they were properly categorized and boxed. We packed 1,115 boxes which equates to approximately 15,325 meals for community members.
+    p: The experience was not only rewarding for our team members, but it also served as a powerful reminder of the importance of supporting organizations like
+  [A href=https://www.linkedin.com/company/gleaners/]
+    a: Gleaners Community Food Bank of Southeastern Michigan’s
+    p: that are making a real difference in the lives of others. We are incredibly proud of our team’s dedication to giving back and look forward to continuing our support.
+    p: Location: Detroit, MI
+    span: June 9-12, 2024
+    span: Orlando, FL
+
+== <section class='bde-section-1308-100-1321-1308-1 bde-section bde-section-1308-100' id=''>
+  [IMG src=https://img.aelieve.com/w:477/h:474/q:mauto/f:best/https://renkim.com/wp-content/uploads/Mail-Lindsey-Haag-Outlook-2.png alt='' w=477 h=474]
+    h1: Renkim’s Pawsitive Impact for Local Pets
+    p: Big news from the Renkim family! This month, we channeled our collective passion and energy into a cause that resonates with all of us: supporting the wonderful Wyandotte Animal Adoption Center. It’s amazing what we can achieve when we come together. Our team’s dedication to this cause has been nothing short of inspiring.
+    p: From organizing fundraising events to spreading awareness, every effort counts, we are overjoyed by all the support and contributions from our team. The goods we’ve raised will go a long way in helping our four-legged friends receive the care and love they deserve. A big shoutout to every Renkim team member who participated. Your enthusiasm and generosity showcase the best of who we are! Hats off to the Wyandotte Animal Adoption Center for their tireless efforts in animal welfare. We are proud to support your mission and look forward to continuing this partnership.
+    p: Location: Wyandotte, MI
+    span: June 9-12, 2024
+    span: Orlando, FL
+
+== <section class='bde-section-1308-100-1314-1308-1 bde-section bde-section-1308-100' id=''>
+  [IMG src=https://img.aelieve.com/w:1142/h:1080/q:mauto/f:best/https://renkim.com/wp-content/uploads/affectionate-military-father-his-daughter-embracing-with-eyes-closed-home.png alt='' w=4740 h=4480]
+    h1: Love a Michigan Vet Project
+    p: Renkim Team, we are thrilled to announce that for the next 3 weeks, we will be organizing a donation drive to support homeless veterans. A donation box has been set up in the hallway by the elevator. Your contributions, no matter the size, will be immensely appreciated. Thank you in advance for your generous support as we come together to make a positive impact!
+    p: Location: Michigan
+    span: June 9-12, 2024
+    span: Orlando, FL
+
+== <section class='bde-section-878-305 bde-section' id=''>
+  [IMG src=https://img.aelieve.com/w:945/h:1024/q:mauto/f:best/https://renkim.com/wp-content/uploads/IMG_4546-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/sign-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:1024/h:683/q:mauto/f:best/https://renkim.com/wp-content/uploads/Renkim-at-the-Booth-ACA-National-21-Vegas.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/gleaners.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:768/h:1024/q:mauto/f:best/https://renkim.com/wp-content/uploads/IMG_6220-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/Green1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/volunteer-day-10.30.24.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:1024/h:768/q:mauto/f:best/https://renkim.com/wp-content/uploads/Resized_Resized_20230521_092134.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/esop-lunch-7.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/chili-pic-3.jpg alt='' w=None h=None]
+
+== <section class='bde-section-72-128 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:216/h:66/q:mauto/f:best/https://renkim.com/wp-content/uploads/EmployeeOwnedLogoLarge.png alt='' w=216 h=66]
+    h6: What We Do
+  [A href=https://renkim.com/print-mail/]
+    h6: Print and Mail
+  [A href=https://renkim.com/digital-services/]
+    h6: Digital Services
+  [A href=https://renkim.com/digital-services/email/]
+    h6: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    h6: Text Message
+  [A href=https://renkim.com/ancillary-services/]
+    h6: Ancillary Services
+    h6: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    h6: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    h6: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    h6: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    h6: Renkim Reporting
+    h6: Who We Help
+  [A href=https://renkim.com/industries-served/]
+    h6: Automotive
+  [A href=https://renkim.com/industries-served/]
+    h6: Class Action
+  [A href=https://renkim.com/industries-served/]
+    h6: Financial
+  [A href=https://renkim.com/industries-served/]
+    h6: Government
+  [A href=https://renkim.com/industries-served/]
+    h6: Healthcare
+  [A href=https://renkim.com/industries-served/]
+    h6: Mortgage
+  [A href=https://renkim.com/industries-served/]
+    h6: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    h6: Telecom/Internet
+  [A href=https://renkim.com/industries-served/]
+    h6: Utility
+    h6: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    h6: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    h6: Our History
+  [A href=https://renkim.com/about-us/#values]
+    h6: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    h6: The ESOP Advantage
+    h6: Resources
+  [A href=https://renkim.com/compliance/]
+    h6: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    h6: Renkim On The Road
+  [A href=https://renkim.com/in-the-community/]
+    h6: Renkim In The Community
+  [A href=https://renkim.com/careers/]
+    h6: Careers
+    h6: Contact
+  [A href=tel:(734) 374-8300]
+    h6: Call (734) 374-8300
+  [A href=https://breakdance.com/]
+    h6: Fax (734) 374-0168
+  [A href=https://renkim.com/contact-us/]
+    h6: Send us a message
+    h6: Our Location
+  [A href=#]
+    h6: 13333 Allen Road
+  [A href=#]
+    h6: Southgate, MI 48195
+    p: Made with ♥ by
+  [A href=https://aelieve.com/]
+    a: Aelieve
+  [A href=https://renkim.com/privacy-policy/]
+    a: Privacy Policy
+  [A href=https://renkim.com/terms-of-service/]
+    a: Terms of Service
+    div: © 2026 Renkim. All Rights Reserved.
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+
+== <section class='bde-section-250-101 bde-section' id=''>
+    span: Want to
+    span: get in touch
+    span: with our team?
+    div: Just want to send a message to our team? No worries, we are here to help. Click on the button below to contact us.
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+    span: Request a
+    span: Renkim demo
+    span: today
+    h3: ... fill out the form below
+
+== <form class='breakdance-form breakdance-form--vertical' id='contact-form112'>
+  [INPUT type=text name=fields[name] id=name placeholder='Name' required=True value='']
+  [INPUT type=text name=fields[company] id=company placeholder='Company' required=False value='']
+  [INPUT type=email name=fields[email] id=email placeholder='Email' required=True value='']
+  [INPUT type=tel name=fields[phone] id=phone placeholder='Phone Number' required=False value='']
+  [TEXTAREA type=textarea name=fields[message] id=message placeholder='Message' required=True value='']
+  [BUTTON]
+    span: Submit
+  [INPUT type=hidden name=form_id id=None placeholder='' required=False value='112']
+  [INPUT type=hidden name=post_id id=None placeholder='' required=False value='250']

@@ -1,0 +1,102 @@
+{
+ "url": "http://localhost:4173/digital-services/email/",
+ "tabStops": 38,
+ "noRing": [],
+ "offScreen": [],
+ "underHeader": [],
+ "invisible": [],
+ "h1Count": 1,
+ "outline": [
+  {
+   "level": 1,
+   "text": "Connect, Secure, & Engage: 3 Powerful Ways to Deliver Digital Document"
+  },
+  {
+   "level": 2,
+   "text": "01. Renkim eBlast"
+  },
+  {
+   "level": 3,
+   "text": "The Approach"
+  },
+  {
+   "level": 3,
+   "text": "The Benefit"
+  },
+  {
+   "level": 3,
+   "text": "How It Works"
+  },
+  {
+   "level": 2,
+   "text": "02. Renkim eNotice"
+  },
+  {
+   "level": 3,
+   "text": "The Approach"
+  },
+  {
+   "level": 3,
+   "text": "The Benefit"
+  },
+  {
+   "level": 3,
+   "text": "How It Works"
+  },
+  {
+   "level": 2,
+   "text": "03. Renkim PDF Attachment"
+  },
+  {
+   "level": 3,
+   "text": "The Approach"
+  },
+  {
+   "level": 3,
+   "text": "The Benefit"
+  },
+  {
+   "level": 3,
+   "text": "How It Works"
+  },
+  {
+   "level": 2,
+   "text": "What We Do"
+  },
+  {
+   "level": 2,
+   "text": "Portal"
+  },
+  {
+   "level": 2,
+   "text": "Who We Help"
+  },
+  {
+   "level": 2,
+   "text": "About Us"
+  },
+  {
+   "level": 2,
+   "text": "Resources"
+  },
+  {
+   "level": 2,
+   "text": "Contact"
+  },
+  {
+   "level": 2,
+   "text": "Our Location"
+  }
+ ],
+ "skips": [],
+ "dupIds": [],
+ "brokenAnchors": [],
+ "imgsNoAlt": [],
+ "unnamed": [],
+ "landmarks": [
+  "header",
+  "nav",
+  "main",
+  "footer"
+ ]
+}

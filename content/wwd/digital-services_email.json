@@ -1,0 +1,68 @@
+{
+ "$meta": {
+  "source": "https://renkim.com/digital-services/email/ main body, extracted 2026-10-11 (reference/wwd/digital-services_email-text.txt + -outline.txt).",
+  "rules": "Copy is verbatim. The live page title-cases headings with CSS (text-transform); the redesign keeps the source text. Heading levels normalized: one h1 (hero); the live h1 offering titles become h2; The Approach / The Benefit / How It Works stay h3. The live page has no sidebar or bands; neither does the redesign.",
+  "typoFixes": [],
+  "liveSiteIssuesFound": [
+   "The three offering illustrations (renkim_email1-3.png) have empty alt text. The redesign redraws them as SVG in the same style; they are decorative (aria-hidden) because the copy carries the content."
+  ]
+ },
+ "hero": {
+  "headingLevelLive": "h1",
+  "heading": "Connect, Secure, & Engage: 3 Powerful Ways to Deliver Digital Documents via Email",
+  "body": "Reach your customers directly in their inbox, improve customer experience, and drastically reduce your postage and paper costs with Renkim's tailored email solutions."
+ },
+ "offerings": [
+  {
+   "heading": "01. Renkim eBlast",
+   "facts": [
+    {
+     "heading": "The Approach",
+     "body": "High engagement, zero friction."
+    },
+    {
+     "heading": "The Benefit",
+     "body": "Deliver your message effortlessly. Templates can include embedded document images for instant visibility and increased engagement."
+    },
+    {
+     "heading": "How It Works",
+     "body": "Sends customized text-based or HTML templates straight to your customer's inbox without requiring an upfront authentication or login page."
+    }
+   ]
+  },
+  {
+   "heading": "02. Renkim eNotice",
+   "facts": [
+    {
+     "heading": "The Approach",
+     "body": "Secure, authenticated access."
+    },
+    {
+     "heading": "The Benefit",
+     "body": "Maximum security. Because the documents are fully interactive, you can glide your customers directly to your payment portal."
+    },
+    {
+     "heading": "How It Works",
+     "body": "Sends a link directing your customer to a secure authentication page on Renkim web servers. After entering their information, they are seamlessly guided to an interactive PDF or HTML version of the document via a Personalized URL (PURL)."
+    }
+   ]
+  },
+  {
+   "heading": "03. Renkim PDF Attachment",
+   "facts": [
+    {
+     "heading": "The Approach",
+     "body": "The perfect blend of security and convenience."
+    },
+    {
+     "heading": "The Benefit",
+     "body": "By utilizing password protection on the PDF, you seamlessly combine the ironclad security of an eNotice with the effortless convenience of an eBlast."
+    },
+    {
+     "heading": "How It Works",
+     "body": "Delivers a statement or critical document as a direct email attachment without requiring your customer to log into an external portal."
+    }
+   ]
+  }
+ ]
+}

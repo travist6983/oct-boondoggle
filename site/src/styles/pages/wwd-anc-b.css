@@ -1,0 +1,41 @@
+/* ==========================================================================
+   What We Do · Ancillary B (Bankruptcy & Deceased, Email Verification,
+   Litigious Scrub, Lockbox, Renkim 360). Each article has one lab: a 4:3
+   illustration drawn in its finished state (static page) that the motion
+   layer pins and scrubs while the envelope performs the service.
+   ========================================================================== */
+
+/* --- The lab ---------------------------------------------------------------- */
+.anc-pin { position: relative; margin: 36px 0 8px; }
+.page-wwd--anc-b .wwd-lab { aspect-ratio: 4 / 3; box-shadow: 0 34px 60px -44px rgba(17, 24, 39, 0.45); }
+.anc-art text { font-family: var(--rk-font); }
+.anc-runway { display: none; }
+.anc-qa { position: absolute; left: 0; width: 1px; height: 1px; pointer-events: none; }
+.is-live .anc-runway { display: block; height: 95svh; }
+@media (max-width: 767px) { .is-live .anc-runway { height: 80svh; } }
+.is-live .anc-pin .wwd-lab { position: sticky; z-index: 3; }
+.is-live .anc-still { display: none; }
+
+/* Strokes the motion layer draws (pathLength = 1) */
+.is-live .anc-art :is(.ev-branch, .ev-strike, .ls-strike, .lb-arc, .r3-ring) { stroke-dasharray: 1 1; }
+.is-live .anc-art .ev-branch { stroke: var(--rk-blue); stroke-width: 3; }
+.is-live .anc-art .ev-branch.is-bounced { stroke: var(--rk-grey); stroke-width: 2; stroke-dasharray: 0.02 0.03; }
+
+/* --- Lockbox: the live "Flow of Operations" diagram, rebuilt as HTML ---------- */
+.lb-flow { display: grid; gap: 16px; margin-top: 24px; counter-reset: none; }
+.lb-stage { position: relative; background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card); padding: 22px 22px 18px; }
+.lb-stage__title {
+  display: inline-flex; align-items: center; min-height: 36px; padding: 6px 16px; margin-bottom: 14px;
+  border-radius: var(--rk-radius-pill); background: var(--rk-deep-blue); color: #fff; font-size: 1rem; font-weight: 600;
+}
+.wwd-article .lb-steps { display: grid; gap: 8px; padding-left: 26px; list-style: decimal; }
+.wwd-article .lb-steps li { font-size: 1rem; line-height: 1.5; padding-left: 4px; }
+.lb-steps li::marker { color: var(--rk-blue); font-weight: 700; }
+@media (min-width: 768px) {
+  .lb-flow { grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  /* the arrows between stages, as in the live diagram */
+  .lb-stage:not(:last-child)::after {
+    content: ''; position: absolute; top: 34px; right: -24px; width: 20px; height: 12px;
+    background: no-repeat center / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 12'%3E%3Cpath d='M1 6h16m-5-5 5 5-5 5' fill='none' stroke='%230076C0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+}

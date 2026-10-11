@@ -1,0 +1,54 @@
+{
+  "$meta": {
+    "page": "/print-mail/micr-check-printing/",
+    "live": "https://renkim.com/print-mail/micr-check-printing/",
+    "source": "reference/wwd/print-mail_micr-check-printing-text.txt",
+    "localLinks": "Links to built pages are local in the prototype (https://renkim.com/print-mail/… ≡ /print-mail/…); verify-content maps them.",
+    "typoFixes": [],
+    "liveHidden": [
+      "'MCIR Check Printing Example' (ABC Bank case example) is in the live HTML but display:none at every breakpoint (.bde-heading-575-103, .bde-rich-text-575-104). Left out, as on the live page."
+    ],
+    "notes": [
+      "The MICR line in the lab is abstract E-13B-style shapes, not real routing or account numbers."
+    ]
+  },
+  "hero": {
+    "heading": "MICR Check Printing",
+    "chips": [
+      {
+        "label": "Print Documents",
+        "href": "https://renkim.com/print-mail/print-document/"
+      },
+      {
+        "label": "Certified Mail",
+        "href": "https://renkim.com/print-mail/certified-mail/"
+      },
+      {
+        "label": "MICR Check Printing",
+        "href": "https://renkim.com/print-mail/micr-check-printing/"
+      },
+      {
+        "label": "Contact Us",
+        "href": "https://renkim.com/contact-us/"
+      }
+    ]
+  },
+  "article": {
+    "heading": "MICR Check Printing Services",
+    "body": [
+      {
+        "text": "Renkim's MICR Check Printing services offer secure, reliable, and compliant solutions for all your check printing needs. Utilizing advanced Magnetic Ink Character Recognition (MICR) technology, we ensure that your checks meet all banking standards, providing you with peace of mind and efficient processing. Our commitment to quality and security makes us a trusted partner for businesses across various industries."
+      }
+    ],
+    "sections": [
+      {
+        "heading": "Renkim: Print and Email Professionals",
+        "body": [
+          {
+            "text": "By partnering with Renkim, your business can trust that their MICR Check Printing needs are handled with the utmost professionalism and security. Our advanced technology, rigorous quality control, and commitment to compliance make us the ideal choice for any organization requiring reliable check printing services. Ready to get started? Contact Renkim today to learn more about how we can support your check printing needs."
+          }
+        ]
+      }
+    ]
+  }
+}

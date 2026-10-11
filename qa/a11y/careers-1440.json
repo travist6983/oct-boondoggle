@@ -1,0 +1,62 @@
+{
+ "url": "http://localhost:4173/careers/",
+ "tabStops": 60,
+ "noRing": [],
+ "offScreen": [],
+ "underHeader": [],
+ "invisible": [],
+ "h1Count": 1,
+ "outline": [
+  {
+   "level": 1,
+   "text": "Careers"
+  },
+  {
+   "level": 2,
+   "text": "Interested in working with us at Renkim?"
+  },
+  {
+   "level": 3,
+   "text": "Apply today at Renkim!"
+  },
+  {
+   "level": 2,
+   "text": "What We Do"
+  },
+  {
+   "level": 2,
+   "text": "Portal"
+  },
+  {
+   "level": 2,
+   "text": "Who We Help"
+  },
+  {
+   "level": 2,
+   "text": "About Us"
+  },
+  {
+   "level": 2,
+   "text": "Resources"
+  },
+  {
+   "level": 2,
+   "text": "Contact"
+  },
+  {
+   "level": 2,
+   "text": "Our Location"
+  }
+ ],
+ "skips": [],
+ "dupIds": [],
+ "brokenAnchors": [],
+ "imgsNoAlt": [],
+ "unnamed": [],
+ "landmarks": [
+  "header",
+  "nav",
+  "main",
+  "footer"
+ ]
+}

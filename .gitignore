@@ -1,0 +1,22 @@
+# Dependencies and builds
+node_modules/
+site/dist/
+.DS_Store
+
+# Bulky, regenerable QA output (scripts in site/scripts recreate it; numbers are in QA.md)
+qa/screenshots/
+qa/perf/
+qa/lighthouse/*
+!qa/lighthouse/SUMMARY.md
+!qa/lighthouse/home-mobile.report.html
+!qa/lighthouse/home-desktop.report.html
+
+# Original photography at full resolution (the web derivatives live in site/public/img/pages)
+assets/pages/
+
+# Third-party captures kept locally only: live-site HTML/CSS dumps, full-page screenshots,
+# and inspiration-site screenshots. The extracted text and outlines (reference/**/*.txt) stay.
+reference/**/*.html
+reference/css/
+reference/screenshots/
+research/screenshots/

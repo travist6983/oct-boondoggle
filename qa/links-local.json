@@ -1,0 +1,33 @@
+{
+ "pages": {
+  "/": 200,
+  "/about-us/": 200,
+  "/ancillary-services/": 200,
+  "/ancillary-services/address-element-correction-aec/": 200,
+  "/ancillary-services/bankruptcy-deceased/": 200,
+  "/ancillary-services/email-verification/": 200,
+  "/ancillary-services/litigious-scrub/": 200,
+  "/ancillary-services/lockbox/": 200,
+  "/ancillary-services/phone-search/": 200,
+  "/ancillary-services/renkim-360/": 200,
+  "/ancillary-services/return-mail-processing/": 200,
+  "/ancillary-services/usps-cass-dpv-ncoa/": 200,
+  "/ancillary-services/vacant-address-search/": 200,
+  "/careers/": 200,
+  "/compliance/": 200,
+  "/digital-services/": 200,
+  "/digital-services/email/": 200,
+  "/digital-services/text-message/": 200,
+  "/in-the-community/": 200,
+  "/industries-served/": 200,
+  "/on-the-road/": 200,
+  "/print-mail/": 200,
+  "/print-mail/certified-mail/": 200,
+  "/print-mail/micr-check-printing/": 200,
+  "/print-mail/print-document/": 200,
+  "/services/": 200
+ },
+ "localLinks": 1990,
+ "distinct": 55,
+ "problems": []
+}

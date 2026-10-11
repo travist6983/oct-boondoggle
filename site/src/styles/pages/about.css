@@ -1,0 +1,237 @@
+/* ==========================================================================
+   About Us: "Since 1982"
+   Leadership (letters in Renkim envelopes) → History (the route is the
+   timeline spine) → 100% Employee Owned → Core Values (franked as the
+   envelope passes) → Certifications → Community wall (postcards).
+   Static-first; .motion-ok changes layout only, .is-live enables JS states.
+   ========================================================================== */
+
+.page-about {
+  --about-side: 100%;
+  --about-lane: 0px;
+}
+@media (min-width: 768px) {
+  .page-about { --about-side: 248px; --about-lane: 64px; }
+}
+@media (min-width: 1024px) {
+  .page-about { --about-side: 300px; --about-lane: 84px; }
+}
+@media (min-width: 1200px) {
+  .page-about { --about-side: 360px; --about-lane: 100px; }
+}
+
+/* Shared three-track grid: side | lane (the route) | main */
+@media (min-width: 768px) {
+  .about-grid { display: grid; grid-template-columns: var(--about-side) var(--about-lane) minmax(0, 1fr); align-items: start; }
+}
+.about-lane { display: none; }
+@media (min-width: 768px) { .about-lane { display: block; grid-column: 2; align-self: stretch; } }
+
+/* --- Monogram (initials; the live page has no headshots) ------------------- */
+.mono {
+  flex: none; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%;
+  background: var(--rk-deep-blue); color: #fff; font-weight: 800; font-size: 1.25rem; letter-spacing: 0.02em;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--rk-green);
+}
+.mono--sm { width: 36px; height: 36px; font-size: 0.8125rem; box-shadow: none; background: var(--rk-light-grey); color: var(--rk-blue); border: 1px solid var(--rk-border); }
+
+/* ==========================================================================
+   Leadership
+   ========================================================================== */
+.lead { background: var(--rk-light-grey); padding: 88px 0 104px; }
+.lead__title { margin-bottom: 18px; }
+.lead__intro { font-size: var(--rk-fs-lead); }
+.lead__side { margin-bottom: 40px; }
+@media (min-width: 768px) { .lead__side { grid-column: 1; margin-bottom: 0; } }
+.lead__stage { position: relative; }
+@media (min-width: 768px) { .lead__stage { grid-column: 3; } }
+
+/* Tabs (shown when JS runs) */
+.lead__tabs { display: flex; gap: 8px; margin-top: 28px; overflow-x: auto; scrollbar-width: none; padding: 8px; margin-inline: -8px; scroll-snap-type: x proximity; }
+.lead__tabs::-webkit-scrollbar { display: none; }
+.lead__tabs[hidden] { display: none; }
+.lead__tab {
+  flex: none; display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 6px 16px 6px 6px;
+  border: 1px solid var(--rk-border); border-radius: var(--rk-radius-pill); background: #fff; cursor: pointer; text-align: left;
+  scroll-snap-align: start; transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+.lead__tab-text { display: flex; flex-direction: column; line-height: 1.2; }
+.lead__tab-name { font-weight: 600; color: var(--rk-heading); font-size: 0.9375rem; white-space: nowrap; }
+.lead__tab-role { display: none; font-size: 0.8125rem; color: var(--rk-grey); white-space: nowrap; }
+.lead__tab:hover { border-color: var(--rk-blue); }
+.lead__tab[aria-selected='true'] { background: var(--rk-deep-blue); border-color: var(--rk-deep-blue); }
+.lead__tab[aria-selected='true'] .lead__tab-name, .lead__tab[aria-selected='true'] .lead__tab-role { color: #fff; }
+.lead__tab[aria-selected='true'] .mono--sm { background: var(--rk-green); color: var(--rk-dark-grey); border-color: var(--rk-green); }
+@media (min-width: 768px) {
+  .lead__tabs { flex-direction: column; gap: 4px; overflow: visible; margin-top: 32px; padding: 0; margin-inline: 0; }
+  .lead__tab { width: 100%; border-color: transparent; background: transparent; border-radius: 14px; padding: 8px 12px 8px 8px; }
+  .lead__tab:hover { background: #fff; border-color: var(--rk-border); }
+  .lead__tab[aria-selected='true'], .lead__tab[aria-selected='true']:hover { background: var(--rk-deep-blue); border-color: var(--rk-deep-blue); }
+  .lead__tab-role { display: block; }
+  .lead__tab-name, .lead__tab-role { white-space: normal; }
+}
+
+/* The letter */
+.lead__letters { position: relative; z-index: 2; }
+.letter {
+  position: relative; background: #fff; border-radius: 18px 18px 0 0; padding: 32px 24px 36px;
+  box-shadow: 0 1px 0 var(--rk-border), 0 22px 48px -30px rgba(17, 24, 39, 0.35);
+}
+.letter + .letter { margin-top: 24px; border-radius: 18px; }
+.letter__head { display: flex; align-items: center; gap: 20px; margin-bottom: 22px; padding-bottom: 22px; border-bottom: 1px dashed var(--rk-border); }
+.letter__name { font-size: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem); }
+.letter__role { margin-top: 4px; color: var(--rk-blue); font-weight: 600; }
+.letter__body p { font-size: 1rem; line-height: 1.65; }
+.letter__body p + p { margin-top: 14px; }
+@media (min-width: 768px) { .letter { padding: 44px 48px 44px; } }
+
+/* The envelope pocket the letter sits in (shown once tabs are active) */
+.lead__pocket { display: none; }
+.lead.is-tabbed .letter { border-radius: 18px 18px 0 0; }
+.lead.is-tabbed .lead__letters { clip-path: inset(-80px -80px 0 -80px); }
+.lead.is-tabbed .lead__pocket { display: block; position: relative; height: 112px; margin-inline: -14px; }
+.pocket__back {
+  position: absolute; left: 0; right: 0; bottom: 100%; height: 96px; z-index: 0;
+  background: linear-gradient(180deg, var(--rk-deep-blue), var(--rk-blue)); border-radius: 16px 16px 0 0;
+}
+.lead.is-tabbed .lead__letters { margin-inline: 0; }
+.pocket__front {
+  position: absolute; inset: 0; z-index: 3; overflow: hidden;
+  background: linear-gradient(180deg, var(--rk-blue) 0%, var(--rk-deep-blue) 100%);
+  border-radius: 0 0 18px 18px; box-shadow: 0 24px 40px -28px rgba(0, 10, 202, 0.7);
+}
+.pocket__v { position: absolute; inset: 0; width: 100%; height: 100%; }
+.pocket__v path { fill: none; stroke: rgba(255, 255, 255, 0.28); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+.pocket__seal {
+  position: absolute; left: 50%; top: 64%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border-radius: 50%;
+  display: grid; place-items: center; background: var(--rk-green); box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.18);
+}
+.pocket__seal svg { width: 22px; height: 22px; fill: none; stroke: var(--rk-dark-grey); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.lead.is-tabbed .letter[hidden] { display: none; }
+/* letter is tucked into the envelope until the stage arrives (motion only) */
+.is-live .lead.is-tucked .lead__slide { transform: translateY(105%); }
+.is-live .lead .lead__slide { transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1); }
+
+/* ==========================================================================
+   History
+   ========================================================================== */
+.hist { padding: 104px 0 72px; }
+.hist__year {
+  display: none; font-size: clamp(5rem, 3rem + 6vw, 9.5rem); font-weight: 800; line-height: 0.9; letter-spacing: -0.04em;
+  color: transparent; -webkit-text-stroke: 2px var(--rk-border); margin: 0;
+}
+@media (min-width: 768px) {
+  .hist__year { display: block; grid-column: 1; align-self: center; }
+  .hist__head { grid-column: 3; }
+}
+.hist__head .dual { margin-bottom: 16px; }
+.hist__head p { font-size: var(--rk-fs-lead); }
+.hist__list { position: relative; margin-top: 64px; display: grid; gap: 56px; }
+.milestone { position: relative; display: grid; gap: 20px; }
+.milestone__art { max-width: 360px; width: 100%; }
+.vig { width: 100%; height: auto; overflow: visible; }
+.vig text { font-family: var(--rk-font); }
+.milestone__card { background: var(--rk-light-grey); border-radius: var(--rk-radius-card); padding: 28px 24px; }
+.milestone__card h3 { font-size: var(--rk-fs-h3); margin-bottom: 12px; }
+.milestone__card p { font-size: 1rem; line-height: 1.65; }
+.milestone__node { display: none; }
+@media (min-width: 768px) {
+  .milestone { grid-template-columns: var(--about-side) var(--about-lane) minmax(0, 1fr); gap: 0; align-items: center; }
+  .milestone__art { grid-column: 1; justify-self: center; }
+  .milestone__card { grid-column: 3; padding: 36px 40px; }
+  .milestone__node {
+    display: block; grid-column: 2; grid-row: 1; justify-self: center; position: relative; z-index: 3;
+    width: 22px; height: 22px; border-radius: 50%; background: #fff; border: 4px solid var(--rk-blue);
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s var(--ease-cine);
+  }
+  /* static spine (the route draws over it when live) */
+  .hist__list::before {
+    content: ''; position: absolute; top: 0; bottom: 0; width: 3px; border-radius: 2px; background: var(--rk-blue); opacity: 0.25;
+    left: calc(var(--gutter) + var(--about-side) + var(--about-lane) / 2 - 1.5px);
+  }
+  .is-live .hist__list::before { display: none; }
+  .is-live .milestone__node { border-color: var(--rk-border); }
+  .is-live .milestone__node.is-reached { background: var(--rk-green); border-color: var(--rk-blue); transform: scale(1.12); }
+}
+
+/* Vignette type */
+.v1-ren, .v1-a, .v1-kim { font-size: 32px; font-weight: 800; fill: var(--rk-deep-blue); }
+.v1-kim { fill: var(--rk-blue); }
+.v1-year { font-size: 13px; font-weight: 700; letter-spacing: 0.22em; fill: var(--rk-grey); }
+.v1-plus { font-size: 26px; font-weight: 700; fill: var(--rk-grey-400); }
+.v2-pct { font-size: 24px; font-weight: 800; fill: var(--rk-heading); }
+.v2-cap { font-size: 11px; font-weight: 700; letter-spacing: 0.18em; fill: var(--rk-grey); }
+.v4-num { font-size: 84px; font-weight: 800; fill: var(--rk-deep-blue); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.v4-label { font-size: 13px; font-weight: 700; letter-spacing: 0.24em; fill: var(--rk-grey); }
+.vig .v2-p, .vig .v3-n, .vig .v4-check { transform-box: fill-box; transform-origin: center bottom; }
+.vig .v3-n, .vig .v4-check { transform-origin: center; }
+
+/* ==========================================================================
+   Core values
+   ========================================================================== */
+.vals { padding: 104px 0 112px; }
+.vals__head { max-width: 760px; margin-bottom: 48px; }
+.vals__head .dual { margin-bottom: 16px; }
+.vals__head p { font-size: var(--rk-fs-lead); }
+.vals__list { display: grid; gap: 20px; }
+@media (min-width: 768px) { .vals__list { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .vals__list { grid-template-columns: repeat(3, 1fr); } }
+.vals__lane { display: none; }
+.vcard { position: relative; background: var(--rk-light-grey); border-radius: var(--rk-radius-card); padding: 28px; overflow: hidden; }
+.vcard__icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; background: var(--rk-green); color: var(--rk-dark-grey); margin-bottom: 18px; }
+.vcard__icon svg { width: 24px; height: 24px; }
+.vcard h3 { font-size: var(--rk-fs-h3); margin-bottom: 10px; }
+.vcard__pre { font-size: 0.8em; font-weight: 600; color: var(--rk-heading); }
+.vcard p { font-size: 1rem; }
+.is-live .vcard.is-franked .vcard__icon { animation: about-pop 0.5s var(--ease-cine); }
+@keyframes about-pop { 0% { transform: scale(1); } 40% { transform: scale(1.18) rotate(-6deg); } 100% { transform: none; } }
+/* postal cancellation mark */
+.vcard__cancel { position: absolute; top: 18px; right: -6px; width: 132px; transform: rotate(-9deg); pointer-events: none; mix-blend-mode: multiply; }
+.vcard__cancel svg { width: 100%; height: auto; overflow: visible; }
+.cancel__ring circle { fill: none; stroke: var(--rk-blue); stroke-width: 2; }
+.cancel__text { font-family: var(--rk-font); font-size: 7.6px; font-weight: 800; letter-spacing: 0.08em; fill: var(--rk-blue); }
+.cancel__waves path { fill: none; stroke: var(--rk-blue); stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 0; }
+.vcard__cancel { opacity: 0.55; }
+/* the values lane is wider below 1200px so the envelope clears the fixed Schedule A Call tab */
+.vals { --vals-lane: 120px; }
+@media (min-width: 1200px) { .vals { --vals-lane: var(--about-lane); } }
+@media (min-width: 768px) {
+  .motion-ok .vals__grid { display: grid; grid-template-columns: minmax(0, 1fr) var(--vals-lane); }
+  .motion-ok .vals__lane { display: block; }
+  .motion-ok .vals__main { padding-right: 12px; }
+}
+
+/* ==========================================================================
+   Community wall
+   ========================================================================== */
+.wall { padding: 88px var(--gutter) 104px; overflow: clip; }
+.wall__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 1300px; margin-inline: auto; }
+@media (min-width: 768px) { .wall__grid { grid-template-columns: repeat(3, 1fr); gap: 16px; } }
+@media (min-width: 1024px) { .wall__grid { grid-template-columns: repeat(5, 1fr); gap: 18px; } }
+.postcard {
+  background: #fff; padding: 8px; border-radius: 12px;
+  box-shadow: 0 1px 0 var(--rk-border), 0 18px 34px -24px rgba(17, 24, 39, 0.45);
+}
+.postcard img { width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: 6px; }
+@media (min-width: 768px) and (max-width: 1023px) { .postcard:nth-child(10) { grid-column: 2; } }
+.is-live .postcard { transition: transform 0.75s cubic-bezier(0.2, 0.9, 0.25, 1.15), opacity 0.45s ease; transition-delay: calc(var(--i) * 70ms); }
+.is-live .wall:not(.is-dropped) .postcard { opacity: 0; transform: translate3d(0, -56px, 0) rotate(calc(var(--r) * 2.4)) scale(1.06); }
+.is-live .wall.is-dropped .postcard { transform: rotate(calc(var(--r) * 0.35)); }
+
+/* ==========================================================================
+   Mobile journey (< 768px): left rail, as on the homepage
+   ========================================================================== */
+@media (max-width: 767px) {
+  .motion-ok .lead > .container, .motion-ok .hist > .container, .motion-ok .vals > .container { padding-left: calc(var(--gutter) + 28px); }
+  .lead { padding: 64px 0 80px; }
+  .hist { padding: 80px 0 56px; }
+  .vals { padding: 80px 0 88px; }
+  .milestone__art { margin-inline: auto; max-width: 320px; }
+  .is-live .milestone__node { display: block; position: absolute; left: -28px; top: 0; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid var(--rk-border); }
+  .is-live .milestone__node.is-reached { background: var(--rk-green); border-color: var(--rk-blue); }
+  .vcard__cancel { width: 112px; }
+}
+
+/* Route station dots drawn into the values route */
+.route .station-dot { fill: #fff; stroke: var(--rk-border); stroke-width: 3; transition: fill 0.3s, stroke 0.3s; }
+.route .station-dot.is-reached { fill: var(--rk-green); stroke: var(--rk-blue); }

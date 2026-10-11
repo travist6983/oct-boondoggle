@@ -1,0 +1,161 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/ancillary-services/litigious-scrub/",
+    "captured": "2026-10-11",
+    "notes": [
+      "Main body only (hero + article). Sidebar, bands, values, header and footer are shared partials verified elsewhere.",
+      "Hero sibling chips link to the local pages; live hrefs are https://renkim.com/ancillary-services/…/ (the verifier treats them as equal). Renkim Reporting is a Portal page and stays on renkim.com.",
+      "The live page also carries an 'Example of … Service' case study (fictional client name, challenge, solution, results), but its heading and rich text are display:none at every breakpoint (CSS bde-heading-*-103 / bde-rich-text-*-104). It is kept here under hiddenOnLive and is not rendered, matching live."
+    ],
+    "typoFixes": [
+      {
+        "where": "hero chip",
+        "from": "Litigous Scrub",
+        "to": "Litigious Scrub",
+        "note": "Live sibling chip label; the page itself spells it 'Litigious'."
+      }
+    ]
+  },
+  "hero": {
+    "heading": "Litigious Scrub",
+    "siblings": [
+      {
+        "label": "Address Element Correction",
+        "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+      },
+      {
+        "label": "Bankruptcy & Deceased",
+        "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+      },
+      {
+        "label": "Email Verification",
+        "href": "https://renkim.com/ancillary-services/email-verification/"
+      },
+      {
+        "label": "Litigious Scrub",
+        "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+      },
+      {
+        "label": "LockBox",
+        "href": "https://renkim.com/ancillary-services/lockbox/"
+      },
+      {
+        "label": "Phone Search",
+        "href": "https://renkim.com/ancillary-services/phone-search/"
+      },
+      {
+        "label": "Renkim 360",
+        "href": "https://renkim.com/ancillary-services/renkim-360/"
+      },
+      {
+        "label": "Return Mail Processing",
+        "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+      },
+      {
+        "label": "USPS CASS, DPV, NCOA",
+        "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+      },
+      {
+        "label": "Vacant Address",
+        "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+      },
+      {
+        "label": "Renkim Reporting",
+        "href": "https://renkim.com/portal/renkim-reporting/",
+        "note": "Portal page: stays on renkim.com."
+      }
+    ]
+  },
+  "article": [
+    {
+      "level": "h2",
+      "heading": "Litigious Scrub Services"
+    },
+    {
+      "text": "In today's business environment, reducing legal risks is crucial. Renkim's Litigious Scrub Services help you identify and manage potentially litigious accounts, ensuring that your communications and interactions remain compliant and secure. Our advanced screening processes provide the insights needed to mitigate risks and make informed decisions."
+    },
+    {
+      "level": "h2",
+      "heading": "Optimize Your Litigious Scrub Services Today!"
+    },
+    {
+      "text": "Effective risk management is essential for safeguarding your business. Renkim's Litigious Scrub Services provide the tools you need to identify and mitigate potential legal threats, ensuring compliant and secure operations."
+    },
+    {
+      "text": "Ready to protect your business? Contact Renkim today at (734) 374-8300 or email us at info@renkim.com to learn how our Litigious Scrub Services can help you mitigate risks and enhance your operational efficiency. Let's work together to safeguard your business and ensure compliance!"
+    }
+  ],
+  "hiddenOnLive": {
+    "omitted": "display:none on the live page at every breakpoint; not rendered",
+    "items": [
+      {
+        "tag": "h3",
+        "text": "Example of Litigious Scrub Service"
+      },
+      {
+        "tag": "strong",
+        "text": "Client:"
+      },
+      {
+        "tag": "p",
+        "text": "ABC Collection Agency"
+      },
+      {
+        "tag": "strong",
+        "text": "Challenge:"
+      },
+      {
+        "tag": "p",
+        "text": "ABC Collection Agency faced numerous lawsuits due to interactions with litigious consumers, leading to increased legal costs and operational disruptions."
+      },
+      {
+        "tag": "strong",
+        "text": "Solution:"
+      },
+      {
+        "tag": "p",
+        "text": "Renkim introduced our Litigious Scrub Services to ABC Collection Agency. Our team screened their consumer database, identifying accounts with a high risk of litigation. By flagging these accounts, ABC Collection Agency could adjust their communication strategies accordingly."
+      },
+      {
+        "tag": "strong",
+        "text": "Results:"
+      },
+      {
+        "tag": "strong",
+        "text": "Reduced Legal Risks:"
+      },
+      {
+        "tag": "li",
+        "text": "The number of lawsuits dropped significantly, saving the agency substantial legal fees."
+      },
+      {
+        "tag": "strong",
+        "text": "Improved Compliance:"
+      },
+      {
+        "tag": "li",
+        "text": "By identifying high-risk accounts, the agency could ensure that their interactions remained compliant with regulations."
+      },
+      {
+        "tag": "strong",
+        "text": "Enhanced Operational Efficiency:"
+      },
+      {
+        "tag": "li",
+        "text": "With fewer legal disputes, the agency could focus more on their core activities, improving overall productivity."
+      },
+      {
+        "tag": "strong",
+        "text": "Better Decision Making:"
+      },
+      {
+        "tag": "li",
+        "text": "Access to detailed risk insights enabled the agency to make more informed decisions regarding account management."
+      },
+      {
+        "tag": "p",
+        "text": "ABC Collection Agency successfully minimized their legal exposure and streamlined their operations by leveraging Renkim's Litigious Scrub Services."
+      }
+    ]
+  }
+}

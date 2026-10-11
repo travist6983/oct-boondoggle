@@ -1,0 +1,235 @@
+/* ==========================================================================
+   What We Do · Ancillary A (addresses and contact data):
+   the Ancillary landing, AEC, USPS CASS/DPV/NCOA, Vacant Address Search,
+   Return Mail Processing, Phone Search.
+   Each lab is HTML + small SVG pieces (so it reflows on phones); the route
+   overlay and the envelope are placed by src/motion/pages/wwd-anc-a.js.
+   Final states live on .is-on (set from scroll) and on html:not(.is-live),
+   so the static and reduced-motion page shows every lab finished.
+   ========================================================================== */
+
+
+/* --- Lab shell ------------------------------------------------------------ */
+.page-wwd--anc-a .wwd-lab.anc-lab {
+  --es: 1; /* envelope scale while it works in the lab (read by the motion layer) */
+  aspect-ratio: auto; margin: 32px 0 12px; padding: clamp(18px, 3vw, 34px);
+  background-color: #fff;
+  background-image: radial-gradient(circle at 1px 1px, #ececee 1px, transparent 0);
+  background-size: 18px 18px;
+}
+@media (min-width: 768px) { .page-wwd--anc-a .wwd-lab.anc-lab--aec, .page-wwd--anc-a .wwd-lab.anc-lab--phone { --es: 1.15; } }
+@media (max-width: 767px) { .page-wwd--anc-a .wwd-lab.anc-lab { --es: 0.66; } }
+.anc-lab__route { z-index: 1; }
+.anc-lab .route-plan { stroke-opacity: 0.3; }
+.anc-lab__scene { position: relative; z-index: 2; }
+
+/* Where the envelope works. The static still is the envelope's end state in this lab. */
+.anc-dock { position: relative; flex: none; width: calc(120px * var(--es)); height: calc(84px * var(--es)); }
+.anc-dock--tag { margin-top: calc(58px * var(--es)); }
+.anc-still { position: absolute; left: 50%; top: 50%; width: calc(120px * var(--es)); aspect-ratio: 1; transform: translate(-50%, -50%); pointer-events: none; }
+.anc-still svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.is-live .anc-still { visibility: hidden; }
+
+/* --- Shared pieces --------------------------------------------------------- */
+.anc-card { position: relative; background: #fff; border: 1px solid var(--rk-border); border-radius: 18px; overflow: hidden; box-shadow: 0 26px 44px -34px rgba(17, 24, 39, 0.45); }
+.anc-card__head { display: flex; align-items: center; gap: 6px; height: 40px; padding: 0 12px 0 16px; background: linear-gradient(0deg, var(--rk-deep-blue), var(--rk-blue)); }
+.anc-card__head i { width: 8px; height: 8px; border-radius: 50%; background: #fff; opacity: 0.9; }
+.anc-card__head i:nth-child(2) { opacity: 0.55; }
+.anc-card__head i:nth-child(3) { opacity: 0.3; }
+.anc-card__head b { width: 84px; height: 7px; margin-left: 10px; border-radius: 4px; background: rgba(255, 255, 255, 0.8); }
+.anc-card__ok { margin-left: auto; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--rk-green); transform: scale(0); transition: transform 0.35s cubic-bezier(0.3, 1.6, 0.5, 1); }
+.anc-card__body { position: relative; display: grid; gap: 16px; padding: 20px; }
+
+.anc-lab svg:not(.anc-house):not(.anc-icon):not(.anc-env) { fill: none; stroke: var(--rk-dark-grey); stroke-width: 2.6; stroke-linecap: round; stroke-linejoin: round; }
+.anc-card__ok svg, .anc-flag svg, .anc-station__ok svg, .anc-row__ok svg, .anc-rec__ok svg, .anc-cand__ok svg, .anc-field__ok svg, .anc-step__dot svg { width: 66%; height: 66%; }
+
+.anc-bar { display: inline-block; flex: none; height: 10px; border-radius: 5px; background: var(--rk-border); }
+.anc-bar--name { width: 46%; height: 12px; background: var(--rk-dark-grey); }
+.anc-bar--street { width: clamp(64px, 14vw, 128px); background: #3a3637; }
+.anc-bar--city { width: clamp(60px, 12vw, 112px); background: #3a3637; }
+.anc-bar--state { width: 30px; background: #3a3637; }
+.anc-bar--short { width: 74px; background: rgba(255, 255, 255, 0.8); }
+.anc-tok { font-weight: 800; font-size: 1.125rem; line-height: 1; color: var(--rk-heading); font-variant-numeric: tabular-nums; }
+
+/* Address slots: dashed and unknown → corrected (green) */
+.anc-addr__line { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.anc-slot { display: inline-flex; flex-direction: column; align-items: center; gap: 5px; }
+.anc-slot__box { position: relative; display: grid; place-items: center; min-width: 46px; height: 36px; padding: 0 10px; border-radius: 10px; border: 2px dashed #c9c9ce; font-weight: 800; font-size: 1.0625rem; color: var(--rk-grey); transition: border-color 0.3s, background-color 0.3s; }
+.anc-slot__q, .anc-slot__v { grid-area: 1 / 1; transition: opacity 0.25s, transform 0.3s var(--ease-cine); }
+.anc-slot__v { opacity: 0; transform: translateY(6px); color: var(--rk-heading); }
+.anc-slot__label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--rk-grey); white-space: nowrap; }
+.anc-zip { display: inline-flex; gap: 3px; }
+.anc-zip i { width: 9px; height: 14px; border-radius: 3px; background: #3a3637; }
+.anc-zip--4::before { content: '+'; margin-right: 1px; font-weight: 800; color: var(--rk-heading); line-height: 14px; }
+
+/* Scan / search sweeps (positioned by the motion layer) */
+.anc-scan { position: absolute; z-index: 3; top: 0; bottom: 0; left: 0; width: 3px; border-radius: 2px; background: var(--rk-green); box-shadow: 0 0 16px 5px rgba(0, 255, 132, 0.35); opacity: 0; pointer-events: none; }
+.anc-scan--h { top: 0; bottom: auto; left: 8px; right: 8px; width: auto; height: 3px; }
+.anc-sweep { position: absolute; z-index: 3; top: 0; bottom: 0; left: 0; width: 22%; background: linear-gradient(90deg, rgba(0, 255, 132, 0), rgba(0, 255, 132, 0.2) 50%, rgba(0, 255, 132, 0)); opacity: 0; pointer-events: none; }
+.anc-sweep--v { left: 0; right: 0; width: auto; top: 0; bottom: auto; height: 46px; background: linear-gradient(180deg, rgba(0, 255, 132, 0), rgba(0, 255, 132, 0.22) 50%, rgba(0, 255, 132, 0)); }
+
+/* Status flags over houses / stations */
+.anc-flag { position: absolute; z-index: 3; left: 50%; top: 2%; display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; font-size: 0.8125rem; font-weight: 700; line-height: 1; white-space: nowrap; opacity: 0; transform: translate(-50%, -6px) scale(0.7); transition: opacity 0.3s, transform 0.4s cubic-bezier(0.3, 1.5, 0.5, 1); }
+.anc-flag--ok { width: 34px; height: 34px; padding: 0; justify-content: center; background: var(--rk-green); box-shadow: 0 8px 18px -10px rgba(0, 10, 202, 0.5); }
+.anc-flag--moved { top: 34%; background: #fff; border: 1px solid var(--rk-border); color: var(--rk-heading); box-shadow: 0 10px 20px -14px rgba(17, 24, 39, 0.5); }
+.anc-flag--moved svg { width: 16px; height: 16px; stroke: var(--rk-blue); }
+.anc-flag--vacant { background: #fff; border: 1.5px solid var(--rk-grey); color: var(--rk-grey); padding-left: 6px; }
+.anc-flag--vacant svg { width: 18px; height: 18px; stroke: var(--rk-grey); }
+.anc-flag--return { left: auto; right: -10px; top: -10px; width: 30px; height: 30px; padding: 0; justify-content: center; background: #fff; border: 1.5px solid var(--rk-grey); transform: scale(0.6); }
+.anc-flag--return svg { stroke: var(--rk-grey); }
+
+/* Final states (scroll-driven .is-on, or the static page) */
+.anc-card__ok.is-on, html:not(.is-live) .anc-card__ok { transform: none; }
+.anc-slot.is-on .anc-slot__box, html:not(.is-live) .anc-slot__box { border-style: solid; border-color: var(--rk-green); background: rgba(0, 255, 132, 0.12); }
+.anc-slot.is-on .anc-slot__q, html:not(.is-live) .anc-slot__q { opacity: 0; }
+.anc-slot.is-on .anc-slot__v, html:not(.is-live) .anc-slot__v { opacity: 1; transform: none; }
+.anc-slot.is-on .anc-slot__label, html:not(.is-live) .anc-slot__label { color: var(--rk-heading); }
+.anc-flag.is-on, html:not(.is-live) .anc-flag { opacity: 1; transform: translate(-50%, 0) scale(1); }
+.anc-flag--return.is-on, html:not(.is-live) .anc-flag--return { transform: none; }
+
+/* --- AEC ------------------------------------------------------------------ */
+.anc-lab--aec .anc-lab__scene { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(18px, 3vw, 36px); align-items: center; }
+.anc-lab--aec .anc-dock { margin-left: 4px; }
+
+/* --- USPS CASS, DPV, NCOA ------------------------------------------------- */
+.anc-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-bottom: 20px; }
+.anc-step { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 10px; align-items: center; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--rk-border); background: #fff; transition: border-color 0.3s, box-shadow 0.3s; }
+.anc-step__dot { grid-row: span 2; display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; border: 2px solid #c9c9ce; transition: background-color 0.3s, border-color 0.3s; }
+.anc-step__dot svg { opacity: 0; transition: opacity 0.25s; }
+.anc-step__name { font-weight: 800; color: var(--rk-heading); line-height: 1.2; }
+.anc-step__full { font-size: 0.75rem; line-height: 1.3; color: var(--rk-grey); }
+.anc-step.is-active { border-color: var(--rk-blue); box-shadow: 0 0 0 3px rgba(0, 118, 192, 0.14); }
+.anc-step.is-on, html:not(.is-live) .anc-step { border-color: var(--rk-green); }
+.anc-step.is-on .anc-step__dot, html:not(.is-live) .anc-step__dot { background: var(--rk-green); border-color: var(--rk-green); }
+.anc-step.is-on .anc-step__dot svg, html:not(.is-live) .anc-step__dot svg { opacity: 1; }
+@media (max-width: 599px) {
+  .anc-steps { gap: 8px; }
+  .anc-step { grid-template-columns: 1fr; justify-items: center; row-gap: 6px; padding: 10px 6px; text-align: center; }
+  .anc-step__dot { grid-row: auto; }
+  .anc-step__full { display: none; }
+}
+
+.anc-street { position: relative; display: grid; grid-template-columns: auto repeat(2, minmax(0, 1fr)); gap: clamp(8px, 2vw, 22px); align-items: end; }
+.anc-lot { position: relative; }
+.anc-lot .anc-house { display: block; width: 100%; height: auto; }
+/* lot stills dock at the mailbox (left ~29% of the lot drawing), smaller than the house */
+.anc-still--lot { left: 29%; top: 47%; width: calc(120px * var(--es) * 0.8); }
+.anc-dock--entry { align-self: center; }
+.anc-street--four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.anc-street--four .anc-still--lot { top: 66%; width: calc(120px * var(--es) * 0.62); }
+@media (max-width: 767px) {
+  .anc-street { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .anc-street .anc-dock--entry { position: absolute; left: 0; top: 0; }
+  .anc-street--four { row-gap: 18px; }
+}
+
+/* --- Vacant: the address list above the street, in the same four columns ---- */
+.anc-addrlist { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 2vw, 22px); margin-bottom: 14px; }
+.anc-addr { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--rk-border); background: #fff; transition: border-color 0.3s, background-color 0.3s; }
+.anc-addr .anc-bar--street { flex: 1; width: auto; min-width: 16px; height: 8px; background: #c9c9ce; }
+.anc-addr__state { flex: none; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--rk-green); transform: scale(0); transition: transform 0.35s cubic-bezier(0.3, 1.6, 0.5, 1); }
+.anc-addr__state--vacant { background: #fff; border: 1.5px solid var(--rk-grey); }
+.anc-addr__state--vacant svg { stroke: var(--rk-grey) !important; }
+.anc-addr.is-on .anc-addr__state, html:not(.is-live) .anc-addr__state { transform: none; }
+.anc-addr.is-on:not(.anc-addr--vacant), html:not(.is-live) .anc-addr:not(.anc-addr--vacant) { border-color: var(--rk-green); }
+.anc-addr--vacant.is-on, html:not(.is-live) .anc-addr--vacant { background: var(--rk-light-grey); }
+.anc-addr--vacant.is-on .anc-tok, html:not(.is-live) .anc-addr--vacant .anc-tok { color: var(--rk-grey); text-decoration: line-through; }
+@media (max-width: 767px) {
+  .anc-addrlist { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .anc-addr { padding: 8px 10px; }
+}
+
+/* --- Vacant: the vacant lot greys once it is flagged -------------------------- */
+.anc-lot--vacant .anc-house { transition: opacity 0.4s; }
+.anc-lot--vacant.is-on .anc-house, html:not(.is-live) .anc-lot--vacant .anc-house { opacity: 0.7; }
+
+/* --- Return Mail Processing ------------------------------------------------ */
+.anc-flow { display: grid; grid-template-columns: auto auto minmax(0, 1fr); gap: clamp(14px, 2.4vw, 28px); align-items: center; }
+.anc-station-box { position: relative; display: grid; justify-items: center; gap: 8px; padding: 12px 14px 16px; border-radius: 18px; border: 1.5px dashed #c9c9ce; background: rgba(255, 255, 255, 0.85); }
+.anc-station-box__icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 10px; background: var(--rk-light-grey); color: var(--rk-blue); }
+.anc-station-box__icon svg { width: 22px; height: 22px; }
+.anc-station-box .anc-dock--tag { margin-top: calc(50px * var(--es)); }
+.anc-station-box .anc-scan--h { left: 10px; right: 10px; }
+.anc-rec { display: flex; align-items: center; gap: 10px; min-height: 22px; }
+.anc-rec--addr { display: grid; }
+.anc-rec__old, .anc-rec__new { grid-area: 1 / 1; display: flex; align-items: center; gap: 10px; transition: opacity 0.35s, transform 0.35s var(--ease-cine); }
+.anc-rec__old { position: relative; }
+.anc-rec__old::after { content: ''; position: absolute; left: -4px; right: -4px; top: 50%; height: 2px; background: var(--rk-grey); transform: scaleX(0); transform-origin: left; transition: transform 0.35s var(--ease-cine); }
+.anc-rec__new { opacity: 0; transform: translateY(10px); }
+.anc-rec__ok { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--rk-green); }
+.anc-rec__old.is-on::after, html:not(.is-live) .anc-rec__old::after { transform: none; }
+.anc-rec__old.is-on, html:not(.is-live) .anc-rec__old { opacity: 0; transform: translateY(-10px); }
+.anc-rec__new.is-on, html:not(.is-live) .anc-rec__new { opacity: 1; transform: none; }
+@media (max-width: 767px) {
+  .anc-flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .anc-flow .anc-card--records { grid-column: 1 / -1; }
+}
+
+/* --- Phone Search ---------------------------------------------------------- */
+.anc-lab--phone .anc-lab__scene { display: grid; grid-template-columns: auto minmax(0, 1.1fr) minmax(0, 1fr); gap: clamp(14px, 2.4vw, 26px); align-items: center; }
+.anc-person { display: flex; align-items: center; gap: 14px; }
+.anc-avatar { flex: none; width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(180deg, #e4e4e7, #d4d4d8); }
+.anc-person__lines { display: grid; gap: 8px; flex: 1; min-width: 0; }
+.anc-person__lines .anc-bar--name { width: 70%; }
+.anc-person__lines .anc-bar { max-width: 100%; }
+.anc-field { display: grid; gap: 6px; }
+.anc-field__label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--rk-grey); }
+.anc-field__box { position: relative; display: grid; align-items: center; height: 42px; padding: 0 12px; border-radius: 10px; border: 2px dashed #c9c9ce; color: var(--rk-grey); font-weight: 800; transition: border-color 0.3s, background-color 0.3s; }
+.anc-field__box > * { grid-area: 1 / 1; transition: opacity 0.3s; }
+.anc-field__box .anc-digits { opacity: 0; }
+.anc-field__ok { display: inline-flex; align-items: center; gap: 6px; justify-self: start; padding: 4px 10px 4px 4px; border-radius: 999px; background: rgba(0, 255, 132, 0.16); font-size: 0.75rem; font-weight: 700; color: var(--rk-heading); opacity: 0; transition: opacity 0.3s; }
+.anc-field__ok svg { width: 18px; height: 18px; padding: 2px; border-radius: 50%; background: var(--rk-green); }
+.anc-field.is-on .anc-field__box, html:not(.is-live) .anc-field__box { border-style: solid; border-color: var(--rk-green); background: rgba(0, 255, 132, 0.1); }
+.anc-field.is-on .anc-slot__q, html:not(.is-live) .anc-field .anc-slot__q { opacity: 0; }
+.anc-field.is-on .anc-digits, html:not(.is-live) .anc-field .anc-digits { opacity: 1; }
+.anc-field.is-on .anc-field__ok, html:not(.is-live) .anc-field__ok { opacity: 1; }
+
+.anc-digits { display: inline-flex; align-items: center; gap: 3px; }
+.anc-digits i { width: 7px; height: 12px; border-radius: 2px; background: #3a3637; }
+.anc-digits b { width: 5px; }
+.anc-card--search { padding-bottom: 6px; }
+.anc-search__head { display: flex; align-items: center; gap: 10px; height: 40px; padding: 0 14px; background: linear-gradient(0deg, var(--rk-deep-blue), var(--rk-blue)); }
+.anc-search__head svg { width: 20px; height: 20px; stroke: #fff !important; }
+.anc-cands { display: grid; gap: 8px; padding: 14px; }
+.anc-cand { position: relative; display: flex; align-items: center; gap: 10px; padding: 8px 10px; border-radius: 10px; border: 1px solid var(--rk-border); transition: border-color 0.3s, background-color 0.3s; }
+.anc-cand > svg { flex: none; width: 18px; height: 18px; stroke: #9c9ca2 !important; stroke-width: 2 !important; }
+.anc-cand .anc-digits i { background: #d4d4d8; }
+.anc-cand__ok { margin-left: auto; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--rk-green); opacity: 0; transition: opacity 0.3s; }
+.anc-cand--match.is-on, html:not(.is-live) .anc-cand--match { border-color: var(--rk-green); background: rgba(0, 255, 132, 0.12); }
+.anc-cand--match.is-on .anc-digits i, html:not(.is-live) .anc-cand--match .anc-digits i { background: #3a3637; }
+.anc-cand--match.is-on .anc-cand__ok, html:not(.is-live) .anc-cand--match .anc-cand__ok { opacity: 1; }
+.anc-card--search .anc-sweep--v { top: 40px; }
+@media (max-width: 767px) {
+  .anc-lab--phone .anc-lab__scene { grid-template-columns: auto minmax(0, 1fr); }
+  .anc-lab--phone .anc-card--search { grid-column: 1 / -1; }
+}
+
+/* --- Landing: the service line ---------------------------------------------- */
+.anc-stations { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 30px 16px; }
+.anc-station { display: grid; justify-items: center; align-content: start; gap: 8px; text-align: center; }
+.anc-station__tile { position: relative; display: grid; place-items: center; width: 64px; height: 64px; border-radius: 18px; background: #fff; border: 1.5px solid var(--rk-border); color: var(--rk-blue); transition: border-color 0.3s, background-color 0.3s, color 0.3s; }
+.anc-station__tile .anc-icon { width: 28px; height: 28px; }
+.anc-station__ok, .anc-row__ok { position: absolute; right: -7px; top: -7px; display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--rk-green); transform: scale(0); transition: transform 0.35s cubic-bezier(0.3, 1.6, 0.5, 1); }
+.anc-station__label { font-size: 0.8125rem; font-weight: 600; line-height: 1.25; color: var(--rk-heading); }
+.anc-station.is-on .anc-station__tile, html:not(.is-live) .anc-station__tile { border-color: var(--rk-green); background: rgba(0, 255, 132, 0.14); color: var(--rk-dark-grey); }
+.anc-station.is-on .anc-station__ok, html:not(.is-live) .anc-station__ok { transform: none; }
+@media (max-width: 767px) {
+  .anc-stations { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px 8px; }
+  .anc-station__tile { width: 54px; height: 54px; border-radius: 15px; }
+  .anc-station__label { font-size: 0.75rem; }
+}
+
+.anc-rows { display: grid; gap: 18px; margin-top: 36px; }
+.anc-row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 18px 22px; padding: 26px 28px; background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card); }
+.anc-row__icon { position: relative; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 16px; background: var(--rk-light-grey); color: var(--rk-blue); transition: background-color 0.3s, color 0.3s; }
+.anc-row__icon .anc-icon { width: 26px; height: 26px; }
+.anc-row h2 { font-size: clamp(1.375rem, 1.1rem + 0.8vw, 1.75rem); }
+.anc-row .anc-row__kicker { margin-top: 4px; font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--rk-blue); }
+.anc-row p:not(.anc-row__kicker) { margin-top: 10px; font-size: var(--rk-fs-body); }
+.anc-row .btn { margin-top: 16px; }
+.is-live .anc-row.is-reached .anc-row__icon, html:not(.is-live) .anc-row__icon { background: rgba(0, 255, 132, 0.16); color: var(--rk-dark-grey); }
+.is-live .anc-row.is-reached .anc-row__ok, html:not(.is-live) .anc-row__ok { transform: none; }
+@media (max-width: 767px) {
+  .anc-row { grid-template-columns: 1fr; gap: 14px; padding: 22px 20px; }
+  .anc-row__icon { width: 46px; height: 46px; border-radius: 13px; }
+}

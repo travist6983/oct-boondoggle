@@ -1,0 +1,261 @@
+    ?: Careers | Renkim
+
+== <section class='bde-section-406-138 bde-section' id=''>
+    p: Renkim has experienced a cybersecurity incident.
+  [A href=https://renkim.com/renkim-notice-of-data-security-incident/]
+    a: Click here
+    p: for more information.
+
+== <section class='bde-section-406-113 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:1920/h:499/q:mauto/f:best/https://renkim.com/wp-content/uploads/RGB-Renkim-Logo-2026_WHITE-scaled.png alt='' w=2560 h=666]
+  [BUTTON]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/RenkimLogowhiteSmaller.png alt='' w= h=None]
+  [BUTTON]
+    button: Close
+  [BUTTON]
+    button: What We Do
+  [BUTTON]
+    h1: Print & Mail
+  [A href=https://renkim.com/print-mail/print-document/]
+    a: Print Document
+  [A href=https://renkim.com/print-mail/certified-mail/]
+    a: Certified Mail
+  [A href=https://renkim.com/print-mail/micr-check-printing/]
+    a: MICR Check Printing
+    h1: Digital
+  [A href=https://renkim.com/digital-services/email/]
+    a: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    a: Text Message
+    h1: Ancillary Services
+  [A href=https://renkim.com/ancillary-services/address-element-correction-aec/]
+    a: Address Element Correction (AEC)
+  [A href=https://renkim.com/ancillary-services/bankruptcy-deceased/]
+    a: Bankruptcy & Deceased
+  [A href=https://renkim.com/ancillary-services/email-verification/]
+    a: Email Verification
+  [A href=https://renkim.com/ancillary-services/litigious-scrub/]
+    a: Litigious Scrub
+  [A href=https://renkim.com/ancillary-services/lockbox/]
+    a: Lockbox
+  [A href=https://renkim.com/ancillary-services/phone-search/]
+    a: Phone Search
+  [A href=https://renkim.com/ancillary-services/return-mail-processing/]
+    a: Return Mail Processing
+  [A href=https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/]
+    a: USPS CASS, DPV, NCOA
+  [A href=https://renkim.com/ancillary-services/vacant-address-search/]
+    a: Vacant Address Search
+    h1: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    a: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    a: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    a: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    a: Renkim Reporting
+  [A href=https://renkim.com/about-us/]
+    a: Who We Are
+  [BUTTON]
+    span: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    span: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    span: History
+  [A href=https://renkim.com/about-us/#values]
+    span: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    span: The ESOP Advantage
+  [A href=https://renkim.com/industries-served/]
+    a: Who We Help
+  [BUTTON]
+    span: Industries We Serve
+  [A href=https://renkim.com/industries-served/#automotive]
+    span: Automotive
+  [A href=https://renkim.com/industries-served/#class-action]
+    span: Class Action/Data Breach
+  [A href=https://renkim.com/industries-served/#financial]
+    span: Financial
+  [A href=https://renkim.com/industries-served/#gov]
+    span: Government/Municipality
+  [A href=https://renkim.com/industries-served/#healthcare]
+    span: Healthcare
+  [A href=https://renkim.com/industries-served/#mortgage]
+    span: Mortgage
+  [A href=https://renkim.com/industries-served/#receivables]
+    span: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    span: Telecom/Internet
+  [A href=https://renkim.com/industries-served/#utility]
+    span: Utility
+  [BUTTON]
+    button: Resources
+  [BUTTON]
+    span: Quick Links
+  [A href=https://renkim.com/compliance/]
+    span: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    span: Renkim on the Road
+  [A href=https://renkim.com/in-the-community/]
+    span: Renkim in the Community
+  [A href=https://renkim.com/careers/]
+    span: Careers
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+  [A href=https://renkim.com/contact-us/]
+    span: Schedule A Call
+
+== <section class='bde-section-529-135 bde-section' id=''>
+    h1: Careers
+  [A href=tel:7343748300]
+    span: (734) 374-8300
+  [A href=mailto:info@renkim.com]
+    span: info@renkim.com
+  [A href=fax:7343740168]
+    span: (734) 374-0168
+  [A href=https://www.google.com/maps?sca_esv=13134d05f9161faa&sca_upv=1&rlz=1C5CHFA_enUS907US907&uact=5&gs_lp=Egxnd3Mtd2l6LXNlcnAiInJlbmtpbSBwcmludGluZyBzb2x1dGlvbnMgbWljaGlnYW4yBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABMgUQIRigATIFECEYnwVIyA5QlgRYyg1wAXgBkAEAmAGJAqAB4QqqAQUwLjguMbgBA8gBAPgBAZgCCqAChAvCAgoQABiwAxjWBBhHwgIFECEYqwKYAwCIBgGQBgOSBwUxLjguMaAH6yo&um=1&ie=UTF-8&fb=1&gl=us&sa=X&geocode=KeV8OeiUNzuIMXoQxR1dbvPg&daddr=13333+Allen+Rd,+Southgate,+MI+48195]
+    span: Southgate, MI 48195
+
+== <section class='bde-section-529-108 bde-section' id=''>
+    h2: Interested in working with us at Renkim?
+    div: We are excited to speak with you and see if you would be a good fit for our company. We are an equal opportunities employer. Apply at Renkim today!
+  [A href=mailto:info@renkim.com]
+    span: Email :
+    span: info@renkim.com
+  [A href=tel:7323748300]
+    span: Phone :
+    span: (734) 374-8300
+    span: Fax :
+    span: (734) 374-0168
+  [A href=#]
+    span: Address :
+    span: 13333 Allen Rd. Southgate, MI 48195
+    span: Or fill out the form to the right, and we'll be in touch
+    span: Apply today
+    span: at Renkim!
+    h4: ... fill out the form below to get started
+  [IFRAME src=https://apiclients.aelieve.com/widget/form/UbGgRhsOFSzfr1J6Rv6v]
+
+== <section class='bde-section-529-148 bde-section' id=''>
+  [IMG src=https://img.aelieve.com/w:945/h:1024/q:mauto/f:best/https://renkim.com/wp-content/uploads/IMG_4546-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/sign-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:1024/h:683/q:mauto/f:best/https://renkim.com/wp-content/uploads/Renkim-at-the-Booth-ACA-National-21-Vegas.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/gleaners.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:768/h:1024/q:mauto/f:best/https://renkim.com/wp-content/uploads/IMG_6220-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/Green1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/volunteer-day-10.30.24.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:1024/h:768/q:mauto/f:best/https://renkim.com/wp-content/uploads/Resized_Resized_20230521_092134.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/esop-lunch-7.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/chili-pic-3.jpg alt='' w=None h=None]
+
+== <section class='bde-section-72-128 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:216/h:66/q:mauto/f:best/https://renkim.com/wp-content/uploads/EmployeeOwnedLogoLarge.png alt='' w=216 h=66]
+    h6: What We Do
+  [A href=https://renkim.com/print-mail/]
+    h6: Print and Mail
+  [A href=https://renkim.com/digital-services/]
+    h6: Digital Services
+  [A href=https://renkim.com/digital-services/email/]
+    h6: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    h6: Text Message
+  [A href=https://renkim.com/ancillary-services/]
+    h6: Ancillary Services
+    h6: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    h6: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    h6: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    h6: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    h6: Renkim Reporting
+    h6: Who We Help
+  [A href=https://renkim.com/industries-served/]
+    h6: Automotive
+  [A href=https://renkim.com/industries-served/]
+    h6: Class Action
+  [A href=https://renkim.com/industries-served/]
+    h6: Financial
+  [A href=https://renkim.com/industries-served/]
+    h6: Government
+  [A href=https://renkim.com/industries-served/]
+    h6: Healthcare
+  [A href=https://renkim.com/industries-served/]
+    h6: Mortgage
+  [A href=https://renkim.com/industries-served/]
+    h6: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    h6: Telecom/Internet
+  [A href=https://renkim.com/industries-served/]
+    h6: Utility
+    h6: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    h6: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    h6: Our History
+  [A href=https://renkim.com/about-us/#values]
+    h6: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    h6: The ESOP Advantage
+    h6: Resources
+  [A href=https://renkim.com/compliance/]
+    h6: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    h6: Renkim On The Road
+  [A href=https://renkim.com/in-the-community/]
+    h6: Renkim In The Community
+  [A href=https://renkim.com/careers/]
+    h6: Careers
+    h6: Contact
+  [A href=tel:(734) 374-8300]
+    h6: Call (734) 374-8300
+  [A href=https://breakdance.com/]
+    h6: Fax (734) 374-0168
+  [A href=https://renkim.com/contact-us/]
+    h6: Send us a message
+    h6: Our Location
+  [A href=#]
+    h6: 13333 Allen Road
+  [A href=#]
+    h6: Southgate, MI 48195
+    p: Made with ♥ by
+  [A href=https://aelieve.com/]
+    a: Aelieve
+  [A href=https://renkim.com/privacy-policy/]
+    a: Privacy Policy
+  [A href=https://renkim.com/terms-of-service/]
+    a: Terms of Service
+    div: © 2026 Renkim. All Rights Reserved.
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+
+== <section class='bde-section-250-101 bde-section' id=''>
+    span: Want to
+    span: get in touch
+    span: with our team?
+    div: Just want to send a message to our team? No worries, we are here to help. Click on the button below to contact us.
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+    span: Request a
+    span: Renkim demo
+    span: today
+    h3: ... fill out the form below
+
+== <form class='breakdance-form breakdance-form--vertical' id='contact-form112'>
+  [INPUT type=text name=fields[name] id=name placeholder='Name' required=True value='']
+  [INPUT type=text name=fields[company] id=company placeholder='Company' required=False value='']
+  [INPUT type=email name=fields[email] id=email placeholder='Email' required=True value='']
+  [INPUT type=tel name=fields[phone] id=phone placeholder='Phone Number' required=False value='']
+  [TEXTAREA type=textarea name=fields[message] id=message placeholder='Message' required=True value='']
+  [BUTTON]
+    span: Submit
+  [INPUT type=hidden name=form_id id=None placeholder='' required=False value='112']
+  [INPUT type=hidden name=post_id id=None placeholder='' required=False value='250']

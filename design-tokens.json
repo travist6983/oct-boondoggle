@@ -1,0 +1,83 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/ (Breakdance/WordPress), extracted 2026-10-10 via Chrome computed styles + the site's global palette custom properties",
+    "method": "getComputedStyle() over every rendered element (text color, background, border, font) + :root --bde-palette-* variables in global-settings.css",
+    "notes": [
+      "The palette below is the site's own Breakdance global palette; every value was also observed in computed styles on the homepage.",
+      "No new brand colors are introduced. Neutrals are the site's own greys plus pure white/near-black.",
+      "Third-party social colors (Facebook #4267B2, LinkedIn #0077B5) appear only on the social icon chips and are not brand colors."
+    ]
+  },
+  "color": {
+    "brand": {
+      "blue":      { "value": "#0076C0", "source": "--bde-palette-main-blue", "usage": "Primary buttons (Services, Contact), dual-heading accent on white, links, icon chips" },
+      "deepBlue":  { "value": "#000ACA", "source": "--bde-palette-color-1", "usage": "Gradient anchor, Schedule A Call tab, incident banner background" },
+      "green":     { "value": "#00FF84", "source": "--bde-palette-color-2", "usage": "Contact Us button, icon badges, dual-heading accent on blue, scroll-progress bar" }
+    },
+    "neutral": {
+      "white":      { "value": "#FFFFFF", "source": "--bde-palette-white" },
+      "lightGrey":  { "value": "#F7F7F7", "source": "--bde-palette-light-grey", "usage": "Alternate section background, cards" },
+      "border":     { "value": "#DDDDDD", "source": "--bde-palette-border-grey", "usage": "Card/menu borders, dividers" },
+      "grey":       { "value": "#656263", "source": "--bde-palette-grey", "usage": "Body copy (most frequent text color, 55 elements)" },
+      "darkGrey":   { "value": "#231F20", "source": "--bde-palette-dark-grey", "usage": "Nav links, text on green buttons" },
+      "heading":    { "value": "#111827", "source": "--grey-900 (--bde-headings-color)", "usage": "Headings, dual-heading primary" },
+      "grey700":    { "value": "#374151", "source": "--grey-700" },
+      "grey400":    { "value": "#9CA3AF", "source": "accordion icon" }
+    },
+    "alpha": {
+      "glassFill":     { "value": "rgba(255,255,255,0.26)", "usage": "Industry pills on the blue gradient" },
+      "glassStroke":   { "value": "rgba(255,255,255,0.48)", "usage": "Industry pill 1px border" },
+      "scrim":         { "value": "rgba(35,31,32,0.85)", "usage": "Popup backdrop (darkGrey @ 85%)" },
+      "photoCardFill": { "value": "rgba(221,221,221,0.35)", "usage": "Translucent card fill" }
+    },
+    "gradient": {
+      "blueToBlue":      { "value": "linear-gradient(0deg, #000ACA 0%, #0076C0 100%)", "source": "--bde-palette-blue-to-blue-gradient", "usage": "Industries band, 'Ready to Talk' form card" },
+      "hero":            { "value": "linear-gradient(0deg, #0076C0 0%, #000ACA 100%)", "source": "--bde-palette-hero-gradient" },
+      "transparentBlue": { "value": "linear-gradient(10deg, #000ACA 0.51%, rgba(0,10,202,0.01) 98.97%)", "source": "--bde-palette-transparent-blue-gradient", "usage": "Overlay on the employee-owned warehouse photo" }
+    }
+  },
+  "font": {
+    "family": {
+      "brand": { "value": "\"Plus Jakarta Sans\", sans-serif", "notes": "Loaded as a variable font (weight axis 200–800). Every rendered text node uses it except 2 system-ui fallbacks." }
+    },
+    "weight": { "regular": 400, "medium": 500, "semibold": 600, "bold": 700 },
+    "observedStyles": [
+      { "role": "h1 hero",              "size": "89px", "lineHeight": "106.8px (1.2)", "weight": 700, "tabletSize": "75px", "mobileSize": "48px" },
+      { "role": "h2 dual-heading",      "size": "55px", "lineHeight": "66px (1.2)",   "weight": 700 },
+      { "role": "h3 dual-heading (cards)", "size": "45px", "lineHeight": "54px (1.2)", "weight": 700 },
+      { "role": "h4 large",             "size": "30px", "lineHeight": "36px (1.2)",   "weight": 700 },
+      { "role": "h4 card title",        "size": "21px", "lineHeight": "25.2px (1.2)", "weight": 600 },
+      { "role": "body large",           "size": "19px", "lineHeight": "28.5px (1.5)", "weight": 400 },
+      { "role": "body / links",         "size": "17px", "lineHeight": "23.8–25.5px (1.4–1.5)", "weight": 400 },
+      { "role": "nav / buttons",        "size": "17px", "lineHeight": "1", "weight": 500 },
+      { "role": "footer heading (h6)",  "size": "16px", "lineHeight": "19.2px (1.2)", "weight": 500 },
+      { "role": "small",                "size": "14px", "lineHeight": "19.6px (1.4)", "weight": 500 }
+    ],
+    "textTransform": "Dual headings render with text-transform: capitalize on the live site (source copy is sentence/title mixed)."
+  },
+  "radius": {
+    "button": "13px",
+    "input": "4px",
+    "card": "21px",
+    "photoCard": "34px",
+    "pill": "1000px"
+  },
+  "button": {
+    "padding": "17px 34px",
+    "fontSize": "17px",
+    "fontWeight": 500,
+    "variants": {
+      "primaryGreen": { "background": "#00FF84", "color": "#231F20", "usage": "Contact Us" },
+      "primaryBlue":  { "background": "#0076C0", "color": "#FFFFFF", "usage": "Services, Contact, Compliance, Careers" }
+    }
+  },
+  "layout": {
+    "containerMax": "1140px (content column measured at 1440px viewport)",
+    "breakpoints": { "desktop": "1120px", "tablet": "1024px", "tabletPortrait": "768px", "mobile": "480px" }
+  },
+  "motionSignatures": {
+    "annotate": "Secondary words in some dual headings carry class js-annotate: a hand-drawn underline (Rough Notation style) drawn on reveal. Reused in the redesign as an SVG stroke draw.",
+    "scrollProgress": "A thin green (#00FF84) scroll-progress bar runs across the top of the viewport.",
+    "waveLines": "Light-blue fine-line wave PNGs (Renkim_Wave-Lines_*) decorate the hero and contact card."
+  }
+}

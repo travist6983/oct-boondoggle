@@ -1,0 +1,47 @@
+<svg class="wwd-lab__art pm-art pm-art--certified" viewBox="0 0 1200 800" aria-hidden="true" focusable="false">
+<defs><clipPath id="ce-bar-clip"><rect class="ce-bar-mask" x="168" y="276" width="276" height="60"/></clipPath><pattern id="ce-grid" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="14" cy="14" r="1.6" fill="#E3E5EA"/></pattern></defs>
+<rect width="1200" height="800" fill="url(#ce-grid)"/>
+<rect x="40" y="680" width="1120" height="70" rx="35" fill="#F2F3F5"/>
+<!-- tracking timeline -->
+<g class="ce-track">
+<path d="M820,228 V588" stroke="#DDDDDD" stroke-width="8" stroke-linecap="round"/>
+<path class="ce-progress" d="M820,228 V588" stroke="#00FF84" stroke-width="8" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0"/>
+<g class="ce-node" data-i="0">
+<circle cx="820" cy="228" r="20" fill="#00FF84" stroke="#0076C0" stroke-width="7"/>
+<text x="884" y="238" font-family="Plus Jakarta Sans, PJS Fallback, system-ui, sans-serif" font-size="31" font-weight="700" fill="#111827">Preparation</text></g><g class="ce-node" data-i="1">
+<circle cx="820" cy="348" r="20" fill="#00FF84" stroke="#0076C0" stroke-width="7"/>
+<text x="884" y="358" font-family="Plus Jakarta Sans, PJS Fallback, system-ui, sans-serif" font-size="31" font-weight="700" fill="#111827">Tracking</text></g><g class="ce-node" data-i="2">
+<circle cx="820" cy="468" r="20" fill="#00FF84" stroke="#0076C0" stroke-width="7"/>
+<text x="884" y="478" font-family="Plus Jakarta Sans, PJS Fallback, system-ui, sans-serif" font-size="31" font-weight="700" fill="#111827">Final delivery</text></g><g class="ce-node" data-i="3">
+<circle cx="820" cy="588" r="20" fill="#00FF84" stroke="#0076C0" stroke-width="7"/>
+<text x="884" y="598" font-family="Plus Jakarta Sans, PJS Fallback, system-ui, sans-serif" font-size="31" font-weight="700" fill="#111827">Proof of delivery</text></g>
+</g>
+<!-- the big certified envelope -->
+<g class="ce-env">
+<rect x="120" y="196" width="600" height="390" rx="18" fill="#fff" stroke="#DDDDDD" stroke-width="3"/>
+<path d="M120,586 L372,404 M720,586 L468,404" stroke="#DDDDDD" stroke-width="3" fill="none"/>
+<rect x="176" y="420" width="268" height="96" rx="10" fill="#F7F7F7" stroke="#DDDDDD" stroke-width="3"/>
+<g fill="#231F20"><rect x="198" y="440" width="150" height="12" rx="6"/><rect x="198" y="462" width="196" height="12" rx="6"/><rect x="198" y="484" width="120" height="12" rx="6"/></g>
+<g transform="translate(660 262)"><rect x="-34" y="-40" width="68" height="80" fill="#fff" stroke="#DDDDDD" stroke-width="3" stroke-dasharray="5 5"/><rect x="-27" y="-33" width="54" height="66" fill="#000ACA"/>
+<path d="M-19,14 q9.5,-14 19,0 t19,0" fill="none" stroke="#00FF84" stroke-width="5"/><circle cy="-10" r="9" fill="#fff"/></g>
+<g fill="none" stroke="#656263" stroke-width="3" opacity=".55"><path d="M520,232 q14,-10 28,0 t28,0 t28,0"/><path d="M520,250 q14,-10 28,0 t28,0 t28,0"/><path d="M520,268 q14,-10 28,0 t28,0 t28,0"/></g>
+<g class="ce-label">
+<rect x="150" y="226" width="312" height="132" rx="12" fill="#fff" stroke="#00FF84" stroke-width="6"/>
+<path d="M150,238 a12,12 0 0 1 12,-12 h288 a12,12 0 0 1 12,12 v26 h-312z" fill="#00FF84"/>
+<text x="306" y="255" text-anchor="middle" font-family="Plus Jakarta Sans, PJS Fallback, system-ui, sans-serif" font-size="24" font-weight="800" letter-spacing="3" fill="#231F20">CERTIFIED</text>
+<g clip-path="url(#ce-bar-clip)" fill="#231F20"><rect x="176" y="282" width="2" height="44"/><rect x="182" y="282" width="4" height="44"/><rect x="188" y="282" width="1.5" height="44"/><rect x="194" y="282" width="3" height="44"/><rect x="200" y="282" width="2.5" height="44"/><rect x="206" y="282" width="1.5" height="44"/><rect x="212" y="282" width="4" height="44"/><rect x="218" y="282" width="2" height="44"/><rect x="224" y="282" width="2" height="44"/><rect x="230" y="282" width="4" height="44"/><rect x="236" y="282" width="1.5" height="44"/><rect x="242" y="282" width="3" height="44"/><rect x="248" y="282" width="2.5" height="44"/><rect x="254" y="282" width="1.5" height="44"/><rect x="260" y="282" width="4" height="44"/><rect x="266" y="282" width="2" height="44"/><rect x="272" y="282" width="2" height="44"/><rect x="278" y="282" width="4" height="44"/><rect x="284" y="282" width="1.5" height="44"/><rect x="290" y="282" width="3" height="44"/><rect x="296" y="282" width="2.5" height="44"/><rect x="302" y="282" width="1.5" height="44"/><rect x="308" y="282" width="4" height="44"/><rect x="314" y="282" width="2" height="44"/><rect x="320" y="282" width="2" height="44"/><rect x="326" y="282" width="4" height="44"/><rect x="332" y="282" width="1.5" height="44"/><rect x="338" y="282" width="3" height="44"/><rect x="344" y="282" width="2.5" height="44"/><rect x="350" y="282" width="1.5" height="44"/><rect x="356" y="282" width="4" height="44"/><rect x="362" y="282" width="2" height="44"/><rect x="368" y="282" width="2" height="44"/><rect x="374" y="282" width="4" height="44"/><rect x="380" y="282" width="1.5" height="44"/><rect x="386" y="282" width="3" height="44"/><rect x="392" y="282" width="2.5" height="44"/><rect x="398" y="282" width="1.5" height="44"/><rect x="404" y="282" width="4" height="44"/><rect x="410" y="282" width="2" height="44"/><rect x="416" y="282" width="2" height="44"/><rect x="422" y="282" width="4" height="44"/><rect x="428" y="282" width="1.5" height="44"/><rect x="434" y="282" width="3" height="44"/></g>
+<g fill="#9CA3AF"><rect x="176" y="336" width="150" height="7" rx="3.5"/><rect x="334" y="336" width="96" height="7" rx="3.5"/></g>
+<rect class="ce-beam" x="168" y="274" width="6" height="64" rx="3" fill="#00FF84" opacity="0"/>
+</g>
+</g>
+<!-- proof of delivery card -->
+<g class="ce-proof">
+<rect x="452" y="432" width="330" height="222" rx="18" fill="#fff" stroke="#DDDDDD" stroke-width="3"/>
+<path d="M452,450 a18,18 0 0 1 18,-18 h294 a18,18 0 0 1 18,18 v14 h-330z" fill="#000ACA"/>
+<g fill="#DDDDDD"><rect x="480" y="490" width="170" height="10" rx="5"/><rect x="480" y="512" width="220" height="10" rx="5"/></g>
+<rect x="480" y="604" width="270" height="4" rx="2" fill="#231F20"/>
+<path class="ce-sign" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="0" d="M490,592 c10,-40 22,-44 24,-12 c2,22 10,10 18,-10 c8,-20 14,-12 12,4 c-2,16 10,12 22,-6 c10,-14 16,-10 20,4 c4,12 16,4 30,-6 c12,-8 24,-6 36,-2" fill="none" stroke="#0076C0" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g class="ce-ok" transform="translate(744 492)"><circle r="24" fill="#00FF84"/>
+<path d="M-10.8,0.5 l7.2,7.2 l14.4,-14.9" fill="none" stroke="#231F20" stroke-width="5.3" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+</svg>

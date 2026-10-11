@@ -1,0 +1,76 @@
+/* Resources pages (Compliance, On the Road, In the Community, Careers): slim, static-first.
+   The live LinkedIn feed widget (Elfsight) is replaced by a plain link card; no embeds. */
+
+/* The hero's journey leg runs into the first card below it, so the hero paints above the next
+   section instead of clipping. Room under the chips for the resting envelope. */
+.res-hero.page-hero { overflow: visible; z-index: 3; padding-bottom: 72px; }
+@media (min-width: 768px) { .res-hero.page-hero { padding-bottom: 84px; } }
+
+/* The card the envelope docks in takes a green check once it arrives */
+[data-dock] { position: relative; }
+.is-live [data-dock]::after {
+  content: ''; position: absolute; top: -14px; right: -14px; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--rk-green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='m6.5 12.5 3.5 3.5 7.5-8' fill='none' stroke='%23231F20' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 24px no-repeat;
+  box-shadow: 0 0 0 4px #fff, 0 10px 20px -10px rgba(0, 10, 202, 0.5);
+  opacity: 0; transform: scale(0.4); transition: opacity 0.25s, transform 0.45s cubic-bezier(0.2, 1.6, 0.4, 1);
+}
+.is-live [data-dock].is-docked::after { opacity: 1; transform: none; }
+@media (max-width: 767px) { .is-live [data-dock]::after { top: -12px; right: -6px; } }
+/* small docks (the LinkedIn logo, the contact icon) take a small check */
+.is-live .res-li__logo[data-dock]::after, .is-live .contact__icon[data-dock]::after { width: 26px; height: 26px; top: -9px; right: -9px; background-size: 16px; box-shadow: 0 0 0 3px #fff; }
+
+/* --- LinkedIn link card (On the Road, In the Community) --------------------- */
+.res-linkedin { background: var(--rk-light-grey); padding: 72px 0; }
+.res-li {
+  display: grid; gap: 20px; align-items: center; max-width: 920px; margin-inline: auto;
+  background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card); padding: 28px;
+}
+.res-li__logo { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 16px; background: var(--rk-blue); color: #fff; }
+.res-li__logo svg { width: 34px; height: 34px; fill: currentColor; }
+.res-li__title { font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem); margin-bottom: 6px; }
+.res-li__copy p { font-size: var(--rk-fs-lead); }
+@media (min-width: 768px) { .res-li { grid-template-columns: auto 1fr auto; padding: 32px 36px; } }
+
+/* --- Philanthropy (In the Community) ------------------------------------------ */
+.res-phil { padding: 96px 0; }
+.res-phil .section-head { margin-bottom: 48px; }
+.res-phil__grid { display: grid; gap: 18px; }
+@media (min-width: 640px) { .res-phil__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .res-phil__grid { grid-template-columns: repeat(3, 1fr); } }
+.res-org {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px;
+  background: var(--rk-light-grey); border-radius: var(--rk-radius-card); padding: 28px 24px 24px;
+}
+.res-org__logo { display: grid; place-items: center; height: 84px; width: 100%; }
+.res-org__logo img { max-height: 84px; max-width: 220px; width: auto; height: auto; object-fit: contain; }
+.res-org h3 { font-size: 1.125rem; }
+.res-org__link { display: inline-flex; align-items: center; gap: 6px; margin-top: auto; color: var(--rk-blue); font-weight: 600; text-decoration: none; padding: 8px 4px; }
+.res-org__link svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform 0.2s var(--ease-cine); }
+.res-org__link:hover svg { transform: translateX(3px); }
+
+/* --- Photo wall (In the Community, Careers): the live 5 × 2 mosaic ------------ */
+.res-wall { padding: 0 0 2px; }
+.res-wall__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; }
+@media (min-width: 768px) { .res-wall__grid { grid-template-columns: repeat(5, 1fr); } }
+.res-wall__item { aspect-ratio: 1; overflow: hidden; background: var(--rk-light-grey); }
+.res-wall__item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s var(--ease-cine); }
+.res-wall__item:hover img { transform: scale(1.04); }
+
+/* --- Careers + Compliance forms ----------------------------------------------- */
+.res-apply, .res-questions { padding: 96px 0; }
+.res-questions .contact__grid { align-items: center; }
+.res-questions__copy h2 { margin-bottom: 18px; }
+.res-questions__copy p { font-size: var(--rk-fs-lead); margin-bottom: 26px; }
+.form-card--plain { padding-top: 36px; }
+.field--file input[type='file'] {
+  width: 100%; padding: 12px; border: 1px dashed rgba(255, 255, 255, 0.6); border-radius: var(--rk-radius-input);
+  background: rgba(255, 255, 255, 0.12); color: #fff; font: inherit; font-size: 0.9375rem;
+}
+.field--file input[type='file']::file-selector-button {
+  margin-right: 12px; padding: 8px 14px; border: 0; border-radius: 8px; background: #fff; color: var(--rk-deep-blue); font: inherit; font-weight: 600; cursor: pointer;
+}
+.field--file input[type='file']:focus-visible { box-shadow: 0 0 0 3px var(--rk-green); outline: none; }
+
+/* Compliance: certifications section right after the hero */
+.certs--compliance { background: #fff; }
+.certs--compliance .certs__copy p + p { margin-top: -10px; }

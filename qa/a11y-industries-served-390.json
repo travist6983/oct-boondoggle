@@ -1,0 +1,106 @@
+{
+ "url": "http://localhost:4173/industries-served/",
+ "tabStops": 53,
+ "noRing": [],
+ "offScreen": [],
+ "underHeader": [],
+ "invisible": [],
+ "h1Count": 1,
+ "outline": [
+  {
+   "level": 1,
+   "text": "Industries Served"
+  },
+  {
+   "level": 2,
+   "text": "Industries We Serve"
+  },
+  {
+   "level": 2,
+   "text": "Ready to get started?"
+  },
+  {
+   "level": 2,
+   "text": "Automotive Recall Specialists"
+  },
+  {
+   "level": 2,
+   "text": "Class Action / Data Breach Solutions"
+  },
+  {
+   "level": 2,
+   "text": "Financial Solutions"
+  },
+  {
+   "level": 2,
+   "text": "Government / Municipality Solutions"
+  },
+  {
+   "level": 2,
+   "text": "Healthcare Solutions"
+  },
+  {
+   "level": 2,
+   "text": "Mortgage Solutions"
+  },
+  {
+   "level": 2,
+   "text": "Receivables Management Solutions"
+  },
+  {
+   "level": 2,
+   "text": "Telecom / Internet Solutions"
+  },
+  {
+   "level": 2,
+   "text": "Utility Solutions"
+  },
+  {
+   "level": 2,
+   "text": "We Are A 100% Employee Owned Business"
+  },
+  {
+   "level": 2,
+   "text": "We Have the Certifications to Get the Job Done Right"
+  },
+  {
+   "level": 2,
+   "text": "What We Do"
+  },
+  {
+   "level": 2,
+   "text": "Portal"
+  },
+  {
+   "level": 2,
+   "text": "Who We Help"
+  },
+  {
+   "level": 2,
+   "text": "About Us"
+  },
+  {
+   "level": 2,
+   "text": "Resources"
+  },
+  {
+   "level": 2,
+   "text": "Contact"
+  },
+  {
+   "level": 2,
+   "text": "Our Location"
+  }
+ ],
+ "skips": [],
+ "dupIds": [],
+ "brokenAnchors": [],
+ "imgsNoAlt": [],
+ "unnamed": [],
+ "landmarks": [
+  "header",
+  "nav",
+  "main",
+  "footer"
+ ]
+}

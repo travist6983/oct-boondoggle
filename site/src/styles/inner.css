@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Inner pages (Services, About Us, Industries Served): shared shell.
+   Same tokens as the homepage. The page hero is the live blue band
+   (linear-gradient(0deg, #0076C0, #000ACA)) with the header sitting on it.
+   ========================================================================== */
+
+/* --- Page hero ------------------------------------------------------------ */
+.page-hero {
+  position: relative; overflow: clip; isolation: isolate;
+  margin-top: calc(var(--header-h) * -1);
+  padding: calc(var(--header-h) + 56px) 0 28px;
+  background: linear-gradient(0deg, var(--rk-blue) 0%, var(--rk-deep-blue) 100%);
+  color: #fff;
+}
+.page-hero > .container { position: relative; z-index: 2; }
+.page-hero__title {
+  color: #fff; text-align: center; font-size: clamp(2.5rem, 1.6rem + 2.8vw, 4rem); letter-spacing: -0.02em; line-height: 1.08;
+}
+.page-hero__art { position: relative; z-index: 1; margin: 28px auto 0; }
+.motion-ok .page-hero__title .w { display: inline-block; animation: word-lock 0.5s var(--ease-cine) both; animation-delay: calc(var(--d) * 45ms + 60ms); }
+.motion-ok .page-hero__title { animation: lock-flicker 0.12s linear 0.62s 1 both; }
+@media (min-width: 768px) { .page-hero { padding: calc(var(--header-h) + 72px) 0 32px; } }
+
+/* Glass chips under the title: contact channels (Services, Industries) or section links (About) */
+.chips { display: grid; gap: 10px; margin-top: 40px; }
+@media (min-width: 640px) { .chips { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .chips { grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 56px; } }
+.chip {
+  display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 8px 18px 8px 8px;
+  background: var(--rk-glass-fill); border: 1px solid var(--rk-glass-stroke); border-radius: var(--rk-radius-pill);
+  color: #fff; text-decoration: none; font-weight: 500; font-size: 0.9375rem;
+  transition: background-color 0.2s, transform 0.2s var(--ease-cine);
+}
+a.chip:hover { background: rgba(255, 255, 255, 0.36); transform: translateY(-2px); }
+.chip:focus-visible { box-shadow: 0 0 0 3px var(--rk-green); border-radius: var(--rk-radius-pill); }
+.chip__icon { flex: none; display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; background: var(--rk-deep-blue); color: #fff; }
+.chip__icon svg { width: 16px; height: 16px; fill: currentColor; }
+.chip__icon--check { background: var(--rk-deep-blue); }
+.chip__icon--check svg { fill: none; stroke: #fff; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.motion-ok .chips > li { animation: chip-in 0.6s var(--ease-cine) both; animation-delay: calc(var(--i, 0) * 70ms + 380ms); }
+@keyframes chip-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* --- Section heading block (centered H2 + lead) ---------------------------- */
+.section-head { max-width: 760px; margin-inline: auto; text-align: center; }
+.section-head .dual { margin-bottom: 16px; }
+.section-head p { font-size: var(--rk-fs-lead); }
+
+/* --- Shared employee band variants (the photo differs per page) ----------- */
+.employee--inner { padding-top: 96px; }

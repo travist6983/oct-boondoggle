@@ -1,0 +1,56 @@
+<svg class="dg-svg dg-svg--email" viewBox="0 0 640 440" aria-hidden="true" focusable="false">
+  <defs><clipPath id="dg-e-clip"><rect x="88" y="32" width="464" height="288" rx="10"/></clipPath></defs>
+  <ellipse cx="320" cy="392" rx="300" ry="14" fill="#F7F7F7"/>
+  <rect x="72" y="16" width="496" height="320" rx="22" fill="#231F20"/>
+  <rect x="88" y="32" width="464" height="288" rx="10" fill="#fff"/>
+  <g clip-path="url(#dg-e-clip)">
+    <rect x="88" y="32" width="464" height="34" fill="#F7F7F7"/>
+    <circle class="" cx="101" cy="49" r="3.6" fill="#DDDDDD"/><circle class="" cx="112" cy="49" r="3.6" fill="#DDDDDD"/><circle class="" cx="123" cy="49" r="3.6" fill="#DDDDDD"/>
+    <rect class="dg-e-url" x="150" y="40" width="380" height="18" rx="9" fill="#fff" stroke="#DDDDDD"/>
+    <g class="dg-e-inbox">
+      <g class="dg-e-rows"><g><circle cx="124" cy="100" r="13" fill="#DDDDDD"/><rect x="148" y="87" width="150" height="9" rx="4.5" fill="#9C9A9B"/><rect x="148" y="105" width="250" height="7" rx="3.5" fill="#DDDDDD"/><rect x="470" y="88" width="50" height="7" rx="3.5" fill="#DDDDDD"/><rect x="96" y="129" width="448" height="1" fill="#F7F7F7"/></g><g><circle cx="124" cy="158" r="13" fill="#DDDDDD"/><rect x="148" y="145" width="136" height="9" rx="4.5" fill="#9C9A9B"/><rect x="148" y="163" width="230" height="7" rx="3.5" fill="#DDDDDD"/><rect x="470" y="146" width="50" height="7" rx="3.5" fill="#DDDDDD"/><rect x="96" y="187" width="448" height="1" fill="#F7F7F7"/></g><g><circle cx="124" cy="216" r="13" fill="#DDDDDD"/><rect x="148" y="203" width="122" height="9" rx="4.5" fill="#9C9A9B"/><rect x="148" y="221" width="210" height="7" rx="3.5" fill="#DDDDDD"/><rect x="470" y="204" width="50" height="7" rx="3.5" fill="#DDDDDD"/><rect x="96" y="245" width="448" height="1" fill="#F7F7F7"/></g><g><circle cx="124" cy="274" r="13" fill="#DDDDDD"/><rect x="148" y="261" width="108" height="9" rx="4.5" fill="#9C9A9B"/><rect x="148" y="279" width="190" height="7" rx="3.5" fill="#DDDDDD"/><rect x="470" y="262" width="50" height="7" rx="3.5" fill="#DDDDDD"/><rect x="96" y="303" width="448" height="1" fill="#F7F7F7"/></g></g>
+      <g class="dg-e-newrow">
+        <rect x="94" y="72" width="452" height="56" rx="9" fill="#E6F1F9"/>
+        <rect x="94" y="72" width="5" height="56" rx="2.5" fill="#0076C0"/>
+        <g class="dg-e-newicon" transform="translate(110 84)"><rect width="46" height="31.28" rx="4.6" fill="#0076C0"/><path d="M2.76 1.61 L23 16.27 L43.24 1.61 Z" fill="#61AAD8"/></g>
+        <rect x="172" y="86" width="170" height="10" rx="5" fill="#231F20"/><rect x="172" y="105" width="260" height="7" rx="3.5" fill="#9C9A9B"/>
+        <circle cx="524" cy="100" r="7" fill="#00FF84"/>
+      </g>
+    </g>
+    <g class="dg-e-notice">
+      <rect x="88" y="66" width="464" height="254" fill="#fff"/>
+      <rect x="128" y="86" width="384" height="44" rx="22" fill="#F7F7F7"/>
+      <text class="dg-e-www" x="152" y="115" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="22" font-weight="600" fill="#231F20">www.</text>
+      <g class="dg-e-lock"><g transform="translate(460 76)"><path class="dg-e-shackle" d="M9.12 19 V11.4 a9.88 9.88 0 0 1 19.76 0 V19" fill="none" stroke="#0076C0" stroke-width="4.56" stroke-linecap="round"/><rect x="0" y="17.48" width="38" height="23.56" rx="4.56" fill="#0076C0"/><circle cx="19" cy="27.36" r="3.04" fill="#000ACA"/><rect x="17.86" y="27.36" width="2.28" height="6.08" fill="#000ACA"/></g></g>
+      <g class="dg-e-auth">
+        <rect x="200" y="158" width="240" height="30" rx="8" fill="#fff" stroke="#DDDDDD" stroke-width="2"/><rect x="214" y="169" width="90" height="8" rx="4" fill="#DDDDDD"/>
+        <rect x="200" y="198" width="240" height="30" rx="8" fill="#fff" stroke="#DDDDDD" stroke-width="2"/><circle class="dg-e-pin dg-e-pin--0" cx="218" cy="213" r="4" fill="#231F20"/><circle class="dg-e-pin dg-e-pin--1" cx="232" cy="213" r="4" fill="#231F20"/><circle class="dg-e-pin dg-e-pin--2" cx="246" cy="213" r="4" fill="#231F20"/>
+        <rect class="dg-e-go" x="200" y="240" width="240" height="32" rx="9" fill="#000ACA"/><rect x="286" y="252" width="68" height="8" rx="4" fill="#fff"/>
+      </g>
+    </g>
+    <g class="dg-e-pdf">
+      <rect x="88" y="66" width="464" height="254" fill="#fff"/>
+      <g class="" transform="translate(112 82)"><rect width="40" height="27.2" rx="4" fill="#0076C0"/><path d="M2.4 1.4 L20 14.14 L37.6 1.4 Z" fill="#61AAD8"/></g><rect x="166" y="84" width="190" height="10" rx="5" fill="#231F20"/><rect x="166" y="102" width="120" height="7" rx="3.5" fill="#9C9A9B"/>
+      <rect x="104" y="130" width="432" height="1" fill="#F7F7F7"/>
+      <rect x="112" y="148" width="380" height="8" rx="4" fill="#DDDDDD"/><rect x="112" y="166" width="330" height="8" rx="4" fill="#DDDDDD"/><rect x="112" y="184" width="360" height="8" rx="4" fill="#DDDDDD"/>
+      <g class="dg-e-attach">
+        <rect x="112" y="214" width="168" height="76" rx="12" fill="#fff" stroke="#DDDDDD" stroke-width="2"/>
+        <path d="M128 224 h28 l12 12 v42 h-40 Z" fill="#fff" stroke="#0076C0" stroke-width="2.5" stroke-linejoin="round"/><path d="M156 224 v12 h12" fill="none" stroke="#0076C0" stroke-width="2.5" stroke-linejoin="round"/>
+        <text x="148" y="266" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#000ACA">PDF</text>
+        <rect x="182" y="236" width="82" height="9" rx="4.5" fill="#231F20"/><rect x="182" y="254" width="60" height="7" rx="3.5" fill="#9C9A9B"/>
+        <g class="dg-e-pdflock"><g transform="translate(236 262)"><path class="dg-e-pdfshackle" d="M4.8 10 V6 a5.2 5.2 0 0 1 10.4 0 V10" fill="none" stroke="#000ACA" stroke-width="2.4" stroke-linecap="round"/><rect x="0" y="9.2" width="20" height="12.4" rx="2.4" fill="#000ACA"/><circle cx="10" cy="14.4" r="1.6" fill="#000ACA"/><rect x="9.4" y="14.4" width="1.2" height="3.2" fill="#000ACA"/></g></g>
+        <g class="dg-e-pdfok"><circle cx="258" cy="216" r="13" fill="#00FF84" stroke="#fff" stroke-width="2.34"/><path d="M252.54 216.26 L256.7 220.42 L263.98 211.84" fill="none" stroke="#231F20" stroke-width="3.12" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </g>
+    </g>
+  </g>
+  <rect x="12" y="336" width="616" height="40" rx="20" fill="#231F20"/><rect x="268" y="336" width="104" height="9" rx="4.5" fill="#4B4748"/>
+  <g class="dg-e-bdots"><ellipse cx="150" cy="46" rx="54" ry="38" fill="#000ACA"/><path d="M173.76 61.2 Q188.88 81.72 206.16 82.48 Q188.88 73.36 189.96 58.16 Z" fill="#000ACA"/><circle class="dg-e-dot dg-e-dot--0" cx="132" cy="46" r="6" fill="#00FF84"/><circle class="dg-e-dot dg-e-dot--1" cx="150" cy="46" r="6" fill="#00FF84"/><circle class="dg-e-dot dg-e-dot--2" cx="168" cy="46" r="6" fill="#00FF84"/></g>
+  <g class="dg-e-binfo"><ellipse cx="508" cy="70" rx="46" ry="40" fill="#00FF84"/><path d="M487.76 86 Q474.88 107.6 460.16 108.4 Q474.88 98.8 473.96 82.8 Z" fill="#00FF84"/><circle cx="513" cy="54" r="5.5" fill="#000ACA"/><path d="M502 66 L513 63.5 L507 87 Q506 92 512 90 L519 86.5" fill="none" stroke="#000ACA" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g class="dg-e-pass">
+    <rect x="300" y="196" width="230" height="44" rx="6" fill="#fff" stroke="#00FF84" stroke-width="5"/>
+    <path d="M330 252 l10 -12 l10 12 Z" fill="#000ACA"/>
+    <rect x="300" y="250" width="270" height="44" rx="4" fill="#000ACA"/>
+    <circle class="dg-e-passdot dg-e-passdot--0" cx="330" cy="272" r="7" fill="#00FF84"/><circle class="dg-e-passdot dg-e-passdot--1" cx="352" cy="272" r="7" fill="#00FF84"/><circle class="dg-e-passdot dg-e-passdot--2" cx="374" cy="272" r="7" fill="#00FF84"/>
+  </g>
+  <g class="dg-e-doc"><rect x="232" y="182" width="176" height="218" rx="12.32" fill="#00FF84"/><rect x="267.2" y="171.1" width="105.6" height="23.98" rx="11.99" fill="#000ACA"/><circle cx="267.2" cy="234.32" r="9.68" fill="#000ACA"/><rect x="288.32" y="231.15" width="91.52" height="6.34" rx="3.17" fill="#000ACA"/><circle cx="267.2" cy="273.56" r="9.68" fill="#000ACA"/><rect x="288.32" y="270.39" width="91.52" height="6.34" rx="3.17" fill="#000ACA"/><circle cx="267.2" cy="312.8" r="9.68" fill="#000ACA"/><rect x="288.32" y="309.63" width="91.52" height="6.34" rx="3.17" fill="#000ACA"/><circle cx="267.2" cy="352.04" r="9.68" fill="#000ACA"/><rect x="288.32" y="348.87" width="91.52" height="6.34" rx="3.17" fill="#000ACA"/><rect class="dg-e-portal" x="262" y="364" width="116" height="24" rx="12" fill="#000ACA"/><path d="M308 376 h22 m-7 -6 l7 6 l-7 6" fill="none" stroke="#00FF84" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

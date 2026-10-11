@@ -1,0 +1,17 @@
+{
+  "linksChecked": 26,
+  "distinctHrefs": 21,
+  "missingHrefs": [],
+  "links": {
+    "ok": 23,
+    "missing": []
+  },
+  "plain": {
+    "ok": 3,
+    "missing": []
+  },
+  "texts": {
+    "ok": 35,
+    "missing": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+ "url": "http://localhost:4173/on-the-road/",
+ "tabStops": 53,
+ "noRing": [],
+ "offScreen": [],
+ "underHeader": [],
+ "invisible": [],
+ "h1Count": 1,
+ "outline": [
+  {
+   "level": 1,
+   "text": "Renkim On The Road"
+  },
+  {
+   "level": 2,
+   "text": "Renkim on LinkedIn"
+  },
+  {
+   "level": 2,
+   "text": "What We Do"
+  },
+  {
+   "level": 2,
+   "text": "Portal"
+  },
+  {
+   "level": 2,
+   "text": "Who We Help"
+  },
+  {
+   "level": 2,
+   "text": "About Us"
+  },
+  {
+   "level": 2,
+   "text": "Resources"
+  },
+  {
+   "level": 2,
+   "text": "Contact"
+  },
+  {
+   "level": 2,
+   "text": "Our Location"
+  }
+ ],
+ "skips": [],
+ "dupIds": [],
+ "brokenAnchors": [],
+ "imgsNoAlt": [],
+ "unnamed": [],
+ "landmarks": [
+  "header",
+  "nav",
+  "main",
+  "footer"
+ ]
+}

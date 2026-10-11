@@ -1,0 +1,193 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/ancillary-services/ main body (rendered, visible text), extracted 2026-10-11.",
+    "rules": "Copy is verbatim from the visible live page. Each row's h3 'Ancillary Services' kicker is rendered as a paragraph under its h2 (heading levels normalized). Learn More links carry visually hidden context ('about <service>').",
+    "typoFixes": [
+      {
+        "where": "hero chips (sibling links)",
+        "from": "Litigous Scrub",
+        "to": "Litigious Scrub"
+      }
+    ],
+    "liveSiteIssuesFound": [
+      "Sibling chip 'Litigous Scrub' is misspelled on every ancillary page; fixed to 'Litigious Scrub' (the page itself is titled Litigious Scrub).",
+      "Renkim Reporting row: Learn More links https://renkim.com/ancillary-services/renkim-reporting/, which redirects to the homepage. The redesign links https://renkim.com/portal/renkim-reporting/ (the Portal page the hero chip already uses).",
+      "The rendered HTML outline is missing the Bankruptcy & Deceased and Email Verification descriptions, but both are visible on the live page; the redesign uses the visible text."
+    ]
+  },
+  "hero": {
+    "headingLevelLive": "h1",
+    "heading": "Ancillary Services",
+    "chips": [
+      {
+        "label": "Address Element Correction",
+        "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+      },
+      {
+        "label": "Bankruptcy & Deceased",
+        "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+      },
+      {
+        "label": "Email Verification",
+        "href": "https://renkim.com/ancillary-services/email-verification/"
+      },
+      {
+        "label": "Litigious Scrub",
+        "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+      },
+      {
+        "label": "LockBox",
+        "href": "https://renkim.com/ancillary-services/lockbox/"
+      },
+      {
+        "label": "Phone Search",
+        "href": "https://renkim.com/ancillary-services/phone-search/"
+      },
+      {
+        "label": "Renkim 360",
+        "href": "https://renkim.com/ancillary-services/renkim-360/"
+      },
+      {
+        "label": "Return Mail Processing",
+        "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+      },
+      {
+        "label": "USPS CASS, DPV, NCOA",
+        "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+      },
+      {
+        "label": "Vacant Address",
+        "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+      },
+      {
+        "label": "Renkim Reporting",
+        "href": "https://renkim.com/portal/renkim-reporting/"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "headingLevelLive": "h2",
+      "heading": "Address Element Correction (AEC)",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Renkim’s Address Element Correction service ensures that your mailing addresses are accurate and up-to-date, reducing the risk of undeliverable mail, and improving delivery efficiency.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Bankruptcy & Deceased",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Our Bankruptcy & Deceased service manages sensitive data related to bankruptcy and deceased accounts, ensuring compliance and accuracy in your communications.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Email Verification",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Renkim’s Email Verification service validates email addresses to improve delivery rates and communication accuracy, helping you reach your audience more effectively.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/email-verification/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Litigious Scrub",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Reduce legal risks by using Renkim’s Litigious Scrub service to identify potentially litigious consumers before initiating contact.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Lockbox",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Our Lockbox service provides secure and efficient payment processing, managing your receivables with accuracy and reliability.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/lockbox/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Phone Search",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Enhance your contact information with Renkim’s Phone Search service, which provides accurate and up-to-date phone number data.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/phone-search/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Renkim 360",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Renkim 360 offers comprehensive data management solutions, integrating various services to provide a full-circle approach to your business needs.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/renkim-360/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Return Mail Processing",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Renkim’s Return Mail Processing service efficiently handles returned mail, keeping your records current, and reducing wasted resources.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "USPS CASS, DPV, NCOA",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Our USPS CASS, DPV, and NCOA services ensure compliance with USPS standards for address accuracy, improving the deliverability of your mail.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Vacant Address Search",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Identify vacant addresses with Renkim’s Vacant Address Search service to avoid undeliverable mail and enhance your mailing efficiency.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+      }
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Renkim Reporting",
+      "kickerLive": "h3 \"Ancillary Services\" (rendered as a kicker paragraph)",
+      "text": "Ancillary Services",
+      "body": "Renkim Reporting provides detailed reports to track and analyze your operations, offering insights to improve efficiency and effectiveness.",
+      "link": {
+        "label": "Learn More",
+        "href": "https://renkim.com/portal/renkim-reporting/",
+        "liveHref": "https://renkim.com/ancillary-services/renkim-reporting/",
+        "note": "The live href redirects to the homepage; the redesign links the Portal page, as the hero chip does."
+      }
+    }
+  ]
+}

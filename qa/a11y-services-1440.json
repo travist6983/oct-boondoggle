@@ -1,0 +1,86 @@
+{
+ "url": "http://localhost:4173/services/",
+ "tabStops": 80,
+ "noRing": [],
+ "offScreen": [],
+ "underHeader": [],
+ "invisible": [],
+ "h1Count": 1,
+ "outline": [
+  {
+   "level": 1,
+   "text": "Services"
+  },
+  {
+   "level": 2,
+   "text": "What We Do here at Renkim"
+  },
+  {
+   "level": 3,
+   "text": "Print & Mail Services"
+  },
+  {
+   "level": 3,
+   "text": "Digital Services"
+  },
+  {
+   "level": 3,
+   "text": "Ancillary Services"
+  },
+  {
+   "level": 2,
+   "text": "We Are A 100% Employee Owned Business"
+  },
+  {
+   "level": 2,
+   "text": "Get in touch with us any way that works for you"
+  },
+  {
+   "level": 3,
+   "text": "Ready to Talk With Renkim Today?"
+  },
+  {
+   "level": 2,
+   "text": "We Have the Certifications to Get the Job Done Right"
+  },
+  {
+   "level": 2,
+   "text": "What We Do"
+  },
+  {
+   "level": 2,
+   "text": "Portal"
+  },
+  {
+   "level": 2,
+   "text": "Who We Help"
+  },
+  {
+   "level": 2,
+   "text": "About Us"
+  },
+  {
+   "level": 2,
+   "text": "Resources"
+  },
+  {
+   "level": 2,
+   "text": "Contact"
+  },
+  {
+   "level": 2,
+   "text": "Our Location"
+  }
+ ],
+ "skips": [],
+ "dupIds": [],
+ "brokenAnchors": [],
+ "imgsNoAlt": [],
+ "unnamed": [],
+ "landmarks": [
+  "header",
+  "nav",
+  "main",
+  "footer"
+ ]
+}

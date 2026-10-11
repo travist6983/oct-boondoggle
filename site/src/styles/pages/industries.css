@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Industries Served: "One route, nine stops".
+   A transit-map index (sticky sidebar ≥1024, sticky stop strip below) that the
+   envelope rides as you read, and nine industries whose photos open out of an
+   envelope window and receive a postmark. Static-first: without JS (and under
+   reduced motion) every photo, postmark and check is simply shown.
+   ========================================================================== */
+
+.ind { position: relative; background: var(--rk-light-grey); padding: 72px 0 150px; }
+.ind > .container { position: relative; z-index: 2; }
+
+/* --- Layout -------------------------------------------------------------- */
+@media (min-width: 1024px) {
+  .ind-layout { display: grid; grid-template-columns: 264px minmax(0, 1fr); gap: 48px; align-items: start; }
+  .ind-side { position: sticky; top: calc(var(--header-h) + 24px); display: grid; gap: 16px; z-index: 3; }
+}
+@media (min-width: 1200px) {
+  .ind-layout { grid-template-columns: 284px minmax(0, 1fr); gap: 72px; }
+}
+/* 1024–1199: keep every stop on one line so the sticky column always fits the viewport */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .ind-layout { grid-template-columns: 272px minmax(0, 1fr); gap: 40px; }
+  .route-map { padding: 20px 12px 28px 44px; }
+  .route-map .route-map__line { left: 21px; }
+  .route-map .stop { font-size: 0.875rem; }
+  .route-map .stop__dot { left: -18px; }
+}
+@media (min-width: 1024px) and (max-height: 820px) {
+  .route-map { padding-top: 18px; padding-bottom: 24px; }
+  .route-map .stop { min-height: 30px; padding-block: 3px; }
+  .ind-cta { padding: 20px 20px 22px; }
+  .ind-cta__title { font-size: 1.375rem; margin-bottom: 14px; }
+}
+
+/* --- Route map (desktop: a sidebar card with a vertical transit line) ---- */
+.route-map { position: relative; }
+.route-map__title { color: var(--rk-heading); font-size: 1.125rem; font-weight: 700; letter-spacing: -0.005em; }
+.stop {
+  position: relative; display: flex; align-items: center; gap: 10px;
+  color: var(--rk-dark-grey); text-decoration: none; font-weight: 500;
+  transition: color 0.2s, background-color 0.2s;
+}
+.stop:hover { color: var(--rk-blue); }
+.stop__dot {
+  flex: none; width: 12px; height: 12px; border-radius: 50%;
+  background: #fff; border: 2px solid rgba(0, 118, 192, 0.45);
+  transition: background-color 0.25s, border-color 0.25s, transform 0.25s var(--ease-cine);
+}
+.stop.is-reached .stop__dot { background: var(--rk-green); border-color: var(--rk-blue); }
+.stop[aria-current='true'] { color: var(--rk-blue); font-weight: 700; }
+.stop[aria-current='true'] .stop__dot { transform: scale(1.25); box-shadow: 0 0 0 4px rgba(0, 118, 192, 0.14); }
+
+@media (min-width: 1024px) {
+  .route-map {
+    background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-card);
+    padding: 22px 18px 30px 52px;
+  }
+  .route-map__title { margin-bottom: 10px; }
+  /* the line runs from the card's top edge (where the route enters) to a terminal at the foot */
+  .route-map__line {
+    position: absolute; left: 25px; top: 0; bottom: 22px; width: 2px;
+    background: repeating-linear-gradient(to bottom, rgba(0, 118, 192, 0.42) 0 3px, transparent 3px 9px);
+  }
+  .route-map__line::after {
+    content: ''; position: absolute; left: 50%; bottom: -6px; width: 10px; height: 10px; margin-left: -5px;
+    border-radius: 50%; background: #fff; border: 2px solid rgba(0, 118, 192, 0.55);
+  }
+  .route-map__fill { position: absolute; inset: 0; background: var(--rk-blue); transform-origin: 50% 0; transform: scaleY(0); }
+  .route-map__stops { display: grid; gap: 2px; }
+  .stop { min-height: 34px; padding: 5px 10px; margin-left: -10px; border-radius: 9px; font-size: 0.9375rem; line-height: 1.25; }
+  .stop:hover { background: rgba(0, 118, 192, 0.06); }
+  .stop[aria-current='true'] { background: rgba(0, 118, 192, 0.08); }
+  /* dot sits on the line: line centre is 26px from the card edge, the stop starts at 52 − 10 */
+  .stop__dot { position: absolute; left: -22px; top: 50%; margin-top: -6px; }
+}
+
+/* --- Route map (below 1024: a sticky strip of stops under the header) ---- */
+@media (max-width: 1023px) {
+  .ind { padding-top: 0; }
+  .ind-side { display: contents; }
+  .route-map {
+    position: sticky; top: var(--header-h); z-index: 30;
+    margin-inline: calc(var(--gutter) * -1);
+    background: rgba(255, 255, 255, 0.96); backdrop-filter: saturate(1.4) blur(10px);
+    border-bottom: 1px solid var(--rk-border);
+    box-shadow: 0 10px 24px -22px rgba(17, 24, 39, 0.5);
+  }
+  .route-map__title {
+    position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .route-map__line { display: none; }
+  .route-map__track {
+    overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none;
+    padding: 10px var(--gutter) 22px; scroll-padding-inline: 40px;
+  }
+  .route-map__track::-webkit-scrollbar { display: none; }
+  .route-map__stops { position: relative; display: flex; gap: 8px; width: max-content; }
+  /* the rail under the stops (dashed plan + solid progress) */
+  .route-map__stops::before, .route-map__stops::after {
+    content: ''; position: absolute; left: 14px; right: 14px; bottom: -12px; height: 2px;
+  }
+  .route-map__stops::before { background: repeating-linear-gradient(to right, rgba(0, 118, 192, 0.42) 0 3px, transparent 3px 9px); }
+  .route-map__stops::after { background: var(--rk-blue); transform-origin: 0 50%; transform: scaleX(var(--fill, 0)); }
+  .stop {
+    min-height: 38px; padding: 6px 14px 6px 10px; white-space: nowrap;
+    background: #fff; border: 1px solid var(--rk-border); border-radius: var(--rk-radius-pill);
+    font-size: 0.875rem;
+  }
+  .stop__dot { width: 10px; height: 10px; }
+  .stop[aria-current='true'] { background: var(--rk-blue); border-color: var(--rk-blue); color: #fff; }
+  .stop[aria-current='true'] .stop__dot { border-color: #fff; box-shadow: none; }
+  .stop:focus-visible { box-shadow: var(--focus); border-radius: var(--rk-radius-pill); }
+  html:has(body.page-industries) { scroll-padding-top: calc(var(--header-h) + 88px); }
+}
+
+/* --- "Ready to get started?" card ------------------------------------------ */
+.ind-cta {
+  position: relative; overflow: hidden; isolation: isolate;
+  background: var(--rk-gradient-blue); color: #fff;
+  border-radius: var(--rk-radius-card); padding: 26px 24px 28px;
+}
+.ind-cta::after {
+  /* faint route arcs, echoing the hero waves */
+  content: ''; position: absolute; right: -40px; bottom: -60px; width: 200px; height: 200px; z-index: -1;
+  border-radius: 50%; border: 1px dashed rgba(255, 255, 255, 0.28); box-shadow: 0 0 0 22px rgba(255, 255, 255, 0.04);
+}
+.ind-cta__kicker { color: #fff; font-size: 1rem; font-weight: 600; }
+.ind-cta__title { margin: 6px 0 20px; color: #fff; font-size: clamp(1.5rem, 1.3rem + 0.6vw, 1.75rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.01em; }
+.ind-cta__title .accent { color: var(--rk-green); }
+.ind-cta__btn { min-height: 46px; padding: 13px 26px; }
+@media (max-width: 1023px) {
+  .ind-cta { margin: 28px 0 56px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 6px 20px; }
+  .ind-cta__kicker, .ind-cta__title { grid-column: 1; }
+  .ind-cta__title { margin-bottom: 0; }
+  .ind-cta__btn { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+}
+@media (max-width: 479px) {
+  .ind-cta { display: block; }
+  .ind-cta__title { margin-bottom: 18px; }
+}
+
+/* --- Industry articles ----------------------------------------------------- */
+.industry { padding-bottom: 72px; margin-bottom: 72px; border-bottom: 1px solid var(--rk-border); }
+.industry:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+.industry__title { font-size: clamp(1.875rem, 1.25rem + 1.6vw, 2.625rem); letter-spacing: -0.015em; line-height: 1.16; margin-bottom: 26px; }
+.industry__copy { display: grid; gap: 16px; max-width: 70ch; }
+@media (max-width: 767px) { .industry__title .annotate { display: inline; } }
+.industry__copy p { line-height: 1.68; }
+
+.ticks { display: grid; gap: 10px; margin-block: 2px 4px; }
+.ticks li { display: flex; align-items: flex-start; gap: 12px; color: var(--rk-dark-grey); font-weight: 500; line-height: 1.45; }
+.tick { flex: none; width: 22px; height: 22px; margin-top: 0; }
+.tick circle { fill: var(--rk-green); transform-box: fill-box; transform-origin: center; }
+.tick path { fill: none; stroke: var(--rk-dark-grey); stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 16; stroke-dashoffset: 0; }
+.is-live .tick circle { transition: transform 0.4s var(--ease-cine), opacity 0.3s; }
+.is-live .tick path { transition: stroke-dashoffset 0.35s var(--ease-cine) 0.12s; }
+.is-live .ticks li:not(.is-ticked) .tick circle { transform: scale(0.5); opacity: 0.25; }
+.is-live .ticks li:not(.is-ticked) .tick path { stroke-dashoffset: 16; }
+
+/* Photo inside an envelope: the address window opens to the full card, then a postmark lands */
+.industry__media { position: relative; margin: 40px 0 0; aspect-ratio: 16 / 10; }
+.env-paper { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+.env-paper svg { width: 100%; height: 100%; overflow: visible; }
+.env-window { position: absolute; inset: 0; overflow: hidden; border-radius: var(--rk-radius-card); background: #e6e8ec; }
+.env-window picture, .industry__img { width: 100%; height: 100%; }
+.industry__img { object-fit: cover; transform-origin: 30% 70%; }
+.industry__img--gov { object-position: 50% 26%; }
+.industry__img--automotive { object-position: 50% 40%; }
+.postmark {
+  position: absolute; z-index: 2; top: -30px; right: -18px; width: 138px;
+  transform: rotate(-9deg); transform-origin: 66% 50%;
+  filter: drop-shadow(0 6px 10px rgba(17, 24, 39, 0.16));
+}
+.postmark__svg { width: 100%; height: auto; overflow: visible; }
+@media (max-width: 767px) {
+  .industry { padding-bottom: 56px; margin-bottom: 56px; }
+  .industry__media { margin-top: 32px; }
+  .postmark { width: 100px; top: -22px; right: -6px; }
+}
+
+/* Motion-only starting states (the journey writes the live values per frame) */
+.is-live .env-paper { opacity: 1; }
+.is-live .env-window { clip-path: inset(52% 53% 18% 7% round 12px); }
+.is-live .postmark { opacity: 0; }
+.is-live .industry__img { transform: scale(1.14); }
+
+/* The envelope is white on a white map card: give it an edge while it rides the line */
+.page-industries .envelope .env-svg { filter: drop-shadow(0 1px 1.5px rgba(17, 24, 39, 0.35)) drop-shadow(0 4px 8px rgba(0, 10, 202, 0.18)); }
+
+/* The employee band follows the grey section on white */
+.page-industries .employee--inner { padding-top: 104px; }

@@ -1,0 +1,200 @@
+{
+ "$meta": {
+  "source": "https://renkim.com/digital-services/ main body, extracted 2026-10-11 (reference/wwd/digital-services-text.txt + -outline.txt). Header, footer and the unreachable popup are shared (see /content.json).",
+  "rules": "Copy is verbatim. Heading levels normalized: one h1 (hero), h2 per service row; the live h3 'Digital Services' under each service name is rendered as a small kicker paragraph above it. Links to built pages are local (/digital-services/email/ ...); Portal pages stay on renkim.com.",
+  "typoFixes": [],
+  "liveSiteIssuesFound": [
+   "The 'Learn More' buttons for Payment Processing and Electronic Bill Presentment link to https://renkim.com/digital-services/payment-processing/ and /digital-services/electronic-bill-presentment/, which redirect to the homepage. The redesign links the working Portal pages the hero chips already use (https://renkim.com/portal/payment-processing/, /portal/electronic-bill-presentment/).",
+   "Industry pills in the 'Go-To Solution' band all link to the top of /industries-served/; the redesign links each to its section anchor (as on the homepage)."
+  ]
+ },
+ "hero": {
+  "headingLevelLive": "h1",
+  "heading": "Digital Services",
+  "chips": [
+   {
+    "label": "Email",
+    "href": "https://renkim.com/digital-services/email/"
+   },
+   {
+    "label": "Text Message",
+    "href": "https://renkim.com/digital-services/text-message/"
+   },
+   {
+    "label": "Payment Processing",
+    "href": "https://renkim.com/portal/payment-processing/"
+   },
+   {
+    "label": "Electronic Bill Presentment",
+    "href": "https://renkim.com/portal/electronic-bill-presentment/"
+   }
+  ]
+ },
+ "sidebar": {
+  "heading": "Industries We Serve",
+  "links": [
+   {
+    "label": "Automotive",
+    "href": "https://renkim.com/industries-served/#automotive"
+   },
+   {
+    "label": "Class Action / Data Breach",
+    "href": "https://renkim.com/industries-served/#class-action"
+   },
+   {
+    "label": "Financial",
+    "href": "https://renkim.com/industries-served/#financial"
+   },
+   {
+    "label": "Government / Municipality",
+    "href": "https://renkim.com/industries-served/#gov"
+   },
+   {
+    "label": "Healthcare",
+    "href": "https://renkim.com/industries-served/#healthcare"
+   },
+   {
+    "label": "Mortgage",
+    "href": "https://renkim.com/industries-served/#mortgage"
+   },
+   {
+    "label": "Receivables Management",
+    "href": "https://renkim.com/industries-served/#receivables"
+   },
+   {
+    "label": "Telecom / Internet",
+    "href": "https://renkim.com/industries-served/#telecom"
+   },
+   {
+    "label": "Utility",
+    "href": "https://renkim.com/industries-served/#utility"
+   }
+  ],
+  "cta": {
+   "subheading": "Ready to get started?",
+   "title": "Get in touch with Renkim Today!",
+   "link": {
+    "label": "Get Started",
+    "href": "https://renkim.com/contact-us/"
+   }
+  }
+ },
+ "services": [
+  {
+   "heading": "Email",
+   "subheading": "Digital Services",
+   "body": "Renkim's Email Services provide efficient and secure communication solutions tailored to meet your business needs. Our advanced email systems ensure that your messages are delivered promptly and reliably, maintaining confidentiality and compliance with industry standards.",
+   "link": {
+    "label": "Learn More",
+    "href": "https://renkim.com/digital-services/email/"
+   }
+  },
+  {
+   "heading": "Text Message",
+   "subheading": "Digital Services",
+   "body": "Enhance your communication strategy with Renkim's Text Message Services. We offer robust solutions for sending timely and relevant text messages to your clients, ensuring high engagement rates and immediate responses.",
+   "link": {
+    "label": "Learn More",
+    "href": "https://renkim.com/digital-services/text-message/"
+   }
+  },
+  {
+   "heading": "Payment Processing",
+   "subheading": "Digital Services",
+   "body": "Streamline your financial transactions with Renkim's Payment Processing Services. Our secure and reliable systems handle all aspects of payment processing, from invoicing to collections, ensuring smooth and efficient transactions.",
+   "link": {
+    "label": "Learn More",
+    "href": "https://renkim.com/portal/payment-processing/",
+    "liveHref": "https://renkim.com/digital-services/payment-processing/"
+   }
+  },
+  {
+   "heading": "Electronic Bill Presentment",
+   "subheading": "Digital Services",
+   "body": "Simplify your billing process with Renkim's Electronic Bill Presentment Services. Our digital solutions allow you to present bills to your customers electronically, providing a convenient and eco-friendly alternative to traditional paper billing.",
+   "link": {
+    "label": "Learn More",
+    "href": "https://renkim.com/portal/electronic-bill-presentment/",
+    "liveHref": "https://renkim.com/digital-services/electronic-bill-presentment/"
+   }
+  }
+ ],
+ "employeeOwned": {
+  "heading": "We Are A 100% Employee Owned Business",
+  "body": "...we value our Renkim employees as they are the success and backbone of our company",
+  "link": {
+   "label": "Careers",
+   "href": "https://renkim.com/careers/"
+  }
+ },
+ "industriesBand": {
+  "heading": "Renkim Is the Go-To Solution for All of Your Print and Mail, Text, and Email Needs",
+  "pills": [
+   {
+    "label": "Automotive",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Class Action / Data Breach",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Financial",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Government / Municipality",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Healthcare",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Mortgage",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Receivables Management",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Telecom / Internet",
+    "href": "https://renkim.com/industries-served/"
+   },
+   {
+    "label": "Utility",
+    "href": "https://renkim.com/industries-served/"
+   }
+  ]
+ },
+ "values": {
+  "heading": "Our core Renkim Values",
+  "items": [
+   {
+    "heading": "We Value Integrity",
+    "body": "There's no point in doing a job unless you're going to do it right. We believe in adherence to proper guidelines that allow us to do exactly that. Being honest and hard-working are values we believe aid in our integrity."
+   },
+   {
+    "heading": "We Value Communication",
+    "body": "Our entire business is founded in our ability to help people communicate quickly, efficiently, and effectively. We carry this ethos with us through every project we work on, from beginning to end."
+   },
+   {
+    "heading": "We Value Teamwork",
+    "body": "Without the people who support our day-to-day operations, we wouldn't be where we are. We prioritize teamwork in all that we do. That's why we're 100% employee-owned, and why we'll stay that way for years to come."
+   },
+   {
+    "heading": "We Value Quality",
+    "body": "Just because we live in a digital age doesn't mean you can't produce quality work. Renkim strives every day to deliver results that both match the speed of the modern era, while also remaining of the highest possible quality."
+   },
+   {
+    "heading": "We Value Empathy",
+    "body": "Part of any good business is the desire to want to understand people. We want to know where you're coming from and why, not just because it's part of our job, but because we believe that's a simple courtesy you deserve."
+   },
+   {
+    "heading": "We Value Respect",
+    "body": "Without mutual respect, any relationship is destined to fall apart. Renkim works every day to maintain the respect of our clients and our colleagues, and we believe the results of our efforts speak for themselves."
+   }
+  ]
+ }
+}

@@ -1,0 +1,373 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/industries-served/",
+    "captured": "2026-10-11",
+    "notes": [
+      "Main body copy only; header, footer and certifications are shared partials verified with /content.json.",
+      "Index stops are in-page anchors (#automotive …). Live hrefs are https://renkim.com/industries-served/#… on the same page, so each stop records the live URL as liveHref.",
+      "Live hero chips link tel:73437483000 (extra digit) and fax:7343740168 (invalid scheme). The redesign links tel:+17343748300 and renders the fax as text, as on the homepage. The live Google Maps link carries tracking parameters; the redesign keeps only the destination (daddr).",
+      "Live heading levels: \"Industries Served\" h1, \"Industries We Serve\" h2, \"Ready to get started?\" h1, industry headings are spans. Normalized to one H1 and H2 per section."
+    ],
+    "typoFixes": []
+  },
+  "hero": {
+    "heading": "Industries Served",
+    "chips": [
+      {
+        "label": "(734) 374-8300",
+        "href": "tel:+17343748300",
+        "liveHref": "tel:73437483000"
+      },
+      {
+        "label": "info@renkim.com",
+        "href": "mailto:info@renkim.com"
+      },
+      {
+        "label": "(734) 374-0168",
+        "href": null,
+        "liveHref": "fax:7343740168"
+      },
+      {
+        "label": "Southgate, MI 48195",
+        "href": "https://www.google.com/maps?daddr=13333+Allen+Rd,+Southgate,+MI+48195"
+      }
+    ]
+  },
+  "index": {
+    "heading": "Industries We Serve",
+    "stops": [
+      {
+        "label": "Automotive",
+        "href": "#automotive",
+        "liveHref": "https://renkim.com/industries-served/#automotive"
+      },
+      {
+        "label": "Class Action / Data Breach",
+        "href": "#class-action",
+        "liveHref": "https://renkim.com/industries-served/#class-action"
+      },
+      {
+        "label": "Financial",
+        "href": "#financial",
+        "liveHref": "https://renkim.com/industries-served/#financial"
+      },
+      {
+        "label": "Government / Municipality",
+        "href": "#gov",
+        "liveHref": "https://renkim.com/industries-served/#gov"
+      },
+      {
+        "label": "Healthcare",
+        "href": "#healthcare",
+        "liveHref": "https://renkim.com/industries-served/#healthcare"
+      },
+      {
+        "label": "Mortgage",
+        "href": "#mortgage",
+        "liveHref": "https://renkim.com/industries-served/#mortgage"
+      },
+      {
+        "label": "Receivables Management",
+        "href": "#receivables",
+        "liveHref": "https://renkim.com/industries-served/#receivables"
+      },
+      {
+        "label": "Telecom / Internet",
+        "href": "#telecom",
+        "liveHref": "https://renkim.com/industries-served/#telecom"
+      },
+      {
+        "label": "Utility",
+        "href": "#utility",
+        "liveHref": "https://renkim.com/industries-served/#utility"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to get started?",
+    "text": "Get in touch with Renkim Today!",
+    "link": {
+      "label": "Get Started",
+      "href": "https://renkim.com/contact-us/"
+    }
+  },
+  "industries": [
+    {
+      "id": "automotive",
+      "heading": "Automotive Recall Specialists",
+      "headingParts": [
+        "Automotive",
+        "Recall Specialists"
+      ],
+      "blocks": [
+        {
+          "text": "Renkim stands at the forefront of innovation, offering a comprehensive suite of capabilities tailored to meet the dynamic needs of the automotive industry."
+        },
+        {
+          "text": "With a focus on quality, efficiency, and sustainability, we continue to navigate the ever-changing needs of both our partners, dealers, and their customers. Renkim's 40+ years of experience and knowledge in the Recall space allows our Teams to provide a multitude of services during the complex and highly critical process of Recalls. We provide not only with just Print and Mail, but everything that goes into the planning, administration, processing, validating, monitoring, and follow-up processes."
+        },
+        {
+          "text": "It is very basic when it comes to the Recall risks. At Renkim, we understand and promote best practices to ensure:"
+        },
+        {
+          "items": [
+            {
+              "text": "Safety and protection"
+            },
+            {
+              "text": "Transparency and confidence of your customers"
+            },
+            {
+              "text": "Maintaining your brand's reputation"
+            },
+            {
+              "text": "Trust and protection of your dealer base"
+            },
+            {
+              "text": "Trust of government agencies"
+            }
+          ]
+        },
+        {
+          "text": "Services we provide:"
+        },
+        {
+          "items": [
+            {
+              "text": "Multi-channel electronic & print communications"
+            },
+            {
+              "text": "Applications and web development, design, hosting and support"
+            },
+            {
+              "text": "Part order fulfillment and inventory management"
+            },
+            {
+              "text": "Electronic document storage and retrieval"
+            },
+            {
+              "text": "Recall program tracking and metrics reporting"
+            },
+            {
+              "text": "Data management"
+            },
+            {
+              "text": "Multi-lingual contact center"
+            },
+            {
+              "text": "Funds distribution"
+            }
+          ]
+        },
+        {
+          "text": "With a proven record of excellence and a passion for progress, Renkim is a trusted partner for success in the automotive industry."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/happy-woman-car-dealership-1.jpg",
+        "local": "/img/pages/ind-automotive-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "class-action",
+      "heading": "Class Action / Data Breach Solutions",
+      "headingParts": [
+        "Class Action / Data Breach",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Renkim has experience with effectively administering class action settlements. Our qualified team is prepared to successfully support services throughout the class action statement processing using cost effective methods to meet case requirements based on court ordered deadlines. Renkim professionals are pleased to provide the following services to notify effectively and efficiently, track, review, and administer action for each step of an approved settlement."
+        },
+        {
+          "text": "Renkim professionals are pleased to provide:"
+        },
+        {
+          "items": [
+            {
+              "text": "Development and print or electronic delivery of settlement notice"
+            },
+            {
+              "text": "Website hosting of settlement documents & electronic claim submission"
+            },
+            {
+              "text": "Claims review administration"
+            },
+            {
+              "text": "Check or Gift Card claimant allocation"
+            },
+            {
+              "text": "Contact Center support"
+            }
+          ]
+        },
+        {
+          "text": "We are equipped and ready to be your support team for class action settlements, big or small."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-pixabay-265087-1-1.jpg",
+        "local": "/img/pages/ind-class-action-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "financial",
+      "heading": "Financial Solutions",
+      "headingParts": [
+        "Financial",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Perhaps nowhere else is operational efficiency more critical than when dealing with banking, wealth management and the credit card industry."
+        },
+        {
+          "text": "That’s why we’ve implemented state-of-the-art technology to help our clients navigate this competitive and diverse marketplace. At Renkim, we make it possible for our clients to interact with their customer base in a timely, efficient, and proactive manner."
+        },
+        {
+          "text": "From print mailing to online document delivery, our services are designed to provide safety, security, and peace of mind."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-anna-nekrashevich-6801874.jpg",
+        "local": "/img/pages/ind-financial-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "gov",
+      "heading": "Government / Municipality Solutions",
+      "headingParts": [
+        "Government / Municipality",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Renkim offers robust solutions tailored for government and municipal needs, ensuring efficient and secure handling of sensitive documents. Our services support various governmental functions, from public records management to utility billing, providing reliable and compliant communication solutions."
+        },
+        {
+          "text": "We understand the unique requirements of government entities and are committed to delivering high-quality services that enhance operational efficiency and public engagement."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-priya-karkare-1998390-3643592.jpg",
+        "local": "/img/pages/ind-gov-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "healthcare",
+      "heading": "Healthcare Solutions",
+      "headingParts": [
+        "Healthcare",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Healthcare providers are increasingly challenged with growing receivables and reimbursement rates. Renkim addresses this challenge by providing customized print and secure online tools that make it easy for patients to view and manage their accounts while improving cash flow and profitability."
+        },
+        {
+          "text": "We understand that the healthcare billing process is critical to forming a positive relationship with patients. That’s why we work closely with our clients to improve the patient experience while increasing brand and community awareness through easy-to-read multi-color statements, call-to-action message icons, and on-demand statement messaging."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-cedric-fauntleroy-4266936.jpg",
+        "local": "/img/pages/ind-healthcare-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "mortgage",
+      "heading": "Mortgage Solutions",
+      "headingParts": [
+        "Mortgage",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Renkim's Mortgage Solutions streamline document management for mortgage lenders and servicers, ensuring timely and accurate delivery of critical information. Our services include secure print and electronic document delivery, helping clients manage loan documents, statements, and notices efficiently."
+        },
+        {
+          "text": "We utilize advanced technology to ensure compliance with industry regulations and provide secure, reliable solutions that meet the needs of the mortgage industry."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-karolina-grabowska-4491459-1.jpg",
+        "local": "/img/pages/ind-mortgage-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "receivables",
+      "heading": "Receivables Management Solutions",
+      "headingParts": [
+        "Receivables Management",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Renkim has provided compliant, cost-effective print and electronic document delivery services for over 30 years in the ARM Industry."
+        },
+        {
+          "text": "Renkim provides the necessary tools and technology to mitigate risk in this highly litigious environment. Our facilities are PCI-DSS secure and include state-of-the-art print, electronic delivery and photo-eye camera insertion equipment to provide 100% accountability for each document inserted. We also provide complete Internet tracking for each mail piece throughout its duration in the USPS mail stream."
+        },
+        {
+          "text": "Renkim’s Document Design Team will provide each partner the flexibility to create custom designed communications that are tailored to their needs, increase profitability, and decrease risk."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-pavel-danilyuk-8111853-1.jpg",
+        "local": "/img/pages/ind-receivables-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "telecom",
+      "heading": "Telecom / Internet Solutions",
+      "headingParts": [
+        "Telecom / Internet",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Renkim's Telecom/Internet Solutions cater to the communication needs of telecom and internet service providers, offering seamless integration of print and digital communications. Our services include bill presentment, payment processing, and customer notifications, ensuring that clients can manage their communications effectively."
+        },
+        {
+          "text": "We leverage the latest technology to provide fast, secure, and efficient solutions that enhance customer engagement and streamline operations."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-olly-3760263-1.jpg",
+        "local": "/img/pages/ind-telecom-<w>.(avif|webp|jpg)"
+      }
+    },
+    {
+      "id": "utility",
+      "heading": "Utility Solutions",
+      "headingParts": [
+        "Utility",
+        "Solutions"
+      ],
+      "blocks": [
+        {
+          "text": "Our customized print and electronic documents are designed to furnish easy-to-read consumer information and dynamic messaging. We offer various channels of message delivery via traditional print and mail, electronic online bill presentment and payment, text messaging, and eStatement reminders. From design to distribution, Renkim is equipped to handle a complete lineup of customer interaction management solutions."
+        }
+      ],
+      "image": {
+        "liveSrc": "https://renkim.com/wp-content/uploads/pexels-thecoachspace-2977565.jpg",
+        "local": "/img/pages/ind-utility-<w>.(avif|webp|jpg)"
+      }
+    }
+  ],
+  "employeeOwned": {
+    "heading": "We Are A 100% Employee Owned Business",
+    "text": "...we value our Renkim employees as they are the success and backbone of our company",
+    "link": {
+      "label": "Careers",
+      "href": "https://renkim.com/careers/"
+    }
+  },
+  "certifications": {
+    "heading": "We Have the Certifications to Get the Job Done Right",
+    "body": "Renkim is always looking for ways to measure success and improve upon it, which is why we adhere to the strongest standards for regulatory compliance recognized in the various industries we support.",
+    "link": {
+      "label": "Compliance",
+      "href": "https://renkim.com/compliance/"
+    }
+  }
+}

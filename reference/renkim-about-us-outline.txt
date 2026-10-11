@@ -1,0 +1,363 @@
+    ?: About Us | Renkim
+
+== <section class='bde-section-406-138 bde-section' id=''>
+    p: Renkim has experienced a cybersecurity incident.
+  [A href=https://renkim.com/renkim-notice-of-data-security-incident/]
+    a: Click here
+    p: for more information.
+
+== <section class='bde-section-406-113 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:1920/h:499/q:mauto/f:best/https://renkim.com/wp-content/uploads/RGB-Renkim-Logo-2026_WHITE-scaled.png alt='' w=2560 h=666]
+  [BUTTON]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/RenkimLogowhiteSmaller.png alt='' w= h=None]
+  [BUTTON]
+    button: Close
+  [BUTTON]
+    button: What We Do
+  [BUTTON]
+    h1: Print & Mail
+  [A href=https://renkim.com/print-mail/print-document/]
+    a: Print Document
+  [A href=https://renkim.com/print-mail/certified-mail/]
+    a: Certified Mail
+  [A href=https://renkim.com/print-mail/micr-check-printing/]
+    a: MICR Check Printing
+    h1: Digital
+  [A href=https://renkim.com/digital-services/email/]
+    a: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    a: Text Message
+    h1: Ancillary Services
+  [A href=https://renkim.com/ancillary-services/address-element-correction-aec/]
+    a: Address Element Correction (AEC)
+  [A href=https://renkim.com/ancillary-services/bankruptcy-deceased/]
+    a: Bankruptcy & Deceased
+  [A href=https://renkim.com/ancillary-services/email-verification/]
+    a: Email Verification
+  [A href=https://renkim.com/ancillary-services/litigious-scrub/]
+    a: Litigious Scrub
+  [A href=https://renkim.com/ancillary-services/lockbox/]
+    a: Lockbox
+  [A href=https://renkim.com/ancillary-services/phone-search/]
+    a: Phone Search
+  [A href=https://renkim.com/ancillary-services/return-mail-processing/]
+    a: Return Mail Processing
+  [A href=https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/]
+    a: USPS CASS, DPV, NCOA
+  [A href=https://renkim.com/ancillary-services/vacant-address-search/]
+    a: Vacant Address Search
+    h1: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    a: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    a: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    a: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    a: Renkim Reporting
+  [A href=https://renkim.com/about-us/]
+    a: Who We Are
+  [BUTTON]
+    span: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    span: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    span: History
+  [A href=https://renkim.com/about-us/#values]
+    span: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    span: The ESOP Advantage
+  [A href=https://renkim.com/industries-served/]
+    a: Who We Help
+  [BUTTON]
+    span: Industries We Serve
+  [A href=https://renkim.com/industries-served/#automotive]
+    span: Automotive
+  [A href=https://renkim.com/industries-served/#class-action]
+    span: Class Action/Data Breach
+  [A href=https://renkim.com/industries-served/#financial]
+    span: Financial
+  [A href=https://renkim.com/industries-served/#gov]
+    span: Government/Municipality
+  [A href=https://renkim.com/industries-served/#healthcare]
+    span: Healthcare
+  [A href=https://renkim.com/industries-served/#mortgage]
+    span: Mortgage
+  [A href=https://renkim.com/industries-served/#receivables]
+    span: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    span: Telecom/Internet
+  [A href=https://renkim.com/industries-served/#utility]
+    span: Utility
+  [BUTTON]
+    button: Resources
+  [BUTTON]
+    span: Quick Links
+  [A href=https://renkim.com/compliance/]
+    span: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    span: Renkim on the Road
+  [A href=https://renkim.com/in-the-community/]
+    span: Renkim in the Community
+  [A href=https://renkim.com/careers/]
+    span: Careers
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+  [A href=https://renkim.com/contact-us/]
+    span: Schedule A Call
+
+== <section class='bde-section-131-280 bde-section' id=''>
+    h1: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    span: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    span: Our History
+  [A href=https://renkim.com/about-us/#values]
+    span: Core Values
+  [A href=https://renkim.com/careers/]
+    span: Careers
+
+== <section class='bde-section-131-355 bde-section' id=''>
+    span: The Renkim
+    span: Leadership
+    span: Team
+    div: Our leadership team brings together a wealth of experience and expertise, guiding Renkim with a strategic vision and a commitment to excellence.
+  [BUTTON]
+    span: Cliff Stephens
+  [BUTTON]
+    span: Rob Augg
+  [BUTTON]
+    span: Tom Horrom
+  [BUTTON]
+    span: Nathan Beatty
+  [BUTTON]
+    span: Henry Lenden
+  [BUTTON]
+    span: Bridgett Cole
+  [BUTTON]
+    span: Linda Webster
+  [BUTTON]
+    span: Derek Blue
+  [BUTTON]
+    span: Derek Vertin
+    h1: Cliff Stephens
+    h1: President & CEO
+    div: Cliff brings over three decades of seasoned expertise in business development, operations management, and sales strategy. With a tenure spanning back to 2007, Cliff has been a driving force in Renkim's evolution, initially joining as Director of Business Development.
+    div: Before his tenure at Renkim, Cliff honed his leadership prowess in distinguished roles within Fortune 500 Companies. His career trajectory includes pivotal positions at renowned organizations such as United Parcel Service, RPS (FedEx Ground), and McKesson Pharmaceuticals. Notably, he spearheaded the establishment of the Southwest Region of Bush Transportation, an ESOP Company headquartered in Wilmington, Ohio. Cliff's responsibilities encompassed comprehensive oversight of profit and loss, operations, and sales initiatives across expansive facilities and client portfolios.
+    div: Preceding his pivotal role at Renkim, Cliff held a pivotal position as the head of Corporate Headquarters for Central Freight Lines in Waco, Texas. Here, he orchestrated a transformative shift in organizational culture and structure, significantly enhancing operational efficiencies, bolstering employee retention rates, and driving substantial revenue growth.
+    div: Cliff's academic foundation includes studies in Marketing at Ohio State University, complementing his extensive practical experience with a strong theoretical understanding of consumer behavior and market dynamics. As President and CEO, Cliff continues to steer Renkim towards unparalleled growth and success through his strategic vision and operational acumen.
+    h1: Rob Augg
+    h1: Chief Revenue Officer
+    div: Rob Augg brings a wealth of experience to the table, with over two and a half decades in service-based sales and management. His tenure at Renkim since 2004, where he's not only been a team member but also an employee owner, underscores his commitment and dedication to his work. Additionally, his background as a US Navy veteran, with experience overseas and during the Persian Gulf War, speaks volumes about his resilience, discipline, and ability to handle high-pressure situations.
+    div: Outside of his professional endeavors, Rob is deeply involved in his community, particularly in children and youth ministries within his church and local boards. His commitment to serving as a four-term member of the ACA Affiliate Committee further demonstrates his dedication to making a positive impact.
+    div: Rob's personal life reflects his values of family and community, as he resides in Chillicothe, OH, with his wife Diane and their two children, Lily and Miles. His multifaceted involvement in both professional and community spheres underscores his well-rounded character and his passion for making a difference wherever he goes.
+    h1: Tom Horrom
+    h1: Chief Information Officer
+    div: Recognized for his innovative thinking within the technological landscape, Thomas brings to the table a wealth of experience, steering groundbreaking technology initiatives that align with our company's objectives.
+    div: Thomas’ well-rounded career, spanning over two decades, is marked by significant contributions across various sectors including sports and entertainment, as well as the financial sphere. His tenure as the Vice President of Technology & Advanced Media at USSSA underscores his depth of expertise. During this period, Thomas was instrumental in forging ahead with innovative technological strategies, thereby elevating the digital stature of the organization.
+    div: At MB Financial Bank, his proactive approach saw a remarkable shift from traditional paradigms to Agile methodologies, attesting to his capability to foster operational efficiency and modernize workflows. Moreover, his leadership in multiple pivotal roles has been a catalyst in rejuvenating IT functions, propelling technology to a centerpiece of organizational advancement.
+    div: His commendable work at both Palace Sports & Entertainment and Olympia Entertainment underscores his unwavering commitment to exploiting technology's potential across various sectors. Notably, his vision for the PS&E Innovation Center is a testament to his relentless pursuit of technological excellence.
+    div: Backed by a solid educational foundation from Michigan State University in IT networking, Thomas also holds the distinguished recognition of serving in the US Army, imbuing his professional journey with unparalleled discipline and leadership finesse.
+    h1: Nathan Beatty
+    h1: Vice President of Technology
+    div: Nathan has been working in various facets of the IT industry for over 25 years, including networking infrastructure, project management, Agile transformations, and software engineering. Over this time, he has developed a passion for all things related to the development and maintenance of enterprise level software. A large part of this passion is related to the people and culture around software engineering teams.
+    div: When Nathan isn’t thinking about IT, he’s spending as much time as possible with his wife and 2 adult children. He and his wife keep busy on the weekends owning and managing a private vacation rental home on the shore of Lake Huron in Michigan.
+    h3: Henry Lenden
+    h4: Vice President of Operations
+    div: Henry has 35 years of experience in a fast paced and high - speed print and mail environment. He is responsible for developing and directing a production team to meet our client service level agreements while maintaining quality control standards. Henry utilizes strong technical and mechanical skills to ensure Renkim Corporation implements the latest hardware and software to meet client business needs.
+    div: In 2018 Henry accepted the Pitney-Bowes Brilliance Award for Higher Value Communications presented to the Renkim team for their performance in converting our workload from digital to full color inkjet. Henry enjoys tinkering with cars and cruising his 1969 Plymouth Roadrunner.
+    h1: Bridgett Cole
+    h1: Finance Manager/Controller
+    div: Bridgett Cole brings over a decade of diverse accounting experience across the dynamic automotive and strategic aviation industries. Known for her meticulous attention to detail and a results-driven mindset, Bridgett has consistently streamlined financial processes to drive efficiency, accuracy, and cost savings. Her contributions at Renkim have led to measurable improvements in operational performance, further cementing her reputation as a trusted financial leader.
+    div: Bridgett holds a Bachelor’s degree in Business Administration with a concentration in Accounting, as well as a Master’s degree from Eastern Michigan University. Her strong academic foundation, coupled with hands-on industry experience, enables her to approach financial challenges with both analytical rigor and strategic insight.
+    div: Outside of work, Bridgett is passionate about reading, traveling, crafting, and volunteering in her local community. She also cherishes spending quality time with her dog and her family, which remains a central part of her life.
+    h1: Linda Webster
+    h1: Director of Major Accounts
+    div: As the Director of Client Partnerships, Development & Operations, Linda began her career path with Renkim as a Project Administrator on the Ford Recall account over 30 years ago. Linda has strengthened and leveraged Recall knowledge to grow Renkim’s service offerings to not only print and mail, but also contact center, website development, claims processing, marketing, tailored program design and administration. Linda’s motto is ‘anything is possible’.
+    div: Linda attended Eastern Michigan University, receiving her bachelor’s degree in marketing, communications, and additional hours toward teaching. Family time is the best time for Linda. She also enjoys boating, golfing, swimming, and babysitting.
+    h1: derek Blue
+    h1: Director of Client Success
+    div: Derek Blue started with Renkim in 2017 in the Account Management department and was promoted to Director of Client Success in June of 2022. Prior to Renkim, Derek spent 15 years in the restaurant industry managing multiple restaurants in the metro Detroit area. Derek graduated from Grand Valley State University in 2006 with a Bachelor of Science in Business Administration.
+    div: Derek lives in Saint Clair Shores, Michigan with his wife Lauren and three kids Jack, Carter and Will. He enjoys helping coach his son's little league teams and spending time with his family.
+    h1: derek Vertin
+    h1: Product Owner
+    div: Derek Vertin has more than 20 years of product management experience with software and data solutions. Prior to joining Renkim in 2023, he developed and enhanced dozens of applications and reporting interfaces across a wide range of industries, including market research, mortgage and PCI compliance. During nearly 15 years working with several automotive market verticals at R.L. Polk & Co. (now S&P Global), Derek moved from traditional product manager to product owner through adoption and practice of Agile development methodology. Since leaving Polk, he has supported four additional Agile transformations in the product owner role. Derek is a proud graduate of Michigan State University with a degree in Marketing.
+
+== <section class='bde-section-131-347 bde-section' id=''>
+    span: About Our
+    span: Extensive Renkim
+    span: History
+    div: Renkim has a rich history of innovation and dedication. Since our inception in 1982, we've evolved from a small data processing firm to a leading provider of comprehensive data management and communication solutions, all while staying true to our roots and core values.
+    h4: How It Started
+    p: Several years ago, a large, Detroit-based automotive manufacturer needed a sophisticated and secure database to handle vehicle and client information. Two programmers, Gary Perlick and Rob Swearengen, were hired to provide a solution for this complex application. In 1982, these two men officially formed Renkim Corporation, naming the company after their wives – Rena and Kim, hence RenKim. The company facilitated large scale data processing and communications management services.
+    h4: 100% Employee Owned
+    p: In the late nineties, the original founders began the process of converting Renkim’s ownership from the two original founders to an ESOP (Employee Stock Ownership Plan). Still today, every single share of Renkim Corporation is owned by current Renkim employees.
+    h4: Adding More Industries
+    p: Around this same time, the company began adding to their project-based service offerings with continuity-based ones catered to a variety of industries with a legal or financial background. Over the years, serving these new industries led Renkim to acquire and maintain top-of-the-line third party compliance certifications for operational procedures, physical and data security, that are still in place today.
+    h4: 40+ Years of Service
+    p: Over forty years since it all began, we still service that first automobile manufacturer client, as well as handling complex data processing and storage, as well as the communications management of legal, tax, financial, and other mission-critical documents for hundreds more clients in the credit, collection, healthcare, insurance, automotive, and utility industries throughout North America.
+
+== <section class='bde-section-131-397 bde-section' id=''>
+    span: We Are A
+    span: 100% Employee Owned
+    span: Business
+    div: ...we value our Renkim employees as they are the success and backbone of our company
+  [A href=https://renkim.com/careers/]
+    span: Careers
+
+== <section class='bde-section-131-350 bde-section' id=''>
+    span: Our core
+    span: Renkim
+    span: Values
+    div: Our core values are the foundation of everything we do at Renkim. They guide our decisions, shape our company culture, and define our commitment to our clients and employees.
+    h3: we value
+    h3: integrity
+    div: There's no point in doing a job unless you're going to do it right. We believe in adherence to proper guidelines that allow us to do exactly that. Being honest and hard-working are values we believe aid in our integrity.
+    h3: we value
+    h3: communication
+    div: Our entire business is founded in our ability to help people communicate quickly, efficiently, and effectively. We carry this ethos with us through every project we work on, from beginning to end.
+    h3: we value
+    h3: teamwork
+    div: Without the people who support our day-to-day operations, we wouldn't be where we are. We prioritize teamwork in all that we do. That's why we're 100% employee-owned, and why we'll stay that way for years to come.
+    h3: we value
+    h3: quality
+    div: Just because we live in a digital age doesn't mean you can't produce quality work. Renkim strives every day to deliver results that both match the speed of the modern era, while also remaining of the highest possible quality.
+    h3: we value
+    h3: empathy
+    div: Part of any good business is the desire to want to understand people. We want to know where you're coming from and why, not just because it's part of our job, but because we believe that's a simple courtesy you deserve.
+    h3: we value
+    h3: respect
+    div: Without mutual respect, any relationship is destined to fall apart. Renkim works every day to maintain the respect of our clients and our colleagues, and we believe the results of our efforts speak for themselves.
+
+== <section class='bde-section-131-542 bde-section' id=''>
+  [IMG src=https://img.aelieve.com/w:534/h:474/q:mauto/f:best/https://renkim.com/wp-content/uploads/Renkim_Certifications.png alt='' w=534 h=474]
+    span: We Have the
+    span: Certifications
+    span: to Get the Job Done
+    span: Right
+    div: Renkim is always looking for ways to measure success and improve upon it, which is why we adhere to the strongest standards for regulatory compliance recognized in the various industries we support.
+  [A href=https://renkim.com/compliance/]
+    span: Compliance
+
+== <section class='bde-section-131-597 bde-section' id=''>
+  [IMG src=https://img.aelieve.com/w:945/h:1024/q:mauto/f:best/https://renkim.com/wp-content/uploads/IMG_4546-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/sign-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:1024/h:683/q:mauto/f:best/https://renkim.com/wp-content/uploads/Renkim-at-the-Booth-ACA-National-21-Vegas.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/gleaners.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:768/h:1024/q:mauto/f:best/https://renkim.com/wp-content/uploads/IMG_6220-1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/Green1.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/volunteer-day-10.30.24.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:1024/h:768/q:mauto/f:best/https://renkim.com/wp-content/uploads/Resized_Resized_20230521_092134.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/esop-lunch-7.jpg alt='' w=None h=None]
+  [IMG src=https://img.aelieve.com/w:auto/h:auto/q:mauto/f:best/https://renkim.com/wp-content/uploads/chili-pic-3.jpg alt='' w=None h=None]
+
+== <section class='bde-section-72-128 bde-section' id=''>
+  [A href=https://renkim.com/]
+  [IMG src=https://img.aelieve.com/w:216/h:66/q:mauto/f:best/https://renkim.com/wp-content/uploads/EmployeeOwnedLogoLarge.png alt='' w=216 h=66]
+    h6: What We Do
+  [A href=https://renkim.com/print-mail/]
+    h6: Print and Mail
+  [A href=https://renkim.com/digital-services/]
+    h6: Digital Services
+  [A href=https://renkim.com/digital-services/email/]
+    h6: Email
+  [A href=https://renkim.com/digital-services/text-message/]
+    h6: Text Message
+  [A href=https://renkim.com/ancillary-services/]
+    h6: Ancillary Services
+    h6: Portal
+  [A href=https://renkim.com/portal/renkim-vision/]
+    h6: Renkim Vision
+  [A href=https://renkim.com/portal/electronic-bill-presentment/]
+    h6: Electronic Bill Presentment
+  [A href=https://renkim.com/portal/payment-processing/]
+    h6: Payment Processing
+  [A href=https://renkim.com/portal/renkim-reporting/]
+    h6: Renkim Reporting
+    h6: Who We Help
+  [A href=https://renkim.com/industries-served/]
+    h6: Automotive
+  [A href=https://renkim.com/industries-served/]
+    h6: Class Action
+  [A href=https://renkim.com/industries-served/]
+    h6: Financial
+  [A href=https://renkim.com/industries-served/]
+    h6: Government
+  [A href=https://renkim.com/industries-served/]
+    h6: Healthcare
+  [A href=https://renkim.com/industries-served/]
+    h6: Mortgage
+  [A href=https://renkim.com/industries-served/]
+    h6: Receivables Management
+  [A href=https://renkim.com/industries-served/#telecom]
+    h6: Telecom/Internet
+  [A href=https://renkim.com/industries-served/]
+    h6: Utility
+    h6: About Us
+  [A href=https://renkim.com/about-us/#leadership]
+    h6: Leadership
+  [A href=https://renkim.com/about-us/#history]
+    h6: Our History
+  [A href=https://renkim.com/about-us/#values]
+    h6: Core Values
+  [A href=https://renkim.com/the-esop-advantage/]
+    h6: The ESOP Advantage
+    h6: Resources
+  [A href=https://renkim.com/compliance/]
+    h6: Compliance
+  [A href=https://renkim.com/on-the-road/]
+    h6: Renkim On The Road
+  [A href=https://renkim.com/in-the-community/]
+    h6: Renkim In The Community
+  [A href=https://renkim.com/careers/]
+    h6: Careers
+    h6: Contact
+  [A href=tel:(734) 374-8300]
+    h6: Call (734) 374-8300
+  [A href=https://breakdance.com/]
+    h6: Fax (734) 374-0168
+  [A href=https://renkim.com/contact-us/]
+    h6: Send us a message
+    h6: Our Location
+  [A href=#]
+    h6: 13333 Allen Road
+  [A href=#]
+    h6: Southgate, MI 48195
+    p: Made with ♥ by
+  [A href=https://aelieve.com/]
+    a: Aelieve
+  [A href=https://renkim.com/privacy-policy/]
+    a: Privacy Policy
+  [A href=https://renkim.com/terms-of-service/]
+    a: Terms of Service
+    div: © 2026 Renkim. All Rights Reserved.
+  [A href=https://www.facebook.com/Renkim-Corporation-186106118105082/]
+  [A href=https://twitter.com/RenkimCorp]
+  [A href=https://www.linkedin.com/company/renkim-corporation/]
+
+== <section class='bde-section-250-101 bde-section' id=''>
+    span: Want to
+    span: get in touch
+    span: with our team?
+    div: Just want to send a message to our team? No worries, we are here to help. Click on the button below to contact us.
+  [A href=https://renkim.com/contact-us/]
+    span: Contact
+    span: Request a
+    span: Renkim demo
+    span: today
+    h3: ... fill out the form below
+
+== <form class='breakdance-form breakdance-form--vertical' id='contact-form112'>
+  [INPUT type=text name=fields[name] id=name placeholder='Name' required=True value='']
+  [INPUT type=text name=fields[company] id=company placeholder='Company' required=False value='']
+  [INPUT type=email name=fields[email] id=email placeholder='Email' required=True value='']
+  [INPUT type=tel name=fields[phone] id=phone placeholder='Phone Number' required=False value='']
+  [TEXTAREA type=textarea name=fields[message] id=message placeholder='Message' required=True value='']
+  [BUTTON]
+    span: Submit
+  [INPUT type=hidden name=form_id id=None placeholder='' required=False value='112']
+  [INPUT type=hidden name=post_id id=None placeholder='' required=False value='250']

@@ -1,0 +1,381 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/about-us/ main body, extracted 2026-10-11 (reference/renkim-about-us.html, reference/renkim-about-us-outline.txt)",
+    "rules": "Copy is verbatim from the live page. Heading levels are normalized (one h1; h2 per section; h3 for leaders, milestones, values). The live page uses h1 for every leader name and title; the redesign uses h3 + p.",
+    "typoFixes": [
+      {
+        "where": "leadership.derek-blue.name",
+        "from": "derek Blue",
+        "to": "Derek Blue",
+        "note": "The live tab label already reads \"Derek Blue\"; only the panel heading is lowercase."
+      },
+      {
+        "where": "leadership.derek-vertin.name",
+        "from": "derek Vertin",
+        "to": "Derek Vertin",
+        "note": "The live tab label already reads \"Derek Vertin\"; only the panel heading is lowercase."
+      }
+    ],
+    "notes": [
+      "Hero chips link in-page (#leadership, #history, #values); live hrefs are https://renkim.com/about-us/#… on the same page.",
+      "The live leadership section has no photos; the redesign shows initials monograms only.",
+      "The live community photo wall has no heading; the redesign gives the section an aria-label only.",
+      "The live photo alts are empty; the redesign describes what each photo shows."
+    ]
+  },
+  "hero": {
+    "heading": "About Us",
+    "links": [
+      {
+        "label": "Leadership",
+        "href": "#leadership",
+        "liveHref": "https://renkim.com/about-us/#leadership"
+      },
+      {
+        "label": "Our History",
+        "href": "#history",
+        "liveHref": "https://renkim.com/about-us/#history"
+      },
+      {
+        "label": "Core Values",
+        "href": "#values",
+        "liveHref": "https://renkim.com/about-us/#values"
+      },
+      {
+        "label": "Careers",
+        "href": "https://renkim.com/careers/"
+      }
+    ]
+  },
+  "leadership": {
+    "headingLevelLive": "span (styled heading)",
+    "heading": {
+      "full": "The Renkim Leadership Team",
+      "parts": [
+        {
+          "text": "The Renkim",
+          "style": "primary"
+        },
+        {
+          "text": "Leadership",
+          "style": "secondary"
+        },
+        {
+          "text": "Team",
+          "style": "primary"
+        }
+      ]
+    },
+    "body": "Our leadership team brings together a wealth of experience and expertise, guiding Renkim with a strategic vision and a commitment to excellence.",
+    "people": [
+      {
+        "name": {
+          "text": "Cliff Stephens"
+        },
+        "title": "President & CEO",
+        "bio": [
+          {
+            "body": "Cliff brings over three decades of seasoned expertise in business development, operations management, and sales strategy. With a tenure spanning back to 2007, Cliff has been a driving force in Renkim's evolution, initially joining as Director of Business Development."
+          },
+          {
+            "body": "Before his tenure at Renkim, Cliff honed his leadership prowess in distinguished roles within Fortune 500 Companies. His career trajectory includes pivotal positions at renowned organizations such as United Parcel Service, RPS (FedEx Ground), and McKesson Pharmaceuticals. Notably, he spearheaded the establishment of the Southwest Region of Bush Transportation, an ESOP Company headquartered in Wilmington, Ohio. Cliff's responsibilities encompassed comprehensive oversight of profit and loss, operations, and sales initiatives across expansive facilities and client portfolios."
+          },
+          {
+            "body": "Preceding his pivotal role at Renkim, Cliff held a pivotal position as the head of Corporate Headquarters for Central Freight Lines in Waco, Texas. Here, he orchestrated a transformative shift in organizational culture and structure, significantly enhancing operational efficiencies, bolstering employee retention rates, and driving substantial revenue growth."
+          },
+          {
+            "body": "Cliff's academic foundation includes studies in Marketing at Ohio State University, complementing his extensive practical experience with a strong theoretical understanding of consumer behavior and market dynamics. As President and CEO, Cliff continues to steer Renkim towards unparalleled growth and success through his strategic vision and operational acumen."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Rob Augg"
+        },
+        "title": "Chief Revenue Officer",
+        "bio": [
+          {
+            "body": "Rob Augg brings a wealth of experience to the table, with over two and a half decades in service-based sales and management. His tenure at Renkim since 2004, where he's not only been a team member but also an employee owner, underscores his commitment and dedication to his work. Additionally, his background as a US Navy veteran, with experience overseas and during the Persian Gulf War, speaks volumes about his resilience, discipline, and ability to handle high-pressure situations."
+          },
+          {
+            "body": "Outside of his professional endeavors, Rob is deeply involved in his community, particularly in children and youth ministries within his church and local boards. His commitment to serving as a four-term member of the ACA Affiliate Committee further demonstrates his dedication to making a positive impact."
+          },
+          {
+            "body": "Rob's personal life reflects his values of family and community, as he resides in Chillicothe, OH, with his wife Diane and their two children, Lily and Miles. His multifaceted involvement in both professional and community spheres underscores his well-rounded character and his passion for making a difference wherever he goes."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Tom Horrom"
+        },
+        "title": "Chief Information Officer",
+        "bio": [
+          {
+            "body": "Recognized for his innovative thinking within the technological landscape, Thomas brings to the table a wealth of experience, steering groundbreaking technology initiatives that align with our company's objectives."
+          },
+          {
+            "body": "Thomas’ well-rounded career, spanning over two decades, is marked by significant contributions across various sectors including sports and entertainment, as well as the financial sphere. His tenure as the Vice President of Technology & Advanced Media at USSSA underscores his depth of expertise. During this period, Thomas was instrumental in forging ahead with innovative technological strategies, thereby elevating the digital stature of the organization."
+          },
+          {
+            "body": "At MB Financial Bank, his proactive approach saw a remarkable shift from traditional paradigms to Agile methodologies, attesting to his capability to foster operational efficiency and modernize workflows. Moreover, his leadership in multiple pivotal roles has been a catalyst in rejuvenating IT functions, propelling technology to a centerpiece of organizational advancement."
+          },
+          {
+            "body": "His commendable work at both Palace Sports & Entertainment and Olympia Entertainment underscores his unwavering commitment to exploiting technology's potential across various sectors. Notably, his vision for the PS&E Innovation Center is a testament to his relentless pursuit of technological excellence."
+          },
+          {
+            "body": "Backed by a solid educational foundation from Michigan State University in IT networking, Thomas also holds the distinguished recognition of serving in the US Army, imbuing his professional journey with unparalleled discipline and leadership finesse."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Nathan Beatty"
+        },
+        "title": "Vice President of Technology",
+        "bio": [
+          {
+            "body": "Nathan has been working in various facets of the IT industry for over 25 years, including networking infrastructure, project management, Agile transformations, and software engineering. Over this time, he has developed a passion for all things related to the development and maintenance of enterprise level software. A large part of this passion is related to the people and culture around software engineering teams."
+          },
+          {
+            "body": "When Nathan isn’t thinking about IT, he’s spending as much time as possible with his wife and 2 adult children. He and his wife keep busy on the weekends owning and managing a private vacation rental home on the shore of Lake Huron in Michigan."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Henry Lenden"
+        },
+        "title": "Vice President of Operations",
+        "bio": [
+          {
+            "body": "Henry has 35 years of experience in a fast paced and high - speed print and mail environment. He is responsible for developing and directing a production team to meet our client service level agreements while maintaining quality control standards. Henry utilizes strong technical and mechanical skills to ensure Renkim Corporation implements the latest hardware and software to meet client business needs."
+          },
+          {
+            "body": "In 2018 Henry accepted the Pitney-Bowes Brilliance Award for Higher Value Communications presented to the Renkim team for their performance in converting our workload from digital to full color inkjet. Henry enjoys tinkering with cars and cruising his 1969 Plymouth Roadrunner."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Bridgett Cole"
+        },
+        "title": "Finance Manager/Controller",
+        "bio": [
+          {
+            "body": "Bridgett Cole brings over a decade of diverse accounting experience across the dynamic automotive and strategic aviation industries. Known for her meticulous attention to detail and a results-driven mindset, Bridgett has consistently streamlined financial processes to drive efficiency, accuracy, and cost savings. Her contributions at Renkim have led to measurable improvements in operational performance, further cementing her reputation as a trusted financial leader."
+          },
+          {
+            "body": "Bridgett holds a Bachelor’s degree in Business Administration with a concentration in Accounting, as well as a Master’s degree from Eastern Michigan University. Her strong academic foundation, coupled with hands-on industry experience, enables her to approach financial challenges with both analytical rigor and strategic insight."
+          },
+          {
+            "body": "Outside of work, Bridgett is passionate about reading, traveling, crafting, and volunteering in her local community. She also cherishes spending quality time with her dog and her family, which remains a central part of her life."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Linda Webster"
+        },
+        "title": "Director of Major Accounts",
+        "bio": [
+          {
+            "body": "As the Director of Client Partnerships, Development & Operations, Linda began her career path with Renkim as a Project Administrator on the Ford Recall account over 30 years ago. Linda has strengthened and leveraged Recall knowledge to grow Renkim’s service offerings to not only print and mail, but also contact center, website development, claims processing, marketing, tailored program design and administration. Linda’s motto is ‘anything is possible’."
+          },
+          {
+            "body": "Linda attended Eastern Michigan University, receiving her bachelor’s degree in marketing, communications, and additional hours toward teaching. Family time is the best time for Linda. She also enjoys boating, golfing, swimming, and babysitting."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Derek Blue"
+        },
+        "title": "Director of Client Success",
+        "bio": [
+          {
+            "body": "Derek Blue started with Renkim in 2017 in the Account Management department and was promoted to Director of Client Success in June of 2022. Prior to Renkim, Derek spent 15 years in the restaurant industry managing multiple restaurants in the metro Detroit area. Derek graduated from Grand Valley State University in 2006 with a Bachelor of Science in Business Administration."
+          },
+          {
+            "body": "Derek lives in Saint Clair Shores, Michigan with his wife Lauren and three kids Jack, Carter and Will. He enjoys helping coach his son's little league teams and spending time with his family."
+          }
+        ]
+      },
+      {
+        "name": {
+          "text": "Derek Vertin"
+        },
+        "title": "Product Owner",
+        "bio": [
+          {
+            "body": "Derek Vertin has more than 20 years of product management experience with software and data solutions. Prior to joining Renkim in 2023, he developed and enhanced dozens of applications and reporting interfaces across a wide range of industries, including market research, mortgage and PCI compliance. During nearly 15 years working with several automotive market verticals at R.L. Polk & Co. (now S&P Global), Derek moved from traditional product manager to product owner through adoption and practice of Agile development methodology. Since leaving Polk, he has supported four additional Agile transformations in the product owner role. Derek is a proud graduate of Michigan State University with a degree in Marketing."
+          }
+        ]
+      }
+    ]
+  },
+  "history": {
+    "heading": {
+      "full": "About Our Extensive Renkim History",
+      "parts": [
+        {
+          "text": "About Our",
+          "style": "primary"
+        },
+        {
+          "text": "Extensive Renkim",
+          "style": "secondary"
+        },
+        {
+          "text": "History",
+          "style": "primary"
+        }
+      ]
+    },
+    "body": "Renkim has a rich history of innovation and dedication. Since our inception in 1982, we've evolved from a small data processing firm to a leading provider of comprehensive data management and communication solutions, all while staying true to our roots and core values.",
+    "milestones": [
+      {
+        "headingLevelLive": "h4",
+        "title": "How It Started",
+        "body": "Several years ago, a large, Detroit-based automotive manufacturer needed a sophisticated and secure database to handle vehicle and client information. Two programmers, Gary Perlick and Rob Swearengen, were hired to provide a solution for this complex application. In 1982, these two men officially formed Renkim Corporation, naming the company after their wives – Rena and Kim, hence RenKim. The company facilitated large scale data processing and communications management services."
+      },
+      {
+        "headingLevelLive": "h4",
+        "title": "100% Employee Owned",
+        "body": "In the late nineties, the original founders began the process of converting Renkim’s ownership from the two original founders to an ESOP (Employee Stock Ownership Plan). Still today, every single share of Renkim Corporation is owned by current Renkim employees."
+      },
+      {
+        "headingLevelLive": "h4",
+        "title": "Adding More Industries",
+        "body": "Around this same time, the company began adding to their project-based service offerings with continuity-based ones catered to a variety of industries with a legal or financial background. Over the years, serving these new industries led Renkim to acquire and maintain top-of-the-line third party compliance certifications for operational procedures, physical and data security, that are still in place today."
+      },
+      {
+        "headingLevelLive": "h4",
+        "title": "40+ Years of Service",
+        "body": "Over forty years since it all began, we still service that first automobile manufacturer client, as well as handling complex data processing and storage, as well as the communications management of legal, tax, financial, and other mission-critical documents for hundreds more clients in the credit, collection, healthcare, insurance, automotive, and utility industries throughout North America."
+      }
+    ]
+  },
+  "employeeOwned": {
+    "heading": {
+      "full": "We Are A 100% Employee Owned Business"
+    },
+    "body": "...we value our Renkim employees as they are the success and backbone of our company",
+    "cta": {
+      "label": "Careers",
+      "href": "https://renkim.com/careers/"
+    }
+  },
+  "values": {
+    "heading": {
+      "full": "Our Core Renkim Values",
+      "parts": [
+        {
+          "text": "Our core",
+          "style": "primary"
+        },
+        {
+          "text": "Renkim",
+          "style": "secondary"
+        },
+        {
+          "text": "Values",
+          "style": "primary"
+        }
+      ],
+      "note": "Live text is \"Our core\"; the live CSS capitalizes it."
+    },
+    "body": "Our core values are the foundation of everything we do at Renkim. They guide our decisions, shape our company culture, and define our commitment to our clients and employees.",
+    "items": [
+      {
+        "eyebrow": "we value",
+        "title": "integrity",
+        "body": "There's no point in doing a job unless you're going to do it right. We believe in adherence to proper guidelines that allow us to do exactly that. Being honest and hard-working are values we believe aid in our integrity."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "communication",
+        "body": "Our entire business is founded in our ability to help people communicate quickly, efficiently, and effectively. We carry this ethos with us through every project we work on, from beginning to end."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "teamwork",
+        "body": "Without the people who support our day-to-day operations, we wouldn't be where we are. We prioritize teamwork in all that we do. That's why we're 100% employee-owned, and why we'll stay that way for years to come."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "quality",
+        "body": "Just because we live in a digital age doesn't mean you can't produce quality work. Renkim strives every day to deliver results that both match the speed of the modern era, while also remaining of the highest possible quality."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "empathy",
+        "body": "Part of any good business is the desire to want to understand people. We want to know where you're coming from and why, not just because it's part of our job, but because we believe that's a simple courtesy you deserve."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "respect",
+        "body": "Without mutual respect, any relationship is destined to fall apart. Renkim works every day to maintain the respect of our clients and our colleagues, and we believe the results of our efforts speak for themselves."
+      }
+    ]
+  },
+  "certifications": {
+    "heading": {
+      "full": "We Have the Certifications to Get the Job Done Right"
+    },
+    "body": "Renkim is always looking for ways to measure success and improve upon it, which is why we adhere to the strongest standards for regulatory compliance recognized in the various industries we support.",
+    "cta": {
+      "label": "Compliance",
+      "href": "https://renkim.com/compliance/"
+    }
+  },
+  "communityWall": {
+    "photos": [
+      {
+        "src": "https://renkim.com/wp-content/uploads/IMG_4546-1.jpg",
+        "alt": "Two Renkim team members in front of a Renkim 100% employee-owned trade show banner"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/sign-1.jpg",
+        "alt": "The Renkim team gathered outdoors around the Renkim 100% Employee Owned sign"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/Renkim-at-the-Booth-ACA-National-21-Vegas.jpg",
+        "alt": "Renkim team members talking with visitors at a Renkim trade show booth"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/gleaners.jpg",
+        "alt": "Renkim volunteers in matching blue shirts at Gleaners, under a Food Bank of the Year banner"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/IMG_6220-1.jpg",
+        "alt": "Two Renkim team members at a Renkim conference booth"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/Green1.jpg",
+        "alt": "Renkim employees dressed in green holding mental health awareness signs"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/volunteer-day-10.30.24.jpg",
+        "alt": "Renkim team members in matching blue shirts posing together indoors"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/Resized_Resized_20230521_092134.jpg",
+        "alt": "A Renkim team member standing at a Renkim trade show booth"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/esop-lunch-7.jpg",
+        "alt": "A large group of Renkim employees together at a company lunch"
+      },
+      {
+        "src": "https://renkim.com/wp-content/uploads/chili-pic-3.jpg",
+        "alt": "Renkim employees standing behind a table of slow cookers at a chili cook-off"
+      }
+    ],
+    "link": {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/company/renkim-corporation/",
+      "note": "The live page links LinkedIn from the footer social icons; the shared footer keeps it."
+    }
+  }
+}

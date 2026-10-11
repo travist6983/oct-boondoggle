@@ -1,0 +1,13 @@
+  <meta name="theme-color" content="#0076C0" />
+  <link rel="icon" href="/favicon-64.png" sizes="64x64" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <script>
+    // Decide motion before first paint so the layout never shifts when the motion layer loads.
+    // ?reduced=1 forces the static page (QA), ?motion=1 forces motion.
+    (function () {
+      var q = location.search, d = document.documentElement;
+      var reduce = /[?&]reduced=1/.test(q) || (!/[?&]motion=1/.test(q) && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+      d.classList.add(reduce ? 'motion-reduce' : 'motion-ok');
+    })();
+  </script>

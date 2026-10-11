@@ -1,0 +1,187 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/ancillary-services/renkim-360/",
+    "captured": "2026-10-11",
+    "notes": [
+      "Main body only (hero + article). Sidebar, bands, values, header and footer are shared partials verified elsewhere.",
+      "Hero sibling chips link to the local pages; live hrefs are https://renkim.com/ancillary-services/…/ (the verifier treats them as equal). Renkim Reporting is a Portal page and stays on renkim.com.",
+      "The live page also carries an 'Example of … Service' case study (fictional client name, challenge, solution, results), but its heading and rich text are display:none at every breakpoint (CSS bde-heading-*-103 / bde-rich-text-*-104). It is kept here under hiddenOnLive and is not rendered, matching live."
+    ],
+    "typoFixes": [
+      {
+        "where": "hero chip",
+        "from": "Litigous Scrub",
+        "to": "Litigious Scrub",
+        "note": "Live sibling chip label; the page itself spells it 'Litigious'."
+      }
+    ],
+    "liveSiteIssuesFound": [
+      "The closing paragraph's phone link is href=\"tel: 7343748300\" (a space and no country code). The redesign links tel:+17343748300, as on the homepage."
+    ]
+  },
+  "hero": {
+    "heading": "Renkim 360",
+    "siblings": [
+      {
+        "label": "Address Element Correction",
+        "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+      },
+      {
+        "label": "Bankruptcy & Deceased",
+        "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+      },
+      {
+        "label": "Email Verification",
+        "href": "https://renkim.com/ancillary-services/email-verification/"
+      },
+      {
+        "label": "Litigious Scrub",
+        "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+      },
+      {
+        "label": "LockBox",
+        "href": "https://renkim.com/ancillary-services/lockbox/"
+      },
+      {
+        "label": "Phone Search",
+        "href": "https://renkim.com/ancillary-services/phone-search/"
+      },
+      {
+        "label": "Renkim 360",
+        "href": "https://renkim.com/ancillary-services/renkim-360/"
+      },
+      {
+        "label": "Return Mail Processing",
+        "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+      },
+      {
+        "label": "USPS CASS, DPV, NCOA",
+        "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+      },
+      {
+        "label": "Vacant Address",
+        "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+      },
+      {
+        "label": "Renkim Reporting",
+        "href": "https://renkim.com/portal/renkim-reporting/",
+        "note": "Portal page: stays on renkim.com."
+      }
+    ]
+  },
+  "article": [
+    {
+      "level": "h2",
+      "heading": "Renkim 360 Services"
+    },
+    {
+      "text": "Renkim 360 is our secure document archival tool that provides a user-friendly solution for receiving, reviewing, and auditing documents in PDF format that we create and send on behalf of our clients."
+    },
+    {
+      "text": "As compliance laws continue to change, PCI-DSS compliancy and data retention rules require clients to retain data and documents for up to seven years."
+    },
+    {
+      "text": "Our secure online portals are branded to our clients, or even our clients’ clients, and provide 24×7 document access using client defined search mechanisms. Fields are completely customizable."
+    },
+    {
+      "text": "Renkim 360 is a useful tool for customer service, accounting, legal, MAP attorneys, sales, and audits. In addition, we give our clients complete administrative rights in their portal to allow for full control over user rights or department specificity."
+    },
+    {
+      "text": "By combining Renkim data processing, print and eNotice services with back-end document archival in Renkim 360, and Renkim MailTrack, clients have end-to-end access to the complete scope, from document creation to the recipient’s mailbox."
+    },
+    {
+      "level": "h2",
+      "heading": "Streamline Your Document Management Today!"
+    },
+    {
+      "text": "Efficient and secure document management is essential for compliance and operational success. Renkim 360 offers a robust solution for managing your documents, providing 24×7 access and customizable search capabilities to meet your specific needs."
+    },
+    {
+      "text": "Ready to enhance your document management? Contact Renkim today at (734) 374-8300 or email us at info@renkim.com to learn how Renkim 360 can benefit your business. Let us help you streamline your document archival and management processes for improved efficiency and compliance!"
+    }
+  ],
+  "hiddenOnLive": {
+    "omitted": "display:none on the live page at every breakpoint; not rendered",
+    "items": [
+      {
+        "tag": "h3",
+        "text": "An Example of Our Renkim 360 Services"
+      },
+      {
+        "tag": "strong",
+        "text": "Client:"
+      },
+      {
+        "tag": "p",
+        "text": "JKL Financial Services"
+      },
+      {
+        "tag": "strong",
+        "text": "Challenge:"
+      },
+      {
+        "tag": "p",
+        "text": "JKL Financial Services needed a secure, efficient way to manage and access their documents while ensuring compliance with data retention laws. Their existing system was fragmented and lacked robust search capabilities, making it difficult to retrieve documents quickly."
+      },
+      {
+        "tag": "strong",
+        "text": "Solution:"
+      },
+      {
+        "tag": "p",
+        "text": "Renkim implemented the Renkim 360 service for JKL Financial Services. We provided a branded, secure online portal that allowed 24×7 access to their documents. The customizable fields enabled specific search mechanisms tailored to JKL's requirements, ensuring efficient document retrieval and management."
+      },
+      {
+        "tag": "strong",
+        "text": "Results:"
+      },
+      {
+        "tag": "strong",
+        "text": "Improved Document Access:"
+      },
+      {
+        "tag": "li",
+        "text": "The secure online portal provided immediate access to documents, enhancing operational efficiency."
+      },
+      {
+        "tag": "strong",
+        "text": "Compliance Assurance:"
+      },
+      {
+        "tag": "li",
+        "text": "JKL Financial Services met all PCI-DSS and data retention requirements, reducing compliance risks."
+      },
+      {
+        "tag": "strong",
+        "text": "Streamlined Operations:"
+      },
+      {
+        "tag": "li",
+        "text": "The ability to customize fields and control user rights improved internal processes and accountability."
+      },
+      {
+        "tag": "strong",
+        "text": "Enhanced Security:"
+      },
+      {
+        "tag": "li",
+        "text": "Secure document storage and access ensured the confidentiality and integrity of sensitive information."
+      },
+      {
+        "tag": "p",
+        "text": "By utilizing Renkim 360, JKL Financial Services streamlined their document management process, ensuring compliance and improving overall efficiency."
+      }
+    ]
+  },
+  "links": [
+    {
+      "label": "(734) 374-8300",
+      "href": "tel:+17343748300",
+      "liveHref": "tel: 7343748300"
+    },
+    {
+      "label": "info@renkim.com",
+      "href": "mailto:info@renkim.com"
+    }
+  ]
+}

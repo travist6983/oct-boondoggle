@@ -1,0 +1,97 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/ancillary-services/phone-search/ main body (rendered, visible text), extracted 2026-10-11. Header, footer, sidebar (Industries We Serve + Ready to get started?), employee band, industries band and core values are shared partials covered elsewhere.",
+    "rules": "Copy is verbatim from the visible live page. Heading levels: one h1 (hero), h2 for the article title and the closing call to action. The phone number and email address in the closing paragraph are linked (tel:+17343748300, mailto:) in the redesign; the text is unchanged.",
+    "typoFixes": [
+      {
+        "where": "hero chips (sibling links)",
+        "from": "Litigous Scrub",
+        "to": "Litigious Scrub"
+      }
+    ],
+    "hiddenOnLiveExcluded": [
+      "'Example of Phone Search Service' (client example with challenge/solution/results) is in the live HTML but display:none on every breakpoint, so it is not shown in the redesign."
+    ],
+    "liveSiteIssuesFound": [
+      "Sibling chip 'Litigous Scrub' is misspelled on every ancillary page; fixed to 'Litigious Scrub' (the page itself is titled Litigious Scrub)."
+    ],
+    "lab": "The page lab is an aria-labelled illustration (role=img); its labels are decorative and not part of the copy."
+  },
+  "hero": {
+    "headingLevelLive": "h1",
+    "heading": "Phone Search",
+    "chips": [
+      {
+        "label": "Address Element Correction",
+        "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+      },
+      {
+        "label": "Bankruptcy & Deceased",
+        "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+      },
+      {
+        "label": "Email Verification",
+        "href": "https://renkim.com/ancillary-services/email-verification/"
+      },
+      {
+        "label": "Litigious Scrub",
+        "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+      },
+      {
+        "label": "LockBox",
+        "href": "https://renkim.com/ancillary-services/lockbox/"
+      },
+      {
+        "label": "Phone Search",
+        "href": "https://renkim.com/ancillary-services/phone-search/"
+      },
+      {
+        "label": "Renkim 360",
+        "href": "https://renkim.com/ancillary-services/renkim-360/"
+      },
+      {
+        "label": "Return Mail Processing",
+        "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+      },
+      {
+        "label": "USPS CASS, DPV, NCOA",
+        "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+      },
+      {
+        "label": "Vacant Address",
+        "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+      },
+      {
+        "label": "Renkim Reporting",
+        "href": "https://renkim.com/portal/renkim-reporting/"
+      }
+    ]
+  },
+  "article": [
+    {
+      "headingLevelLive": "h2",
+      "heading": "Phone Search Services",
+      "body": "Accurate and up-to-date contact information is essential for effective communication and customer engagement. Renkim's Phone Search Services help you enhance your database with verified phone numbers, ensuring you can reach your clients efficiently. Our advanced search tools and techniques provide reliable and accurate phone number data to support your business operations."
+    },
+    {
+      "headingLevelLive": "h2",
+      "heading": "Enhance Your Contact Database Today!",
+      "body": "Accurate phone data is crucial for effective communication and customer engagement. Renkim's Phone Search Services ensure your contact information is up-to-date and reliable, helping you connect with your clients more efficiently."
+    },
+    {
+      "body": "Ready to improve your contact database? Contact Renkim today at (734) 374-8300 or email us at info@renkim.com to learn how our Phone Search Services can benefit your business. Let's work together to enhance your customer communication and engagement!",
+      "links": [
+        {
+          "label": "(734) 374-8300",
+          "href": "tel:+17343748300",
+          "note": "plain text on live; linked in the redesign"
+        },
+        {
+          "label": "info@renkim.com",
+          "href": "mailto:info@renkim.com",
+          "note": "plain text on live; linked in the redesign"
+        }
+      ]
+    }
+  ]
+}

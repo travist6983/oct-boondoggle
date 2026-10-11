@@ -1,0 +1,950 @@
+{
+  "$meta": {
+    "source": "https://renkim.com/ homepage, extracted 2026-10-10 (rendered DOM in Chrome + raw HTML for hidden tab/accordion/section copy)",
+    "rules": "Copy is verbatim from the source HTML. `headingLevelLive` records the tag used on the live site; the redesign keeps the same order but normalizes levels (one h1, no skipped levels).",
+    "typoFixes": [
+      {
+        "where": "values.integrity",
+        "from": "guidlines",
+        "to": "guidelines"
+      },
+      {
+        "where": "values.quality",
+        "from": "higest",
+        "to": "highest"
+      },
+      {
+        "where": "values.integrity",
+        "from": "Being honest, and hard-working",
+        "to": "Being honest and hard-working",
+        "note": "The live carousel contains two copies of each value; the second copy already carries both corrections. We use that copy."
+      },
+      {
+        "where": "dataServices.items[0]",
+        "from": "NOCA",
+        "to": "NCOA",
+        "note": "USPS National Change of Address; the mega menu spells it NCOA."
+      }
+    ],
+    "dedupe": "The 'What Makes Renkim Different' slider repeats all six values twice (12 slides). Deduplicated to six.",
+    "liveSiteIssuesFound": [
+      "Incident banner section (.bde-section-69-196) is in the HTML but display:none at every breakpoint on the live site. Client decision 2026-10-11: leave it out of the redesign.",
+      "Contact section phone link is href=\"tel:7323748300\" (732 area code) while the visible text reads (734) 374-8300. The redesign links tel:+17343748300.",
+      "Footer 'Fax (734) 374-0168' links to https://breakdance.com/ (builder default). Rendered as plain text in the redesign.",
+      "Address links are href=\"#\". Rendered as an <address> element in the redesign.",
+      "Section 'Need to update your mailing or phone information?' (data services + 'Request a Renkim demo today' form) is display:none on the live site. The redesign brings it back as Stage 7, per brief.",
+      "Popup 250 ('Want to get in touch with our team?') only opens from a #request-demo selector that does not exist on the homepage, so it is unreachable today.",
+      "Data-services list item reads 'Phone Return Mail Processing' (the mega menu lists 'Return Mail Processing'). Client decision 2026-10-11: keep the live wording."
+    ]
+  },
+  "incidentBanner": {
+    "text": "Renkim has experienced a cybersecurity incident.",
+    "link": {
+      "label": "Click here",
+      "href": "https://renkim.com/renkim-notice-of-data-security-incident/"
+    },
+    "textAfter": "for more information.",
+    "liveColors": {
+      "background": "#000ACA"
+    },
+    "omitted": "Removed per client decision 2026-10-11 (hidden on the live site too)."
+  },
+  "header": {
+    "logo": {
+      "src": "assets/RGB-Renkim-Logo-2026.png",
+      "alt": "Renkim — Print and Digital Communications",
+      "href": "https://renkim.com/"
+    },
+    "logoWhite": {
+      "src": "assets/RenkimLogowhiteSmaller.png",
+      "alt": "Renkim",
+      "usage": "Mobile menu / dark backgrounds"
+    },
+    "nav": [
+      {
+        "label": "What We Do",
+        "type": "mega",
+        "columns": [
+          {
+            "heading": "Print & Mail",
+            "links": [
+              {
+                "label": "Print Document",
+                "href": "https://renkim.com/print-mail/print-document/"
+              },
+              {
+                "label": "Certified Mail",
+                "href": "https://renkim.com/print-mail/certified-mail/"
+              },
+              {
+                "label": "MICR Check Printing",
+                "href": "https://renkim.com/print-mail/micr-check-printing/"
+              }
+            ]
+          },
+          {
+            "heading": "Digital",
+            "links": [
+              {
+                "label": "Email",
+                "href": "https://renkim.com/digital-services/email/"
+              },
+              {
+                "label": "Text Message",
+                "href": "https://renkim.com/digital-services/text-message/"
+              }
+            ]
+          },
+          {
+            "heading": "Ancillary Services",
+            "links": [
+              {
+                "label": "Address Element Correction (AEC)",
+                "href": "https://renkim.com/ancillary-services/address-element-correction-aec/"
+              },
+              {
+                "label": "Bankruptcy & Deceased",
+                "href": "https://renkim.com/ancillary-services/bankruptcy-deceased/"
+              },
+              {
+                "label": "Email Verification",
+                "href": "https://renkim.com/ancillary-services/email-verification/"
+              },
+              {
+                "label": "Litigious Scrub",
+                "href": "https://renkim.com/ancillary-services/litigious-scrub/"
+              },
+              {
+                "label": "Lockbox",
+                "href": "https://renkim.com/ancillary-services/lockbox/"
+              },
+              {
+                "label": "Phone Search",
+                "href": "https://renkim.com/ancillary-services/phone-search/"
+              },
+              {
+                "label": "Return Mail Processing",
+                "href": "https://renkim.com/ancillary-services/return-mail-processing/"
+              },
+              {
+                "label": "USPS CASS, DPV, NCOA",
+                "href": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/"
+              },
+              {
+                "label": "Vacant Address Search",
+                "href": "https://renkim.com/ancillary-services/vacant-address-search/"
+              }
+            ]
+          },
+          {
+            "heading": "Portal",
+            "links": [
+              {
+                "label": "Renkim Vision",
+                "href": "https://renkim.com/portal/renkim-vision/"
+              },
+              {
+                "label": "Electronic Bill Presentment",
+                "href": "https://renkim.com/portal/electronic-bill-presentment/"
+              },
+              {
+                "label": "Payment Processing",
+                "href": "https://renkim.com/portal/payment-processing/"
+              },
+              {
+                "label": "Renkim Reporting",
+                "href": "https://renkim.com/portal/renkim-reporting/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Who We Are",
+        "href": "https://renkim.com/about-us/",
+        "type": "dropdown",
+        "groupLabel": "About Us",
+        "links": [
+          {
+            "label": "Leadership",
+            "href": "https://renkim.com/about-us/#leadership"
+          },
+          {
+            "label": "History",
+            "href": "https://renkim.com/about-us/#history"
+          },
+          {
+            "label": "Core Values",
+            "href": "https://renkim.com/about-us/#values"
+          },
+          {
+            "label": "The ESOP Advantage",
+            "href": "https://renkim.com/the-esop-advantage/"
+          }
+        ]
+      },
+      {
+        "label": "Who We Help",
+        "href": "https://renkim.com/industries-served/",
+        "type": "dropdown",
+        "groupLabel": "Industries We Serve",
+        "links": [
+          {
+            "label": "Automotive",
+            "href": "https://renkim.com/industries-served/#automotive"
+          },
+          {
+            "label": "Class Action/Data Breach",
+            "href": "https://renkim.com/industries-served/#class-action"
+          },
+          {
+            "label": "Financial",
+            "href": "https://renkim.com/industries-served/#financial"
+          },
+          {
+            "label": "Government/Municipality",
+            "href": "https://renkim.com/industries-served/#gov"
+          },
+          {
+            "label": "Healthcare",
+            "href": "https://renkim.com/industries-served/#healthcare"
+          },
+          {
+            "label": "Mortgage",
+            "href": "https://renkim.com/industries-served/#mortgage"
+          },
+          {
+            "label": "Receivables Management",
+            "href": "https://renkim.com/industries-served/#receivables"
+          },
+          {
+            "label": "Telecom/Internet",
+            "href": "https://renkim.com/industries-served/#telecom"
+          },
+          {
+            "label": "Utility",
+            "href": "https://renkim.com/industries-served/#utility"
+          }
+        ]
+      },
+      {
+        "label": "Resources",
+        "type": "dropdown",
+        "groupLabel": "Quick Links",
+        "links": [
+          {
+            "label": "Compliance",
+            "href": "https://renkim.com/compliance/"
+          },
+          {
+            "label": "Renkim on the Road",
+            "href": "https://renkim.com/on-the-road/"
+          },
+          {
+            "label": "Renkim in the Community",
+            "href": "https://renkim.com/in-the-community/"
+          },
+          {
+            "label": "Careers",
+            "href": "https://renkim.com/careers/"
+          }
+        ]
+      }
+    ],
+    "social": [
+      {
+        "label": "Facebook",
+        "href": "https://www.facebook.com/Renkim-Corporation-186106118105082/"
+      },
+      {
+        "label": "X (Twitter)",
+        "href": "https://twitter.com/RenkimCorp"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/company/renkim-corporation/"
+      }
+    ],
+    "cta": {
+      "label": "Contact",
+      "href": "https://renkim.com/contact-us/"
+    },
+    "floatingTab": {
+      "label": "Schedule A Call",
+      "href": "https://renkim.com/contact-us/",
+      "liveStyle": "Vertical tab fixed to right edge, #000ACA, phone icon"
+    },
+    "scrollProgress": {
+      "liveStyle": "Thin #00FF84 bar across top of viewport"
+    }
+  },
+  "hero": {
+    "headingLevelLive": "h1",
+    "heading": "Quality Print and Mail, Text, and Email Solutions",
+    "subheading": "... by a 100% employee owned business",
+    "ctas": [
+      {
+        "label": "Contact us",
+        "href": "https://renkim.com/contact-us/",
+        "style": "primaryGreen",
+        "liveRendered": "Contact Us (CSS capitalize)"
+      },
+      {
+        "label": "Services",
+        "href": "https://renkim.com/services/",
+        "style": "primaryBlue"
+      }
+    ],
+    "background": "assets/Renkim_Wave-Lines_Background_BottomRight_LightBlue.png"
+  },
+  "industries": {
+    "headingLevelLive": "h2",
+    "heading": {
+      "full": "Renkim Is the Go-To Solution for All of Your Print and Mail, Text, and Email Needs",
+      "parts": [
+        {
+          "text": "Renkim Is the Go-To Solution for All of Your",
+          "style": "primary"
+        },
+        {
+          "text": "Print and Mail, Text, and Email",
+          "style": "secondary"
+        },
+        {
+          "text": "Needs",
+          "style": "primary"
+        }
+      ]
+    },
+    "items": [
+      {
+        "label": "Automotive",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Class Action / Data Breach",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Financial",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Government / Municipality",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Healthcare",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Mortgage",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Receivables Management",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Telecom / Internet",
+        "href": "https://renkim.com/industries-served/"
+      },
+      {
+        "label": "Utility",
+        "href": "https://renkim.com/industries-served/"
+      }
+    ],
+    "liveStyle": "Blue gradient band (#0076C0 → #000ACA), glass pills with green check icons, 3×3 grid"
+  },
+  "onDemand": {
+    "headingLevelLive": "h2",
+    "heading": {
+      "full": "On-Demand Color Printing Solutions",
+      "parts": [
+        {
+          "text": "On-Demand Color",
+          "style": "primary"
+        },
+        {
+          "text": "Printing",
+          "style": "secondary",
+          "annotate": true
+        },
+        {
+          "text": "Solutions",
+          "style": "primary"
+        }
+      ]
+    },
+    "tabs": [
+      {
+        "id": "people",
+        "title": "the People",
+        "headingLevelLive": "h3 + h4 ('the' / 'people')",
+        "body": "Our people have been in the print and email solution business since 1982. We've been at the forefront of a complex and changing industry, and we're ready to put our experience to work for you."
+      },
+      {
+        "id": "processes",
+        "title": "the Processes",
+        "body": "We carefully document every step of our process, and carry out orders according to strict standards and codes of compliance."
+      },
+      {
+        "id": "technology",
+        "title": "the Technology",
+        "body": "Renkim utilizes Pitney Bowes and Canon Inkjet print technology for all our printing solutions and insertion solutions. We have the capacity to print and insert over 30 million documents a month.",
+        "stat": {
+          "value": 30000000,
+          "display": "30 million",
+          "context": "documents a month",
+          "sourcePhrase": "over 30 million documents a month"
+        }
+      }
+    ],
+    "image": {
+      "src": "assets/IsometricPrinter.png",
+      "alt": "Isometric illustration of a production inkjet printer with paper rolls and printed stacks",
+      "width": 650,
+      "height": 555
+    },
+    "liveStyle": "Accordion (one open at a time) left, isometric printer right, #F7F7F7 background"
+  },
+  "values": {
+    "headingLevelLive": "h2",
+    "heading": {
+      "full": "What Makes Renkim Different",
+      "parts": [
+        {
+          "text": "What Makes",
+          "style": "primary"
+        },
+        {
+          "text": "Renkim",
+          "style": "secondary"
+        },
+        {
+          "text": "Different",
+          "style": "primary"
+        }
+      ]
+    },
+    "items": [
+      {
+        "eyebrow": "we value",
+        "title": "integrity",
+        "body": "There's no point in doing a job unless you're going to do it right. We believe in adherence to proper guidelines that allow us to do exactly that. Being honest and hard-working are values we believe aid in our integrity."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "communication",
+        "body": "Our entire business is founded in our ability to help people communicate quickly, efficiently, and effectively. We carry this ethos with us through every project we work on, from beginning to end."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "teamwork",
+        "body": "Without the people who support our day-to-day operations, we wouldn't be where we are. We prioritize teamwork in all that we do. That's why we're 100% employee-owned, and why we'll stay that way for years to come."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "quality",
+        "body": "Just because we live in a digital age doesn't mean you can't produce quality work. Renkim strives every day to deliver results that both match the speed of the modern era, while also remaining of the highest possible quality."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "empathy",
+        "body": "Part of any good business is the desire to want to understand people. We want to know where you're coming from and why, not just because it's part of our job, but because we believe that's a simple courtesy you deserve."
+      },
+      {
+        "eyebrow": "we value",
+        "title": "respect",
+        "body": "Without mutual respect, any relationship is destined to fall apart. Renkim works every day to maintain the respect of our clients and our colleagues, and we believe the results of our efforts speak for themselves."
+      }
+    ],
+    "liveStyle": "Swiper slider rendered as 3×2 grid of #F7F7F7 cards with green icon badges"
+  },
+  "employeeOwned": {
+    "headingLevelLive": "h2",
+    "heading": {
+      "full": "We Are A 100% Employee Owned Business",
+      "parts": [
+        {
+          "text": "We Are A",
+          "style": "primary"
+        },
+        {
+          "text": "100% Employee Owned",
+          "style": "secondary",
+          "annotate": true
+        },
+        {
+          "text": "Business",
+          "style": "primary"
+        }
+      ]
+    },
+    "ctas": [
+      {
+        "label": "About Us",
+        "href": "https://renkim.com/about-us/",
+        "style": "primaryGreen"
+      },
+      {
+        "label": "Careers",
+        "href": "https://renkim.com/careers/",
+        "style": "primaryBlue"
+      }
+    ],
+    "body": "We value our Renkim employees as they are the success and backbone of our company.",
+    "image": {
+      "src": "assets/warehouse_renkim_flipped-1.jpg",
+      "alt": "Renkim employees at work in the production facility",
+      "overlay": "transparentBlue gradient"
+    }
+  },
+  "dataServices": {
+    "liveVisibility": "display:none on live site",
+    "headingLevelLive": "h2",
+    "heading": "Need to update your mailing or phone information? We can help you",
+    "body": "Our team can help you quickly and easily update your contact information across a variety of platforms.",
+    "items": [
+      {
+        "label": "USPS CASS, DPV, NCOA 18 and 48 Months",
+        "liveText": "USPS CASS, DPV, NOCA 18 and 48 Months",
+        "suggestedHref": "https://renkim.com/ancillary-services/usps-cass-dpv-ncoa/",
+        "href": null
+      },
+      {
+        "label": "Address Element Correction (AEC)",
+        "suggestedHref": "https://renkim.com/ancillary-services/address-element-correction-aec/",
+        "href": null
+      },
+      {
+        "label": "Bankruptcy and Deceased",
+        "suggestedHref": "https://renkim.com/ancillary-services/bankruptcy-deceased/",
+        "href": null
+      },
+      {
+        "label": "Phone Append",
+        "suggestedHref": "https://renkim.com/ancillary-services/phone-search/",
+        "href": null
+      },
+      {
+        "label": "Phone Return Mail Processing",
+        "liveText": "Phone Return Mail Processing",
+        "suggestedHref": "https://renkim.com/ancillary-services/return-mail-processing/",
+        "href": null,
+        "note": "Live wording kept per client decision 2026-10-11."
+      }
+    ],
+    "demoCta": {
+      "headingLevelLive": "h3",
+      "heading": {
+        "full": "Request a Renkim demo today",
+        "parts": [
+          {
+            "text": "Request a",
+            "style": "primary"
+          },
+          {
+            "text": "Renkim demo",
+            "style": "secondary",
+            "annotate": true
+          },
+          {
+            "text": "today",
+            "style": "primary"
+          }
+        ]
+      },
+      "subheading": "... fill out the form below",
+      "liveForm": {
+        "id": "contact-form433 (Breakdance, hidden)",
+        "fields": [
+          {
+            "name": "name",
+            "type": "text",
+            "placeholder": "Name",
+            "required": true
+          },
+          {
+            "name": "company",
+            "type": "text",
+            "placeholder": "Company",
+            "required": false
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "placeholder": "Email",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "type": "tel",
+            "placeholder": "Phone Number",
+            "required": false
+          },
+          {
+            "name": "message",
+            "type": "textarea",
+            "placeholder": "Message",
+            "required": true
+          }
+        ],
+        "submit": "Submit"
+      }
+    },
+    "itemsNote": "Live list items are not links. suggestedHref points to the matching existing renkim.com service page; use only if the client approves."
+  },
+  "contact": {
+    "headingLevelLive": "h2",
+    "heading": "Get in touch with us any way that works for you",
+    "body": "We are excited to speak with you and solve your personal print and electronic mail solutions. With our quality services, we're ready to provide you with customized solutions.",
+    "channels": [
+      {
+        "label": "Email :",
+        "value": "info@renkim.com",
+        "href": "mailto:info@renkim.com"
+      },
+      {
+        "label": "Phone :",
+        "value": "(734) 374-8300",
+        "href": "tel:+17343748300",
+        "liveHref": "tel:7323748300"
+      },
+      {
+        "label": "Fax :",
+        "value": "(734) 374-0168",
+        "href": null
+      },
+      {
+        "label": "Address :",
+        "value": "13333 Allen Rd. Southgate, MI 48195",
+        "href": null,
+        "liveHref": "#"
+      }
+    ],
+    "formNote": "Or fill out the form, and we'll be in touch",
+    "formCard": {
+      "headingLevelLive": "h3",
+      "heading": {
+        "full": "Ready to Talk With Renkim Today?",
+        "parts": [
+          {
+            "text": "Ready to Talk With",
+            "style": "primary"
+          },
+          {
+            "text": "Renkim",
+            "style": "secondary"
+          },
+          {
+            "text": "Today?",
+            "style": "primary"
+          }
+        ]
+      },
+      "subheading": "... fill out the form below to get started",
+      "liveForm": {
+        "provider": "LeadConnector (GoHighLevel) iframe widget",
+        "src": "https://apiclients.aelieve.com/widget/form/07LpuJ7IJcHZgH91U4ie",
+        "fields": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "placeholder": "First Name, Last Name*",
+            "required": true
+          },
+          {
+            "name": "organization",
+            "liveName": "2MxmDEw8cwYLg9goPo4I",
+            "type": "text",
+            "placeholder": "Organization*",
+            "required": true
+          },
+          {
+            "name": "phone",
+            "type": "tel",
+            "placeholder": "Phone*",
+            "required": true
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "placeholder": "Email*",
+            "required": true
+          },
+          {
+            "name": "message",
+            "liveName": "FgZHnf3tsaBLFbFwH846",
+            "type": "textarea",
+            "placeholder": "Your Message...",
+            "required": false
+          }
+        ],
+        "hiddenFields": [
+          {
+            "liveName": "ekwD94mtZCfAXySRr8r3",
+            "note": "Hidden (d-none) text field, likely honeypot"
+          }
+        ],
+        "submit": "Submit",
+        "requiredNote": "Required-ness is inferred from the * in placeholders; the widget validates in JS."
+      }
+    },
+    "background": "assets/Renkim_Wave-Lines_Background_BottomL_Teal.png"
+  },
+  "certifications": {
+    "headingLevelLive": "h5",
+    "heading": {
+      "full": "We Have the Certifications to Get the Job Done Right",
+      "parts": [
+        {
+          "text": "We Have the",
+          "style": "primary"
+        },
+        {
+          "text": "Certifications",
+          "style": "secondary"
+        },
+        {
+          "text": "to Get the Job Done",
+          "style": "primary"
+        },
+        {
+          "text": "Right",
+          "style": "secondary"
+        }
+      ]
+    },
+    "body": "Renkim is always looking for ways to measure success and improve upon it, which is why we adhere to the strongest standards for regulatory compliance recognized in the various industries we support.",
+    "cta": {
+      "label": "Compliance",
+      "href": "https://renkim.com/compliance/",
+      "style": "primaryBlue"
+    },
+    "image": {
+      "src": "assets/Renkim_Certifications.png",
+      "alt": "PCI DSS Compliant, HIPAA Compliant, IRS Publication 1075, and AICPA SOC 2 (Service Organization Control Reports, formerly SAS 70)",
+      "width": 534,
+      "height": 474
+    }
+  },
+  "footer": {
+    "logo": {
+      "src": "assets/EmployeeOwnedLogoLarge.png",
+      "alt": "Renkim — 100% employee owned, est. 1982",
+      "href": "https://renkim.com/"
+    },
+    "columns": [
+      {
+        "heading": "What We Do",
+        "links": [
+          {
+            "label": "Print and Mail",
+            "href": "https://renkim.com/print-mail/"
+          },
+          {
+            "label": "Digital Services",
+            "href": "https://renkim.com/digital-services/"
+          },
+          {
+            "label": "Email",
+            "href": "https://renkim.com/digital-services/email/"
+          },
+          {
+            "label": "Text Message",
+            "href": "https://renkim.com/digital-services/text-message/"
+          },
+          {
+            "label": "Ancillary Services",
+            "href": "https://renkim.com/ancillary-services/"
+          }
+        ]
+      },
+      {
+        "heading": "Portal",
+        "links": [
+          {
+            "label": "Renkim Vision",
+            "href": "https://renkim.com/portal/renkim-vision/"
+          },
+          {
+            "label": "Electronic Bill Presentment",
+            "href": "https://renkim.com/portal/electronic-bill-presentment/"
+          },
+          {
+            "label": "Payment Processing",
+            "href": "https://renkim.com/portal/payment-processing/"
+          },
+          {
+            "label": "Renkim Reporting",
+            "href": "https://renkim.com/portal/renkim-reporting/"
+          }
+        ]
+      },
+      {
+        "heading": "Who We Help",
+        "links": [
+          {
+            "label": "Automotive",
+            "href": "https://renkim.com/industries-served/"
+          },
+          {
+            "label": "Class Action",
+            "href": "https://renkim.com/industries-served/"
+          },
+          {
+            "label": "Financial",
+            "href": "https://renkim.com/industries-served/"
+          },
+          {
+            "label": "Government",
+            "href": "https://renkim.com/industries-served/"
+          },
+          {
+            "label": "Healthcare",
+            "href": "https://renkim.com/industries-served/"
+          },
+          {
+            "label": "Mortgage",
+            "href": "https://renkim.com/industries-served/"
+          },
+          {
+            "label": "Receivables Management",
+            "href": "https://renkim.com/industries-served/"
+          },
+          {
+            "label": "Telecom/Internet",
+            "href": "https://renkim.com/industries-served/#telecom"
+          },
+          {
+            "label": "Utility",
+            "href": "https://renkim.com/industries-served/"
+          }
+        ]
+      },
+      {
+        "heading": "About Us",
+        "links": [
+          {
+            "label": "Leadership",
+            "href": "https://renkim.com/about-us/#leadership"
+          },
+          {
+            "label": "Our History",
+            "href": "https://renkim.com/about-us/#history"
+          },
+          {
+            "label": "Core Values",
+            "href": "https://renkim.com/about-us/#values"
+          },
+          {
+            "label": "The ESOP Advantage",
+            "href": "https://renkim.com/the-esop-advantage/"
+          }
+        ]
+      },
+      {
+        "heading": "Resources",
+        "links": [
+          {
+            "label": "Compliance",
+            "href": "https://renkim.com/compliance/"
+          },
+          {
+            "label": "Renkim On The Road",
+            "href": "https://renkim.com/on-the-road/"
+          },
+          {
+            "label": "Renkim In The Community",
+            "href": "https://renkim.com/in-the-community/"
+          },
+          {
+            "label": "Careers",
+            "href": "https://renkim.com/careers/"
+          }
+        ]
+      },
+      {
+        "heading": "Contact",
+        "links": [
+          {
+            "label": "Call (734) 374-8300",
+            "href": "tel:+17343748300",
+            "liveHref": "tel:(734) 374-8300"
+          },
+          {
+            "label": "Fax (734) 374-0168",
+            "href": null,
+            "liveHref": "https://breakdance.com/"
+          },
+          {
+            "label": "Send us a message",
+            "href": "https://renkim.com/contact-us/"
+          }
+        ]
+      },
+      {
+        "heading": "Our Location",
+        "lines": [
+          "13333 Allen Road",
+          "Southgate, MI 48195"
+        ],
+        "liveHref": "#"
+      }
+    ],
+    "legal": {
+      "credit": {
+        "text": "Made with ♥ by",
+        "link": {
+          "label": "Aelieve",
+          "href": "https://aelieve.com/"
+        },
+        "omitted": "Removed per client decision 2026-10-11."
+      },
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "https://renkim.com/privacy-policy/"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "https://renkim.com/terms-of-service/"
+        }
+      ],
+      "copyright": "© 2026 Renkim. All Rights Reserved."
+    },
+    "social": "same as header.social"
+  },
+  "popupUnreachable": {
+    "note": "Breakdance popup 250. Trigger is a click on #request-demo, which is not on the homepage. Copy is listed for completeness.",
+    "heading": {
+      "full": "Want to get in touch with our team?",
+      "parts": [
+        {
+          "text": "Want to",
+          "style": "primary"
+        },
+        {
+          "text": "get in touch",
+          "style": "secondary"
+        },
+        {
+          "text": "with our team?",
+          "style": "primary"
+        }
+      ]
+    },
+    "body": "Just want to send a message to our team? No worries, we are here to help. Click on the button below to contact us.",
+    "cta": {
+      "label": "Contact",
+      "href": "https://renkim.com/contact-us/"
+    },
+    "demoHeading": "Request a Renkim demo today",
+    "demoSubheading": "... fill out the form below",
+    "form": "Same five fields as dataServices.demoCta.liveForm (contact-form112)"
+  },
+  "thirdParty": {
+    "chatWidget": "LeadConnector chat widget loader (https://widgets.leadconnectorhq.com/loader.js), lazy-loaded on the live site. Not included in the prototype; TODO to re-add after load to protect LCP."
+  }
+}
